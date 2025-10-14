@@ -58,12 +58,21 @@ export function Navigation() {
                     SAFARIS
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-48 gap-3 p-4 bg-white">
+                    <ul className="grid w-48 gap-3 p-4" style={{ backgroundColor: "#ffffff", color: "#1a1a1a" }}>
                       <li>
                         <NavigationMenuLink asChild>
                           <Link
                             href="/northern-circuit"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
+                            style={{ color: "#1a1a1a" }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.backgroundColor = "#e67e22"
+                              e.currentTarget.style.color = "#ffffff"
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.backgroundColor = "transparent"
+                              e.currentTarget.style.color = "#1a1a1a"
+                            }}
                           >
                             <div className="text-sm font-medium leading-none">Northern Circuit</div>
                           </Link>
@@ -73,7 +82,16 @@ export function Navigation() {
                         <NavigationMenuLink asChild>
                           <Link
                             href="/southern-circuit"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
+                            style={{ color: "#1a1a1a" }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.backgroundColor = "#e67e22"
+                              e.currentTarget.style.color = "#ffffff"
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.backgroundColor = "transparent"
+                              e.currentTarget.style.color = "#1a1a1a"
+                            }}
                           >
                             <div className="text-sm font-medium leading-none">Southern Circuit</div>
                           </Link>
@@ -83,7 +101,16 @@ export function Navigation() {
                         <NavigationMenuLink asChild>
                           <Link
                             href="/day-safaris"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
+                            style={{ color: "#1a1a1a" }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.backgroundColor = "#e67e22"
+                              e.currentTarget.style.color = "#ffffff"
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.backgroundColor = "transparent"
+                              e.currentTarget.style.color = "#1a1a1a"
+                            }}
                           >
                             <div className="text-sm font-medium leading-none">Day Safaris</div>
                           </Link>
@@ -93,7 +120,16 @@ export function Navigation() {
                         <NavigationMenuLink asChild>
                           <Link
                             href="/cultural-safaris"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
+                            style={{ color: "#1a1a1a" }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.backgroundColor = "#e67e22"
+                              e.currentTarget.style.color = "#ffffff"
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.backgroundColor = "transparent"
+                              e.currentTarget.style.color = "#1a1a1a"
+                            }}
                           >
                             <div className="text-sm font-medium leading-none">Cultural Safaris</div>
                           </Link>
@@ -126,12 +162,21 @@ export function Navigation() {
                     TREKKING
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-48 gap-3 p-4 bg-white">
+                    <ul className="grid w-48 gap-3 p-4" style={{ backgroundColor: "#ffffff", color: "#1a1a1a" }}>
                       <li>
                         <NavigationMenuLink asChild>
                           <Link
                             href="/kilimanjaro"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
+                            style={{ color: "#1a1a1a" }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.backgroundColor = "#e67e22"
+                              e.currentTarget.style.color = "#ffffff"
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.backgroundColor = "transparent"
+                              e.currentTarget.style.color = "#1a1a1a"
+                            }}
                           >
                             <div className="text-sm font-medium leading-none">Kilimanjaro</div>
                           </Link>
@@ -141,7 +186,16 @@ export function Navigation() {
                         <NavigationMenuLink asChild>
                           <Link
                             href="/mt-meru"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
+                            style={{ color: "#1a1a1a" }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.backgroundColor = "#e67e22"
+                              e.currentTarget.style.color = "#ffffff"
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.backgroundColor = "transparent"
+                              e.currentTarget.style.color = "#1a1a1a"
+                            }}
                           >
                             <div className="text-sm font-medium leading-none">Mt Meru</div>
                           </Link>
@@ -151,7 +205,16 @@ export function Navigation() {
                         <NavigationMenuLink asChild>
                           <Link
                             href="/udzungwa"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
+                            style={{ color: "#1a1a1a" }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.backgroundColor = "#e67e22"
+                              e.currentTarget.style.color = "#ffffff"
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.backgroundColor = "transparent"
+                              e.currentTarget.style.color = "#1a1a1a"
+                            }}
                           >
                             <div className="text-sm font-medium leading-none">Udzungwa</div>
                           </Link>
@@ -161,7 +224,16 @@ export function Navigation() {
                         <NavigationMenuLink asChild>
                           <Link
                             href="/lushoto"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
+                            style={{ color: "#1a1a1a" }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.backgroundColor = "#e67e22"
+                              e.currentTarget.style.color = "#ffffff"
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.backgroundColor = "transparent"
+                              e.currentTarget.style.color = "#1a1a1a"
+                            }}
                           >
                             <div className="text-sm font-medium leading-none">Lushoto</div>
                           </Link>
