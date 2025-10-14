@@ -58,12 +58,12 @@ export function Navigation() {
                     SAFARIS
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-48 gap-3 p-4">
+                    <ul className="grid w-48 gap-3 p-4 bg-white">
                       <li>
                         <NavigationMenuLink asChild>
                           <Link
                             href="/northern-circuit"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-gray-900 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
                           >
                             <div className="text-sm font-medium leading-none">Northern Circuit</div>
                           </Link>
@@ -73,7 +73,7 @@ export function Navigation() {
                         <NavigationMenuLink asChild>
                           <Link
                             href="/southern-circuit"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-gray-900 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
                           >
                             <div className="text-sm font-medium leading-none">Southern Circuit</div>
                           </Link>
@@ -83,7 +83,7 @@ export function Navigation() {
                         <NavigationMenuLink asChild>
                           <Link
                             href="/day-safaris"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-gray-900 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
                           >
                             <div className="text-sm font-medium leading-none">Day Safaris</div>
                           </Link>
@@ -93,7 +93,7 @@ export function Navigation() {
                         <NavigationMenuLink asChild>
                           <Link
                             href="/cultural-safaris"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-gray-900 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
                           >
                             <div className="text-sm font-medium leading-none">Cultural Safaris</div>
                           </Link>
@@ -126,12 +126,12 @@ export function Navigation() {
                     TREKKING
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-48 gap-3 p-4">
+                    <ul className="grid w-48 gap-3 p-4 bg-white">
                       <li>
                         <NavigationMenuLink asChild>
                           <Link
                             href="/kilimanjaro"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-gray-900 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
                           >
                             <div className="text-sm font-medium leading-none">Kilimanjaro</div>
                           </Link>
@@ -141,7 +141,7 @@ export function Navigation() {
                         <NavigationMenuLink asChild>
                           <Link
                             href="/mt-meru"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-gray-900 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
                           >
                             <div className="text-sm font-medium leading-none">Mt Meru</div>
                           </Link>
@@ -151,7 +151,7 @@ export function Navigation() {
                         <NavigationMenuLink asChild>
                           <Link
                             href="/udzungwa"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-gray-900 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
                           >
                             <div className="text-sm font-medium leading-none">Udzungwa</div>
                           </Link>
@@ -161,7 +161,7 @@ export function Navigation() {
                         <NavigationMenuLink asChild>
                           <Link
                             href="/lushoto"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-gray-900 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:bg-accent hover:!text-white focus:bg-accent focus:!text-white"
                           >
                             <div className="text-sm font-medium leading-none">Lushoto</div>
                           </Link>
