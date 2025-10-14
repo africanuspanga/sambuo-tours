@@ -5,14 +5,6 @@ import Link from "next/link"
 import Image from "next/image"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
 
 export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -50,96 +42,93 @@ export function Navigation() {
               ABOUT
             </Link>
 
-            {/* Safaris Dropdown */}
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-brand-dark hover:text-brand-orange font-medium">
-                    SAFARIS
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-48 gap-3 p-4" style={{ backgroundColor: "#ffffff", color: "#1a1a1a" }}>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/northern-circuit"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
-                            style={{ color: "#1a1a1a" }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.backgroundColor = "#e67e22"
-                              e.currentTarget.style.color = "#ffffff"
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.backgroundColor = "transparent"
-                              e.currentTarget.style.color = "#1a1a1a"
-                            }}
-                          >
-                            <div className="text-sm font-medium leading-none">Northern Circuit</div>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/southern-circuit"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
-                            style={{ color: "#1a1a1a" }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.backgroundColor = "#e67e22"
-                              e.currentTarget.style.color = "#ffffff"
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.backgroundColor = "transparent"
-                              e.currentTarget.style.color = "#1a1a1a"
-                            }}
-                          >
-                            <div className="text-sm font-medium leading-none">Southern Circuit</div>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/day-safaris"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
-                            style={{ color: "#1a1a1a" }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.backgroundColor = "#e67e22"
-                              e.currentTarget.style.color = "#ffffff"
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.backgroundColor = "transparent"
-                              e.currentTarget.style.color = "#1a1a1a"
-                            }}
-                          >
-                            <div className="text-sm font-medium leading-none">Day Safaris</div>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/cultural-safaris"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
-                            style={{ color: "#1a1a1a" }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.backgroundColor = "#e67e22"
-                              e.currentTarget.style.color = "#ffffff"
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.backgroundColor = "transparent"
-                              e.currentTarget.style.color = "#1a1a1a"
-                            }}
-                          >
-                            <div className="text-sm font-medium leading-none">Cultural Safaris</div>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
+            <div
+              className="relative"
+              onMouseEnter={() => setSafariDropdownOpen(true)}
+              onMouseLeave={() => setSafariDropdownOpen(false)}
+            >
+              <button
+                className="flex items-center gap-1 text-brand-dark hover:text-brand-orange transition-colors duration-200 font-medium"
+                style={{ color: "#251b0b" }}
+              >
+                SAFARIS
+                <ChevronDown size={16} />
+              </button>
+
+              {safariDropdownOpen && (
+                <div
+                  className="absolute top-full left-0 w-56 rounded-lg shadow-lg border border-gray-200"
+                  style={{
+                    backgroundColor: "#ffffff",
+                    zIndex: 1000,
+                    paddingTop: "8px",
+                  }}
+                >
+                  <div className="p-2">
+                    <Link
+                      href="/northern-circuit"
+                      className="block px-4 py-3 rounded-md transition-colors"
+                      style={{ color: "#251b0b", textDecoration: "none" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#e67e22"
+                        e.currentTarget.style.color = "#ffffff"
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent"
+                        e.currentTarget.style.color = "#251b0b"
+                      }}
+                    >
+                      <div className="font-medium">Northern Circuit</div>
+                    </Link>
+                    <Link
+                      href="/southern-circuit"
+                      className="block px-4 py-3 rounded-md transition-colors"
+                      style={{ color: "#251b0b", textDecoration: "none" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#e67e22"
+                        e.currentTarget.style.color = "#ffffff"
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent"
+                        e.currentTarget.style.color = "#251b0b"
+                      }}
+                    >
+                      <div className="font-medium">Southern Circuit</div>
+                    </Link>
+                    <Link
+                      href="/day-safaris"
+                      className="block px-4 py-3 rounded-md transition-colors"
+                      style={{ color: "#251b0b", textDecoration: "none" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#e67e22"
+                        e.currentTarget.style.color = "#ffffff"
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent"
+                        e.currentTarget.style.color = "#251b0b"
+                      }}
+                    >
+                      <div className="font-medium">Day Safaris</div>
+                    </Link>
+                    <Link
+                      href="/cultural-safaris"
+                      className="block px-4 py-3 rounded-md transition-colors"
+                      style={{ color: "#251b0b", textDecoration: "none" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#e67e22"
+                        e.currentTarget.style.color = "#ffffff"
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent"
+                        e.currentTarget.style.color = "#251b0b"
+                      }}
+                    >
+                      <div className="font-medium">Cultural Safaris</div>
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
 
             <Link
               href="/itineraries"
@@ -154,96 +143,93 @@ export function Navigation() {
               ZANZIBAR
             </Link>
 
-            {/* Trekking Dropdown */}
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-brand-dark hover:text-brand-orange font-medium">
-                    TREKKING
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-48 gap-3 p-4" style={{ backgroundColor: "#ffffff", color: "#1a1a1a" }}>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/kilimanjaro"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
-                            style={{ color: "#1a1a1a" }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.backgroundColor = "#e67e22"
-                              e.currentTarget.style.color = "#ffffff"
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.backgroundColor = "transparent"
-                              e.currentTarget.style.color = "#1a1a1a"
-                            }}
-                          >
-                            <div className="text-sm font-medium leading-none">Kilimanjaro</div>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/mt-meru"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
-                            style={{ color: "#1a1a1a" }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.backgroundColor = "#e67e22"
-                              e.currentTarget.style.color = "#ffffff"
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.backgroundColor = "transparent"
-                              e.currentTarget.style.color = "#1a1a1a"
-                            }}
-                          >
-                            <div className="text-sm font-medium leading-none">Mt Meru</div>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/udzungwa"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
-                            style={{ color: "#1a1a1a" }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.backgroundColor = "#e67e22"
-                              e.currentTarget.style.color = "#ffffff"
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.backgroundColor = "transparent"
-                              e.currentTarget.style.color = "#1a1a1a"
-                            }}
-                          >
-                            <div className="text-sm font-medium leading-none">Udzungwa</div>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/lushoto"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-brand-orange"
-                            style={{ color: "#1a1a1a" }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.backgroundColor = "#e67e22"
-                              e.currentTarget.style.color = "#ffffff"
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.backgroundColor = "transparent"
-                              e.currentTarget.style.color = "#1a1a1a"
-                            }}
-                          >
-                            <div className="text-sm font-medium leading-none">Lushoto</div>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
+            <div
+              className="relative"
+              onMouseEnter={() => setTrekkingDropdownOpen(true)}
+              onMouseLeave={() => setTrekkingDropdownOpen(false)}
+            >
+              <button
+                className="flex items-center gap-1 text-brand-dark hover:text-brand-orange transition-colors duration-200 font-medium"
+                style={{ color: "#251b0b" }}
+              >
+                TREKKING
+                <ChevronDown size={16} />
+              </button>
+
+              {trekkingDropdownOpen && (
+                <div
+                  className="absolute top-full left-0 w-56 rounded-lg shadow-lg border border-gray-200"
+                  style={{
+                    backgroundColor: "#ffffff",
+                    zIndex: 1000,
+                    paddingTop: "8px",
+                  }}
+                >
+                  <div className="p-2">
+                    <Link
+                      href="/kilimanjaro"
+                      className="block px-4 py-3 rounded-md transition-colors"
+                      style={{ color: "#251b0b", textDecoration: "none" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#e67e22"
+                        e.currentTarget.style.color = "#ffffff"
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent"
+                        e.currentTarget.style.color = "#251b0b"
+                      }}
+                    >
+                      <div className="font-medium">Kilimanjaro</div>
+                    </Link>
+                    <Link
+                      href="/mt-meru"
+                      className="block px-4 py-3 rounded-md transition-colors"
+                      style={{ color: "#251b0b", textDecoration: "none" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#e67e22"
+                        e.currentTarget.style.color = "#ffffff"
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent"
+                        e.currentTarget.style.color = "#251b0b"
+                      }}
+                    >
+                      <div className="font-medium">Mt Meru</div>
+                    </Link>
+                    <Link
+                      href="/udzungwa"
+                      className="block px-4 py-3 rounded-md transition-colors"
+                      style={{ color: "#251b0b", textDecoration: "none" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#e67e22"
+                        e.currentTarget.style.color = "#ffffff"
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent"
+                        e.currentTarget.style.color = "#251b0b"
+                      }}
+                    >
+                      <div className="font-medium">Udzungwa</div>
+                    </Link>
+                    <Link
+                      href="/lushoto"
+                      className="block px-4 py-3 rounded-md transition-colors"
+                      style={{ color: "#251b0b", textDecoration: "none" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#e67e22"
+                        e.currentTarget.style.color = "#ffffff"
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent"
+                        e.currentTarget.style.color = "#251b0b"
+                      }}
+                    >
+                      <div className="font-medium">Lushoto</div>
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
 
             <Button asChild className="bg-brand-orange hover:bg-brand-orange/90 text-white">
               <Link href="/contact">CONTACT</Link>
