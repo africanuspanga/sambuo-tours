@@ -11,6 +11,12 @@ import { RecommendedBySection } from "@/components/home/recommended-by-section"
 import { TestimonialsSection } from "@/components/home/testimonials-section"
 import { FinalCtaSection } from "@/components/home/final-cta-section"
 
+export const metadata = {
+  title: "KiliSafari Organizing | Tanzania Safari Tours, Kilimanjaro Treks & Zanzibar Holidays",
+  description:
+    "Experience authentic Tanzania safaris, Mount Kilimanjaro treks, and Zanzibar beach holidays with KiliSafari. Expert guides, custom itineraries, and unforgettable adventures await.",
+}
+
 export default function HomePage() {
   return (
     <div className="min-h-screen">

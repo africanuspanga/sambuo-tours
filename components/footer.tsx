@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { MapPin, Phone, Mail, MessageCircle } from "lucide-react"
+import { MapPin, Phone, Mail, MessageCircle, Instagram } from "lucide-react"
 
 export function Footer() {
   return (
@@ -13,7 +13,26 @@ export function Footer() {
               Your gateway to Tanzania's wonders. Experience authentic safaris, epic mountain treks, and cultural
               adventures with 10+ years of expertise.
             </p>
-            <div className="flex gap-4">{/* Social media icons can be added here */}</div>
+            <div className="flex gap-4">
+              <a
+                href="https://www.instagram.com/kilisafariorganising?igsh=bTFlODk5Zmxpd2Y="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-brand-orange transition-colors"
+                aria-label="Follow us on Instagram"
+              >
+                <Instagram size={24} />
+              </a>
+              <a
+                href="https://wa.me/255769418702"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-brand-orange transition-colors"
+                aria-label="Contact us on WhatsApp"
+              >
+                <MessageCircle size={24} />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -108,13 +127,15 @@ export function Footer() {
                 <span className="text-gray-300 text-sm">
                   KiliSafari Organizing
                   <br />
-                  Dar es Salaam, Tanzania
+                  Dar es Salaam, Arusha, and Kilimanjaro
+                  <br />
+                  Tanzania
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={18} className="text-brand-orange flex-shrink-0" />
-                <a href="tel:+255713883303" className="text-gray-300 hover:text-brand-orange transition-colors text-sm">
-                  +255 713 883 303
+                <a href="tel:+255769418702" className="text-gray-300 hover:text-brand-orange transition-colors text-sm">
+                  +255 769 418 702
                 </a>
               </li>
               <li className="flex items-center gap-2">

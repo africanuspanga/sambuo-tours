@@ -5,6 +5,12 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Calendar, TrendingUp, Check, Mountain } from "lucide-react"
 
+export const metadata = {
+  title: "Mount Kilimanjaro Climbing Tours | KiliSafari Organizing",
+  description:
+    "Climb Africa's highest peak with expert guides. Choose from Machame, Marangu, Lemosho, Rongai routes. High success rates, professional support, all equipment included.",
+}
+
 const routes = [
   {
     title: "Machame Route",

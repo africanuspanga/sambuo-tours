@@ -6,6 +6,12 @@ import Link from "next/link"
 import Image from "next/image"
 import { Clock, Check } from "lucide-react"
 
+export const metadata = {
+  title: "Zanzibar Beach Holidays & Tours | KiliSafari Organizing",
+  description:
+    "Explore Zanzibar's pristine beaches, Stone Town, spice tours, and island experiences. Custom beach holidays, snorkeling, diving, and cultural tours available.",
+}
+
 const tours = [
   {
     title: "Stone Town Tour",

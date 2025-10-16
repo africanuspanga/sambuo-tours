@@ -59,7 +59,7 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 text-balance">
-          Discover Tanzania's Wild Beauty
+          Feel the Spirit of Tanzania
         </h1>
         <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-8 max-w-3xl mx-auto text-pretty">
           Experience authentic safaris and epic adventures with Tanzania's premier tour operator

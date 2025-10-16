@@ -6,6 +6,12 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
+export const metadata = {
+  title: "About Us - KiliSafari Organizing | Expert Tanzania Tour Operators",
+  description:
+    "Meet KiliSafari Organizing - Tanzania's trusted tour operator with 10+ years of experience in safaris, Kilimanjaro treks, and beach holidays. Local expertise, 24/7 support.",
+}
+
 const services = [
   {
     icon: Camera,
