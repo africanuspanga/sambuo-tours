@@ -14,15 +14,15 @@ export function Navigation() {
   return (
     <nav className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo.png"
+              src="/images/kilisafari-logo.png"
               alt="KiliSafari Organizing"
-              width={120}
-              height={80}
-              className="h-16 w-auto"
+              width={140}
+              height={90}
+              className="h-20 w-auto"
               priority
             />
           </Link>
@@ -125,13 +125,28 @@ export function Navigation() {
                     >
                       <div className="font-medium">Cultural Safaris</div>
                     </Link>
+                    <Link
+                      href="/accommodation"
+                      className="block px-4 py-3 rounded-md transition-colors"
+                      style={{ color: "#251b0b", textDecoration: "none" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#e67e22"
+                        e.currentTarget.style.color = "#ffffff"
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent"
+                        e.currentTarget.style.color = "#251b0b"
+                      }}
+                    >
+                      <div className="font-medium">Accommodation</div>
+                    </Link>
                   </div>
                 </div>
               )}
             </div>
 
             <Link
-              href="/itineraries"
+              href="/our-itineraries"
               className="text-brand-dark hover:text-brand-orange transition-colors duration-200 font-medium"
             >
               ITINERARIES
@@ -308,12 +323,19 @@ export function Navigation() {
                   >
                     Cultural Safaris
                   </Link>
+                  <Link
+                    href="/accommodation"
+                    className="block text-brand-dark hover:text-brand-orange transition-colors py-2"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Accommodation
+                  </Link>
                 </div>
               )}
             </div>
 
             <Link
-              href="/itineraries"
+              href="/our-itineraries"
               className="block text-brand-dark hover:text-brand-orange transition-colors py-2 font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -384,3 +406,5 @@ export function Navigation() {
     </nav>
   )
 }
+
+export default Navigation

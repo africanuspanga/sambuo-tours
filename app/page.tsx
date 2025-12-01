@@ -5,6 +5,8 @@ import { HeroSection } from "@/components/home/hero-section"
 import { AboutSection } from "@/components/home/about-section"
 import { WhyChooseUsSection } from "@/components/home/why-choose-us-section"
 import { TopDestinationsSection } from "@/components/home/top-destinations-section"
+import { FeaturedItinerariesSection } from "@/components/home/featured-itineraries-section"
+import { FeaturedAccommodationSection } from "@/components/home/featured-accommodation-section"
 import { ZanzibarSection } from "@/components/home/zanzibar-section"
 import { KilimanjaroSection } from "@/components/home/kilimanjaro-section"
 import { RecommendedBySection } from "@/components/home/recommended-by-section"
@@ -26,6 +28,8 @@ export default function HomePage() {
         <AboutSection />
         <WhyChooseUsSection />
         <TopDestinationsSection />
+        <FeaturedItinerariesSection />
+        <FeaturedAccommodationSection />
         <ZanzibarSection />
         <KilimanjaroSection />
         <RecommendedBySection />
