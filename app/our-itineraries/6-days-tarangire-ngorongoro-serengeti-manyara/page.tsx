@@ -1,0 +1,289 @@
+import Image from "next/image"
+import type { Metadata } from "next"
+import Link from "next/link"
+import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
+import { BookingModal } from "@/components/booking-modal"
+import { Clock, MapPin, Users, Calendar } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "6 Days Tarangire, Ngorongoro, Serengeti & Manyara Safari | KiliSafari",
+  description:
+    "Experience four major Northern Tanzania parks in 6 days. Two nights in the Serengeti, Ngorongoro Crater, Tarangire, and Lake Manyara.",
+}
+
+const itinerary = [
+  {
+    day: 1,
+    title: "Tarangire National Park",
+    description:
+      "Early in the morning, you will be driven from Hotel Arusha/Moshi to Tarangire with a packed lunch. For the remainder of the afternoon, you will have a game drive in Tarangire National Park. Thereafter, you will have your dinner at Manyara Safari Lodge. Animals found there include lions, elephants, buffaloes, wildebeest, zebras, reedbucks, flamingos, blue monkeys, hundred-strong baboon troops, waterbucks, Kirk's dikdik, klipspringer, mongoose, bushbuck, vervet monkeys, and water birds such as pelicans, cormorants, and storks.",
+    accommodation: "Manyara Safari Lodge or similar",
+    meals: "Lunch, Dinner",
+  },
+  {
+    day: 2,
+    title: "Serengeti National Park",
+    description:
+      "Early in the morning after breakfast, you will depart from Tarangire to Serengeti with your packed lunch for game viewing. You will pass Maasai boma culture to see Maasai culture, continue to Serengeti where you will have a break for lunch. At Serengeti you will have a game drive then drive to Heritage Luxury Tented Camp for dinner and overnight. Animals found there include lions, elephants, buffaloes, wildebeest, Thomson's gazelles, zebras, reedbucks, leopard, hyenas, cheetah, hippos, eland, waterbucks, dikdik, bushbuck, jackals, vervet monkeys, impala, klipspringer, warthogs, kongoni, and topi.",
+    accommodation: "Heritage Luxury Tented Camp or similar",
+    meals: "Breakfast, Lunch, Dinner",
+  },
+  {
+    day: 3,
+    title: "Full Day Serengeti Game Drive",
+    description:
+      "After breakfast, you will have a full game drive in the Serengeti with your packed lunch. In the afternoon, break for lunch, then continue enjoying a final afternoon game drive in the Serengeti. You will then return to the lodge for dinner and overnight.",
+    accommodation: "Heritage Luxury Tented Camp or similar",
+    meals: "Breakfast, Lunch, Dinner",
+  },
+  {
+    day: 4,
+    title: "Serengeti to Ngorongoro",
+    description:
+      "Early in the after breakfast, you will be having game drive for half day with packed lunch box lunch. Then after we will drive you to Ngorongoro for dinner and overnight at Ngorongoro Rhino Lodge.",
+    accommodation: "Ngorongoro Rhino Lodge or similar",
+    meals: "Breakfast, Lunch, Dinner",
+  },
+  {
+    day: 5,
+    title: "Ngorongoro Crater",
+    description:
+      "Early in the morning after breakfast, you will be driven to Ngorongoro Crater for 7hrs game drive with heavy lunch box, then thereafter we will drive you direct to Eileen's Tree Inn for dinner and overnight. Animals you will see there include lions, elephants, buffaloes, wildebeest, Thomson's gazelles, zebras, reedbucks, flamingos, black rhino, hyenas, cheetah, hippos, eland, waterbucks, dikdik, bushbuck, jackals, and vervet monkeys.",
+    accommodation: "Eileen's Tree Inn or similar",
+    meals: "Breakfast, Lunch, Dinner",
+  },
+  {
+    day: 6,
+    title: "Lake Manyara to Arusha/Moshi",
+    description:
+      "Early in the morning after breakfast, you will enjoy a final game drive in Manyara National Park with your heavy lunch box. Then afternoon we will drive you back to Hotel Arusha/Moshi for dinner and overnight. Animals found there include lions, elephants, buffaloes, wildebeest, gazelles, zebras, cheetah, hartebeest, impala, eland, leopard, oryx, gerenuk, dwarf mongoose, kori bustard, ostrich, hornbills, lovebirds, and yellow barbet.",
+    accommodation: "Hotel in Arusha/Moshi",
+    meals: "Breakfast, Lunch",
+  },
+]
+
+const pricingCamping = [
+  { people: "2 People", price: "$1,600" },
+  { people: "3 People", price: "$1,500" },
+  { people: "4 People", price: "$1,400" },
+  { people: "5 People", price: "$1,350" },
+  { people: "6 People", price: "$1,250" },
+]
+
+const pricingLodge = [
+  { people: "2 People", price: "$3,265" },
+  { people: "3 People", price: "$3,245" },
+  { people: "4 People", price: "$2,840" },
+  { people: "5 People", price: "$2,725" },
+  { people: "6 People", price: "$2,150" },
+]
+
+export default function SixDaysTarangireNgorongoroSerengetiManyaraPage() {
+  return (
+    <>
+      <Navigation />
+
+      <div className="min-h-screen bg-background">
+        <section className="relative h-[50vh] md:h-[60vh]">
+          <Image
+            src="/images/safari-6-days.jpg"
+            alt="Rhino mother and calf at sunset"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 flex items-end">
+            <div className="container mx-auto px-4 pb-12">
+              <Link
+                href="/our-itineraries"
+                className="inline-flex items-center text-white/80 hover:text-white mb-4 transition-colors"
+              >
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+                Back to All Itineraries
+              </Link>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+                6 Days: Tarangire, Ngorongoro, Serengeti (2N) & Manyara
+              </h1>
+              <p className="text-xl text-white/90">The Comprehensive Northern Safari</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Quick Info Bar */}
+        <section className="bg-brand-dark text-white py-6">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+              <div className="flex items-center gap-2">
+                <Clock className="w-5 h-5 text-brand-yellow" />
+                <span>6 Days / 5 Nights</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-5 h-5 text-brand-yellow" />
+                <span>4 National Parks</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Users className="w-5 h-5 text-brand-yellow" />
+                <span>2-6 People</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Calendar className="w-5 h-5 text-brand-yellow" />
+                <span>Year Round</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Main Content */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              {/* Overview */}
+              <div className="mb-12">
+                <h2 className="text-3xl font-bold text-brand-dark mb-6">Safari Overview</h2>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  This comprehensive 6-day safari covers four major Northern Tanzania parks. Spend two nights in the
+                  legendary Serengeti, descend into the Ngorongoro Crater for Big Five viewing, explore Tarangire's
+                  elephant herds, and discover Lake Manyara's tree-climbing lions. This is the complete Northern Circuit
+                  experience.
+                </p>
+              </div>
+
+              <div className="mb-12">
+                <h2 className="text-3xl font-bold text-brand-dark mb-8">Day by Day Itinerary</h2>
+                <div className="space-y-8">
+                  {itinerary.map((day) => (
+                    <div key={day.day} className="bg-white rounded-lg shadow-lg overflow-hidden">
+                      <div className="p-6">
+                        <div className="flex items-center gap-4 mb-4">
+                          <span className="bg-brand-yellow text-brand-dark px-4 py-2 rounded-full font-bold">
+                            Day {day.day}
+                          </span>
+                          <h3 className="text-xl font-bold text-brand-dark">{day.title}</h3>
+                        </div>
+                        <p className="text-gray-700 mb-4 leading-relaxed">{day.description}</p>
+                        <div className="flex flex-wrap gap-4 text-sm">
+                          <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full">
+                            {day.accommodation}
+                          </span>
+                          <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full">{day.meals}</span>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Pricing */}
+              <div className="mb-12">
+                <h2 className="text-3xl font-bold text-brand-dark mb-8">Pricing</h2>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-brand-green">
+                    <h3 className="text-xl font-bold text-brand-green mb-4">Basic Camping</h3>
+                    <div className="space-y-3">
+                      {pricingCamping.map((item) => (
+                        <div key={item.people} className="flex justify-between items-center">
+                          <span className="text-gray-700">{item.people}</span>
+                          <span className="text-xl font-bold text-brand-green">{item.price}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="text-sm text-gray-600 mt-4">Price per person</p>
+                  </div>
+
+                  <div className="bg-amber-50 rounded-lg p-6 border-l-4 border-brand-yellow">
+                    <h3 className="text-xl font-bold text-brand-yellow mb-4">Mid-Range Lodge</h3>
+                    <div className="space-y-3">
+                      {pricingLodge.map((item) => (
+                        <div key={item.people} className="flex justify-between items-center">
+                          <span className="text-gray-700">{item.people}</span>
+                          <span className="text-xl font-bold text-brand-yellow">{item.price}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="text-sm text-gray-600 mt-4">Price per person</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* What's Included/Excluded */}
+              <div className="mb-12">
+                <h2 className="text-3xl font-bold text-brand-dark mb-8">What's Included</h2>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="bg-green-50 p-6 rounded-lg border-l-4 border-brand-green">
+                    <h3 className="text-xl font-bold text-brand-green mb-4">Included</h3>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-brand-green">✓</span>All park fees
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-brand-green">✓</span>Ngorongoro Crater fees
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-brand-green">✓</span>Hotel pick-up and drop-off
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-brand-green">✓</span>4x4 vehicle with viewing roof
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-brand-green">✓</span>Qualified driver/guide
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-brand-green">✓</span>Camping equipment (for camping)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-brand-green">✓</span>3 meals per day
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-brand-green">✓</span>Bottled water
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+                    <h3 className="text-xl font-bold text-red-600 mb-4">Not Included</h3>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600">✗</span>Tips for driver and cook
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600">✗</span>Meals outside itinerary
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600">✗</span>Travel insurance
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600">✗</span>Tanzania visa
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600">✗</span>International flights
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600">✗</span>Single room supplement
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA */}
+              <div className="bg-brand-dark rounded-lg p-8 text-center">
+                <h3 className="text-2xl font-bold text-white mb-4">Ready to Book This Safari?</h3>
+                <p className="text-gray-300 mb-6">Contact us today to start planning your Tanzanian adventure.</p>
+                <BookingModal tourName="6 Days: Tarangire, Ngorongoro, Serengeti (2N) & Manyara">
+                  <button className="bg-brand-yellow text-brand-dark px-8 py-4 rounded-lg font-bold text-lg hover:bg-opacity-90 transition-colors">
+                    Book This Safari
+                  </button>
+                </BookingModal>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <Footer />
+    </>
+  )
+}

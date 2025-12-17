@@ -5,6 +5,12 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Check } from "lucide-react"
 
+export const metadata = {
+  title: "Cultural Tours & Heritage Sites in Tanzania | KiliSafari",
+  description:
+    "Explore Tanzania's rich cultural heritage with visits to Stone Town, Bagamoyo, Kilwa Ruins, National Museum, and Amboni Caves. Authentic cultural experiences and historical tours.",
+}
+
 const destinations = [
   {
     title: "The National Museum and House of Culture, Dar es Salaam",

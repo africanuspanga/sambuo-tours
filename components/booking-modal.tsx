@@ -7,10 +7,11 @@ import { X } from "lucide-react"
 
 interface BookingModalProps {
   tourName: string
-  children: React.ReactNode
+  trigger?: React.ReactNode
+  children?: React.ReactNode
 }
 
-export function BookingModal({ tourName, children }: BookingModalProps) {
+export function BookingModal({ tourName, trigger, children }: BookingModalProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [formData, setFormData] = useState({
     firstName: "",
@@ -50,9 +51,13 @@ export function BookingModal({ tourName, children }: BookingModalProps) {
     })
   }
 
+  const triggerElement = trigger || children
+
   return (
     <>
-      <div onClick={() => setIsOpen(true)}>{children}</div>
+      <div onClick={() => setIsOpen(true)} className="inline-block cursor-pointer">
+        {triggerElement}
+      </div>
 
       {isOpen && (
         <div

@@ -13,6 +13,144 @@ export const metadata: Metadata = {
 
 const accommodations = [
   {
+    location: "Moshi",
+    properties: [
+      {
+        name: "Parkview Inn",
+        category: "Mid-Range",
+        feature: "A central, comfortable hotel with gardens and good views.",
+        image: "/images/parkview-inn.jpg",
+      },
+      {
+        name: "Springlands Hotel",
+        category: "Mid-Range",
+        feature: "Popular with Kilimanjaro climbers, featuring a pool and relaxed vibe.",
+        image: "/images/springlands-hotel.avif",
+      },
+      {
+        name: "Honey Badger Lodge",
+        category: "Budget",
+        feature: "Cozy lodge with lush grounds and a welcoming atmosphere.",
+        image: "/images/honey-badger-lodge.webp",
+      },
+    ],
+  },
+  {
+    location: "Arusha",
+    properties: [
+      {
+        name: "Outpost Lodge",
+        category: "Mid-Range",
+        feature: "Relaxed lodge with a pool and gardens, close to town.",
+        image: "/images/outpost-lodge.jpg",
+      },
+      {
+        name: "Arusha Planet Lodge",
+        category: "Mid-Range",
+        feature: "Peaceful setting with a pool and scenic surroundings.",
+        image: "/images/arusha-planet-lodge.jpg",
+      },
+      {
+        name: "Shoki Shoki Lodge",
+        category: "Budget",
+        feature: "Simple, modern lodge with pool access.",
+        image: "/images/shoki-shoki-lodge.webp",
+      },
+    ],
+  },
+  {
+    location: "Karatu (Gateway to Ngorongoro)",
+    properties: [
+      {
+        name: "Kudu Lodge",
+        category: "Mid-Range",
+        feature: "Charming lodge with pool and gardens.",
+        image: "/images/kudu-lodge.jpg",
+      },
+      {
+        name: "Karatu Safari Camp Lodge",
+        category: "Budget",
+        feature: "Tented camp feel with comfortable facilities.",
+        image: "/images/karatu-safari-camp-lodge.jpg",
+      },
+      {
+        name: "Crater Rim View",
+        category: "Budget",
+        feature: "Budget inn with views toward the crater area.",
+        image: "/images/crater-rim-view.jpg",
+      },
+    ],
+  },
+  {
+    location: "Near Tarangire National Park",
+    properties: [
+      {
+        name: "Sangaiwe Tented Lodge",
+        category: "Mid-Range",
+        feature: "Tented camp with lake views and wildlife nearby.",
+        image: "/images/sangaiwe-tented-lodge.jpg",
+      },
+      {
+        name: "Whistling Thorn Tented Camp",
+        category: "Budget",
+        feature: "Eco-friendly tented camp in a natural setting.",
+        image: "/images/whistling-thorn-camp.jpg",
+      },
+      {
+        name: "Tarangire Safari Lodge",
+        category: "Mid-Range",
+        feature: "Classic lodge with panoramic park views.",
+        image: "/images/tarangire-safari-lodge.webp",
+      },
+    ],
+  },
+  {
+    location: "Near Ngorongoro Crater",
+    properties: [
+      {
+        name: "Bougainvillea Safari Lodge",
+        category: "Mid-Range",
+        feature: "Spacious lodge with pool and gardens.",
+        image: "/images/bougainvillea-lodge.jpg",
+      },
+      {
+        name: "Octagon Lodge",
+        category: "Mid-Range",
+        feature: "Unique, peaceful lodge with character.",
+        image: "/images/octagon-lodge.jpg",
+      },
+      {
+        name: "Country Lodge Karatu",
+        category: "Budget",
+        feature: "Cozy lodge ideal for crater access.",
+        image: "/images/country-lodge.jpg",
+      },
+    ],
+  },
+  {
+    location: "Serengeti National Park",
+    properties: [
+      {
+        name: "Ang'ata Serengeti Camp",
+        category: "Mid-Range",
+        feature: "Mobile tented camp following the migration.",
+        image: "/images/angata-serengeti-camp.jpg",
+      },
+      {
+        name: "Serengeti Safari Lodge",
+        category: "Mid-Range",
+        feature: "Hilltop lodge with views over the plains.",
+        image: "/images/serengeti-safari-lodge.jpeg",
+      },
+      {
+        name: "Budget Tented Camp",
+        category: "Budget",
+        feature: "Basic tented setups for an immersive experience.",
+        image: "/images/budget-tented-camp.jpg",
+      },
+    ],
+  },
+  {
     location: "Dar es Salaam",
     properties: [
       {
@@ -20,12 +158,14 @@ const accommodations = [
         category: "Luxury",
         feature: "Central, iconic city hotel with superb service and views.",
         image: "/images/hyatt-regency.webp",
+        disclaimer: "Additional costs may apply for this premium property.",
       },
       {
         name: "Seashells Millennium Hotel",
         category: "Mid-Range",
         feature: "Comfortable and popular option in a convenient city location.",
         image: "/images/seashells-millennium.jpg",
+        disclaimer: "Additional costs may apply.",
       },
       {
         name: "Transit Motel Airport",
@@ -43,6 +183,7 @@ const accommodations = [
         category: "Mid-Range/Luxury",
         feature: "Reputable international brand offering modern comfort and amenities (like a pool).",
         image: "/images/best-western-dodoma.jpg",
+        disclaimer: "Additional costs may apply for this premium property.",
       },
       {
         name: "New Dodoma Hotel",
@@ -59,7 +200,8 @@ const accommodations = [
         name: "Zakinn Hotel Gangilonga",
         category: "Mid-Range",
         feature: "Well-located, clean, and comfortable—a great value-for-money choice in Iringa Town.",
-        image: "/images/zakinn-hotel.avif",
+        image: "/images/zakinn-hotel-new.webp",
+        disclaimer: "Additional costs may apply.",
       },
       {
         name: "Hidden Valley Backpackers",
@@ -89,6 +231,7 @@ const accommodations = [
         category: "Mid-Range",
         feature: "Offers a more traditional lodge feel with comfortable facilities close to the park.",
         image: "/images/mikumi-safari-lodge.jpg",
+        disclaimer: "Additional costs may apply.",
       },
       {
         name: "Mikumi Adventure Lodge",
@@ -113,12 +256,14 @@ const accommodations = [
         category: "Luxury",
         feature: "High-end experience with views over the Wami River, perfect for luxury clients.",
         image: "/images/sanctuary-saadani.jpg",
+        disclaimer: "Additional costs may apply for this premium property.",
       },
       {
         name: "Simply Saadani Camp",
         category: "Mid-Range",
         feature: 'Offers a fantastic "bush meets beach" experience at a great value.',
         image: "/images/simply-saadani.jpg",
+        disclaimer: "Additional costs may apply.",
       },
       {
         name: "MISENI RETREAT",
@@ -136,12 +281,14 @@ const accommodations = [
         category: "Luxury",
         feature: "Iconic, stylish luxury camp set on a rocky kopje with incredible panoramic views.",
         image: "/images/jabali-ridge.jpg",
+        disclaimer: "Additional costs may apply for this premium property.",
       },
       {
         name: "Ruaha River Lodge (Foxes Safari Camps)",
         category: "Mid-Range",
         feature: "Fantastic location right on the Great Ruaha River, offering prime wildlife viewing from the deck.",
         image: "/images/ruaha-river-lodge.webp",
+        disclaimer: "Additional costs may apply.",
       },
       {
         name: "Mdonya Old River Tented Camp",
@@ -199,13 +346,19 @@ export default function AccommodationPage() {
                     className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
                   >
                     {/* Image */}
-                    <div className="relative h-64 overflow-hidden">
-                      <Image
-                        src={property.image || "/placeholder.svg"}
-                        alt={property.name}
-                        fill
-                        className="object-cover hover:scale-110 transition-transform duration-500"
-                      />
+                    <div className="relative h-64 overflow-hidden bg-gray-200">
+                      {property.image ? (
+                        <Image
+                          src={property.image || "/placeholder.svg"}
+                          alt={property.name}
+                          fill
+                          className="object-cover hover:scale-110 transition-transform duration-500"
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center text-gray-400">
+                          <span className="text-sm">Image coming soon</span>
+                        </div>
+                      )}
                       {/* Category Badge */}
                       <div className="absolute top-4 right-4 bg-brand-orange text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                         {property.category}
@@ -217,6 +370,13 @@ export default function AccommodationPage() {
                       <h3 className="text-xl font-bold text-brand-dark mb-3 line-clamp-2">{property.name}</h3>
                       <p className="text-gray-600 mb-4 leading-relaxed">{property.feature}</p>
 
+                      {/* Disclaimer */}
+                      {property.disclaimer && (
+                        <p className="text-sm text-amber-700 bg-amber-50 px-3 py-2 rounded-md mb-4 leading-snug">
+                          {property.disclaimer}
+                        </p>
+                      )}
+
                       {/* Features */}
                       <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
                         <Star className="w-4 h-4 text-yellow-500 fill-current" />
@@ -224,8 +384,8 @@ export default function AccommodationPage() {
                       </div>
 
                       <BookingModal tourName={`${property.name} - ${locationGroup.location}`}>
-                        <button className="w-full bg-brand-orange text-white py-3 rounded-lg font-bold hover:bg-opacity-90 transition-colors">
-                          BOOK NOW
+                        <button className="w-full bg-brand-orange hover:bg-brand-orange/90 text-white py-3.5 px-6 rounded-lg font-semibold text-base tracking-wide shadow-md hover:shadow-lg transition-all duration-200 active:scale-[0.98]">
+                          Book Now
                         </button>
                       </BookingModal>
                     </div>
@@ -247,9 +407,9 @@ export default function AccommodationPage() {
           </p>
 
           <BookingModal tourName="Accommodation Consultation">
-            <button className="inline-flex items-center gap-3 bg-brand-orange text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-opacity-90 transition-colors">
+            <button className="inline-flex items-center gap-3 bg-brand-orange hover:bg-brand-orange/90 text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200 active:scale-[0.98]">
               <Phone className="w-5 h-5" />
-              GET EXPERT ADVICE
+              Get Expert Advice
             </button>
           </BookingModal>
 

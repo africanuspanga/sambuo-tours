@@ -8,6 +8,8 @@
   --brand-dark: #251b0b;
   --brand-orange: #ff9800;
   --brand-green: #536e2b;
+  /* Added brand-yellow color for CTA buttons */
+  --brand-yellow: #f5a623;
 
   /* Design System Colors */
   --background: #ffffff;
@@ -109,6 +111,8 @@
   --color-brand-dark: var(--brand-dark);
   --color-brand-orange: var(--brand-orange);
   --color-brand-green: var(--brand-green);
+  /* Added brand-yellow to theme */
+  --color-brand-yellow: var(--brand-yellow);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -164,6 +168,23 @@
 
 .bg-brand-green {
   background-color: var(--brand-green);
+}
+
+/* Added brand-yellow utility classes */
+.text-brand-yellow {
+  color: var(--brand-yellow);
+}
+
+.bg-brand-yellow {
+  background-color: var(--brand-yellow);
+}
+
+.border-brand-yellow {
+  border-color: var(--brand-yellow);
+}
+
+.hover\:bg-brand-yellow:hover {
+  background-color: var(--brand-yellow);
 }
 
 .border-brand-orange {

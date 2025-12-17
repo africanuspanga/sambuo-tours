@@ -21,7 +21,7 @@ const destinations = [
   },
   {
     title: "Ngorongoro Crater",
-    image: "/images/ngorongoro.jpg",
+    image: "/images/rhino-ngorongoro.jpg",
     description:
       "The world's largest inactive volcanic caldera supporting 25,000 large animals year-round. This UNESCO World Heritage Site offers virtually guaranteed Big Five sightings in a unique ecosystem. Often called 'Africa's Eden,' the crater floor provides one of the highest concentrations of wildlife anywhere on Earth, all contained within the dramatic walls of this ancient volcano.",
     highlights: [
@@ -33,7 +33,7 @@ const destinations = [
   },
   {
     title: "Lake Manyara National Park",
-    image: "/images/manyara.jpg",
+    image: "/images/lake-manyara-new.jpg",
     description:
       "Renowned for unique tree-climbing lions and massive flocks of pink flamingos. Lake Manyara offers incredible diversity with groundwater forests, acacia woodlands, and the alkaline lake itself. Despite its compact size, the park hosts an impressive variety of habitats and wildlife, making it a photographer's paradise with stunning landscapes and diverse species.",
     highlights: [
@@ -68,6 +68,12 @@ const destinations = [
     ],
   },
 ]
+
+export const metadata = {
+  title: "Northern Circuit Safaris - Serengeti & Ngorongoro | KiliSafari",
+  description:
+    "Explore Tanzania's Northern Circuit including Serengeti National Park, Ngorongoro Crater, Lake Manyara, Tarangire, and Arusha. Witness the Great Migration and Big Five wildlife.",
+}
 
 export default function NorthernCircuitPage() {
   return (

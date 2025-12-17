@@ -6,6 +6,12 @@ import Link from "next/link"
 import Image from "next/image"
 import { Check } from "lucide-react"
 
+export const metadata = {
+  title: "Udzungwa Mountains National Park - Waterfalls & Hiking | KiliSafari",
+  description:
+    "Explore Udzungwa Mountains National Park with Sanje Waterfall hikes, endemic primates, bird watching, and pristine montane rainforest. Biodiversity hotspot in Tanzania.",
+}
+
 export default function UdzungwaPage() {
   return (
     <div className="min-h-screen">
@@ -86,13 +92,31 @@ export default function UdzungwaPage() {
         {/* Image Section */}
         <section className="py-16 md:py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="relative h-[500px] rounded-2xl overflow-hidden">
-              <Image
-                src="/images/udzungwa-waterfall.jpg"
-                alt="Sanje Waterfall cascading through lush forest in Udzungwa Mountains"
-                fill
-                className="object-cover"
-              />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="relative h-80 rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/udzungwa-waterfall.jpg"
+                  alt="Sanje Waterfall cascading through lush forest"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative h-80 rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/udzungwa-entrance.jpg"
+                  alt="Udzungwa National Park entrance sign"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative h-80 rounded-2xl overflow-hidden md:col-span-2 lg:col-span-1">
+                <Image
+                  src="/images/udzungwa-vista.jpg"
+                  alt="Panoramic mountain vista from Udzungwa"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         </section>

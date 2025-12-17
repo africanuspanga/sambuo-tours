@@ -19,7 +19,7 @@ const dayTrips = [
     title: "Materuni Waterfalls & Coffee Tour",
     location: "Arusha/Moshi",
     duration: "Full Day",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/materuni-vPuMND81o4NEA7A0SCZipTJtofzRwJ.jpg",
+    image: "/images/materuni-waterfalls.jpg",
     description:
       "Explore the lush foothills of Mount Kilimanjaro with a visit to the authentic Chagga village of Materuni. Hike through scenic farmlands and rainforests to the magnificent Materuni Waterfalls, then enjoy a hands-on Chagga Coffee Tour where you learn the entire coffee process from bean to cup.",
     highlights: [
@@ -34,10 +34,9 @@ const dayTrips = [
     title: "Rundugai (Chemka) Hot Springs",
     location: "Near Moshi",
     duration: "Half Day",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rundugai-tree-roots-k8SzxBRpaUn75hcvZ4FRee03ChAwd2.jpg",
+    image: "/images/rundugai-hot-springs.jpg",
     description:
-      "Escape to a hidden oasis in the Tanzanian bush. A 2-hour adventurous off-road drive leads you to stunning natural pools of crystal-clear, warm turquoise water sourced from underground springs. Surrounded by towering fig trees, it's perfect for swimming, relaxing, or swinging from a rope into the deeper pool.",
+      "Escape to a hidden oasis in the Tanzanian bush. Discover stunning natural pools of crystal-clear, warm turquoise water sourced from underground springs. Surrounded by towering fig trees, it's perfect for swimming, relaxing, or swinging from a rope into the deeper pool.",
     highlights: [
       "Crystal-clear turquoise hot springs",
       "Natural fish spa experience",
@@ -50,7 +49,7 @@ const dayTrips = [
     title: "Lake Duluti Crater Lake",
     location: "Near Arusha",
     duration: "Half Day",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/duluti-1JfMaFxzB2IFobOfkZEmMonOmlfuNQ.jpg",
+    image: "/images/lake-duluti.jpg",
     description:
       "A tranquil volcanic crater lake just a short drive from Arusha city center, framed by thick forest reserve. Enjoy canoeing or kayaking across calm emerald waters with excellent birdwatching opportunities. The surrounding forest trails are perfect for guided nature walks to spot Blue Monkeys and over 130 bird species.",
     highlights: ["Canoeing and kayaking", "130+ bird species", "Guided nature walks", "Blue Monkey sightings"],
@@ -60,8 +59,7 @@ const dayTrips = [
     title: "Pugu Hills Nature Forest Reserve",
     location: "Dar es Salaam",
     duration: "Full Day",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Pugu_Hill_Nature_Forest_with_Lake_Minaki_2-h0lktJuL7JsrBCnxEAtQ8VFtmUrCLT.jpg",
+    image: "/images/pugu-hills.webp",
     description:
       "Located just 20 km southwest of Dar es Salaam, this biodiverse coastal forest is home to endemic plant species and diverse wildlife including colobus monkeys. Enjoy guided hiking to viewpoints like Msolo Hill Peak with stunning views, plus birdwatching and canoeing on Minaki Dam.",
     highlights: [
@@ -76,7 +74,7 @@ const dayTrips = [
     title: "Themi Falls Leisure Park",
     location: "Arusha",
     duration: "Half Day",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/themi%20falls-e9XTb52kaNjE5iLx1Lgv6cieGCZKef.jpg",
+    image: "/images/themi-falls.jpg",
     description:
       "Situated in the scenic countryside near Olgilai village, this park combines natural beauty with recreational facilities. Enjoy a leisurely hike to the picturesque Themi Waterfalls, explore beautiful gardens, and experience guided cultural walks through the village. Perfect for families seeking a relaxing day trip.",
     highlights: [
@@ -91,7 +89,7 @@ const dayTrips = [
     title: "Kilimanjaro Day Hike",
     location: "Marangu Gate",
     duration: "Full Day",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Marangu%20Gates-Z06KUUyvLREqE88yqZQ4EiEgaJpEZn.jpg",
+    image: "/images/kilimanjaro-day-hike.jpg",
     description:
       "Experience Africa's highest peak without a multi-day trek. Starting from Marangu Gate, trek through lush rainforest to Mandara Hut (2,700m). Encounter towering eucalyptus trees, colorful birds, and black-and-white colobus monkeys. A detour to Maundi Crater rim offers stunning panoramic views of northern Tanzania.",
     highlights: [

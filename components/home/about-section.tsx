@@ -18,9 +18,9 @@ export function AboutSection() {
                 journeys.
               </p>
               <p>
-                Our team of experienced guides and tour operators ensures your safety, comfort, and satisfaction
-                throughout your journey. From the endless plains of the Serengeti to the summit of Mount Kilimanjaro, we
-                bring Tanzania's natural wonders to life.
+                Our team of experienced guides ensures your safety, comfort, and satisfaction throughout your journey.
+                From the endless plains of the Serengeti to the summit of Mount Kilimanjaro, we bring Tanzania's natural
+                wonders to life.
               </p>
               <p>
                 We provide comprehensive services including expert guides, comfortable transportation, airport pickups,

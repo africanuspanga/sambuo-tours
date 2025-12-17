@@ -5,15 +5,8 @@ import Image from "next/image"
 
 const routes = [
   {
-    title: "Machame Route",
-    duration: "6-7 Days",
-    difficulty: "Moderate to Challenging",
-    successRate: "85%",
-    image: "/images/machame.jpg",
-    highlights: ["Scenic and diverse landscapes", "Good acclimatization profile", "Challenging but rewarding"],
-  },
-  {
     title: "Marangu Route",
+    slug: "marangu",
     duration: "5-6 Days",
     difficulty: "Moderate",
     successRate: "75%",
@@ -21,12 +14,22 @@ const routes = [
     highlights: ["Hut accommodation (no camping)", "Gradual, steady ascent", "Good for beginners"],
   },
   {
-    title: "Rongai Route",
+    title: "Machame Route",
+    slug: "machame",
     duration: "6-7 Days",
-    difficulty: "Moderate",
-    successRate: "80%",
-    image: "/images/rongai.jpg",
-    highlights: ["Less crowded", "Gradual ascent", "Good wildlife viewing"],
+    difficulty: "Moderate to Challenging",
+    successRate: "85%",
+    image: "/images/machame.jpg",
+    highlights: ["Scenic and diverse landscapes", "Good acclimatization profile", "Challenging but rewarding"],
+  },
+  {
+    title: "Lemosho Route",
+    slug: "lemosho",
+    duration: "7-8 Days",
+    difficulty: "Moderate to Challenging",
+    successRate: "90%",
+    image: "/images/lemosho.jpg",
+    highlights: ["Remote and scenic start", "Excellent acclimatization", "Highest success rate"],
   },
 ]
 
@@ -87,7 +90,7 @@ export function KilimanjaroSection() {
                 </div>
 
                 <Button asChild className="w-full bg-brand-orange hover:bg-brand-orange/90 text-white">
-                  <Link href="/kilimanjaro">Choose {route.title.split(" ")[0]}</Link>
+                  <Link href={`/kilimanjaro/${route.slug}`}>Choose {route.title.split(" ")[0]}</Link>
                 </Button>
               </div>
             </div>

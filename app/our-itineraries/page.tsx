@@ -6,12 +6,120 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Southern Circuit Safari Itineraries | KiliSafari",
+  title: "Safari Itineraries | KiliSafari",
   description:
-    "Explore our Southern Tanzania safari packages from 1 to 6 days. Visit Mikumi, Selous, and Ruaha National Parks with expert guides.",
+    "Explore our Tanzania safari packages from 1 to 8 days. Visit Serengeti, Ngorongoro, Tarangire, Manyara, Mikumi, Selous, and Ruaha with expert guides.",
 }
 
-const tours = [
+const northernTours = [
+  {
+    id: "2-days-tarangire-ngorongoro",
+    name: "2 Days: Tarangire & Ngorongoro Crater",
+    subtitle: "The Perfect Short Safari",
+    duration: "2 Days / 1 Night",
+    lodgePrice: 700,
+    campingPrice: 526,
+    image: "/images/safari-2-days.jpg",
+    highlights: [
+      "Tarangire's famous elephant herds",
+      "Ngorongoro Crater game drive",
+      "Big Five opportunities",
+      "Ideal for limited time",
+    ],
+  },
+  {
+    id: "3-days-tarangire-ngorongoro-manyara",
+    name: "3 Days: Tarangire, Ngorongoro & Manyara",
+    subtitle: "The Classic Northern Trio",
+    duration: "3 Days / 2 Nights",
+    lodgePrice: 1558,
+    campingPrice: 628,
+    image: "/images/safari-3-days.jpg",
+    highlights: [
+      "Three iconic Northern parks",
+      "Ngorongoro Crater floor exploration",
+      "Tree-climbing lions of Manyara",
+      "Diverse landscapes & wildlife",
+    ],
+  },
+  {
+    id: "4-days-tarangire-serengeti-ngorongoro",
+    name: "4 Days: Tarangire, Serengeti & Ngorongoro",
+    subtitle: "The Serengeti Introduction",
+    duration: "4 Days / 3 Nights",
+    lodgePrice: 1850,
+    campingPrice: 1000,
+    image: "/images/safari-4-days.jpg",
+    highlights: [
+      "Full day in the Serengeti",
+      "Great Migration possibilities",
+      "Ngorongoro Crater descent",
+      "Maasai cultural experience",
+    ],
+  },
+  {
+    id: "5-days-tarangire-serengeti-ngorongoro",
+    name: "5 Days: Tarangire, Serengeti (2N) & Ngorongoro",
+    subtitle: "The Extended Serengeti Experience",
+    duration: "5 Days / 4 Nights",
+    lodgePrice: 2820,
+    campingPrice: 1350,
+    image: "/images/safari-5-days.jpg",
+    highlights: [
+      "Two nights in the Serengeti",
+      "Extended game viewing time",
+      "Big cats & wildebeest herds",
+      "Maasai village visit included",
+    ],
+  },
+  {
+    id: "6-days-tarangire-ngorongoro-serengeti-manyara",
+    name: "6 Days: Tarangire, Ngorongoro, Serengeti (2N) & Manyara",
+    subtitle: "The Comprehensive Northern Safari",
+    duration: "6 Days / 5 Nights",
+    lodgePrice: 3265,
+    campingPrice: 1600,
+    image: "/images/safari-6-days.jpg",
+    highlights: [
+      "Four major Northern parks",
+      "Two full days in Serengeti",
+      "Flamingos at Lake Manyara",
+      "Complete wildlife experience",
+    ],
+  },
+  {
+    id: "7-days-arusha-tarangire-manyara-serengeti-ngorongoro",
+    name: "7 Days: Arusha NP, Tarangire, Manyara, Serengeti (2N) & Ngorongoro",
+    subtitle: "The Grand Northern Circuit",
+    duration: "7 Days / 6 Nights",
+    lodgePrice: 3800,
+    campingPrice: 1850,
+    image: "/images/safari-7-days.jpg",
+    highlights: [
+      "Five diverse national parks",
+      "Walking safari in Arusha NP",
+      "Momella Lakes & Mount Meru views",
+      "Ultimate wildlife diversity",
+    ],
+  },
+  {
+    id: "8-days-arusha-tarangire-manyara-serengeti-ngorongoro",
+    name: "8 Days: Arusha NP, Tarangire, Manyara, Serengeti (3N) & Ngorongoro",
+    subtitle: "The Ultimate Tanzania Safari",
+    duration: "8 Days / 7 Nights",
+    lodgePrice: 4200,
+    campingPrice: 2100,
+    image: "/images/safari-8-days.jpg",
+    highlights: [
+      "Three nights in Serengeti",
+      "Maximum wildlife encounters",
+      "All major Northern parks",
+      "Best value comprehensive tour",
+    ],
+  },
+]
+
+const southernTours = [
   {
     id: "1-day-mikumi",
     name: "1 Day Safari to Mikumi NP",
@@ -189,21 +297,29 @@ export default function OurItinerariesPage() {
         <section className="relative bg-brand-dark text-white py-16 md:py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Southern Circuit Safari Adventures</h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Tanzania Safari Adventures</h1>
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-                Discover Tanzania's hidden gem - the Southern Circuit. Experience untouched wilderness, diverse
-                activities including boat and walking safaris, and encounter incredible wildlife with far fewer crowds
-                than the Northern parks.
+                Discover the best of Tanzania with our carefully crafted safari packages. From the iconic Serengeti and
+                Ngorongoro Crater to the untouched wilderness of the Southern Circuit, we offer experiences for every
+                traveler.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Tours Grid */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Southern Circuit Safaris</h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Discover Tanzania's hidden gem with our Southern Circuit packages. Experience untouched wilderness,
+                diverse activities including boat and walking safaris, and encounter incredible wildlife with far fewer
+                crowds.
+              </p>
+            </div>
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {tours.map((tour) => (
+              {southernTours.map((tour) => (
                 <div
                   key={tour.id}
                   className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
@@ -216,15 +332,15 @@ export default function OurItinerariesPage() {
                       fill
                       className="object-cover hover:scale-105 transition-transform duration-300"
                     />
-                    <div className="absolute top-4 right-4 bg-brand-orange text-white px-4 py-2 rounded-full font-semibold">
+                    <div className="absolute top-4 right-4 bg-brand-yellow text-brand-dark px-4 py-2 rounded-full font-semibold text-sm">
                       {tour.duration}
                     </div>
                   </div>
 
                   {/* Tour Content */}
                   <div className="p-6">
-                    <h3 className="text-2xl font-bold text-brand-dark mb-2">{tour.name}</h3>
-                    <p className="text-brand-orange font-semibold mb-4">{tour.subtitle}</p>
+                    <h3 className="text-xl font-bold text-brand-dark mb-2 leading-tight">{tour.name}</h3>
+                    <p className="text-brand-green font-semibold mb-4">{tour.subtitle}</p>
 
                     {/* Highlights */}
                     <ul className="space-y-2 mb-6">
@@ -247,13 +363,13 @@ export default function OurItinerariesPage() {
                     <div className="mb-6 pb-6 border-b border-gray-200">
                       <div className="flex items-baseline gap-2">
                         <span className="text-sm text-gray-600">From</span>
-                        <span className="text-3xl font-bold text-brand-orange">${tour.priceFrom}</span>
+                        <span className="text-3xl font-bold text-brand-yellow">${tour.priceFrom}</span>
                         <span className="text-sm text-gray-600">per person</span>
                       </div>
                       <p className="text-xs text-gray-500 mt-1">Price range: {tour.priceRange}</p>
                     </div>
 
-                    {/* Action Buttons */}
+                    {/* Action Buttons - yellow brand color for Book Now */}
                     <div className="flex gap-3">
                       <Link
                         href={`/our-itineraries/${tour.id}`}
@@ -262,8 +378,95 @@ export default function OurItinerariesPage() {
                         View Details
                       </Link>
                       <BookingModal tourName={tour.name}>
-                        <button className="flex-1 bg-brand-orange text-white py-3 px-4 rounded-lg font-semibold hover:bg-opacity-90 transition-colors whitespace-nowrap">
-                          Book Tour
+                        <button className="flex-1 bg-brand-yellow text-brand-dark py-3 px-4 rounded-lg font-semibold hover:bg-opacity-90 transition-colors whitespace-nowrap">
+                          Book Now
+                        </button>
+                      </BookingModal>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 md:py-24 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Northern Circuit Safaris</h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Experience the world-famous Serengeti, Ngorongoro Crater, and Tarangire with our Northern Circuit
+                packages. Choose between comfortable camping or mid-range lodge accommodations.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {northernTours.map((tour) => (
+                <div
+                  key={tour.id}
+                  className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                >
+                  <div className="relative h-64 overflow-hidden">
+                    <Image
+                      src={tour.image || "/placeholder.svg"}
+                      alt={tour.name}
+                      fill
+                      className="object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute top-4 right-4 bg-brand-yellow text-brand-dark px-4 py-2 rounded-full font-semibold text-sm">
+                      {tour.duration}
+                    </div>
+                  </div>
+
+                  {/* Tour Content */}
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-brand-dark mb-2 leading-tight">{tour.name}</h3>
+                    <p className="text-brand-green font-semibold mb-4">{tour.subtitle}</p>
+
+                    {/* Highlights */}
+                    <ul className="space-y-2 mb-6">
+                      {tour.highlights.map((highlight, index) => (
+                        <li key={index} className="flex items-start gap-2 text-sm text-gray-700">
+                          <svg
+                            className="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
+
+                    {/* Prices */}
+                    <div className="mb-6 pb-6 border-b border-gray-200">
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="text-center p-3 bg-green-50 rounded-lg">
+                          <p className="text-xs text-gray-600 mb-1">Camping</p>
+                          <p className="text-xl font-bold text-brand-green">${tour.campingPrice}</p>
+                          <p className="text-xs text-gray-500">per person</p>
+                        </div>
+                        <div className="text-center p-3 bg-amber-50 rounded-lg">
+                          <p className="text-xs text-gray-600 mb-1">Lodge</p>
+                          <p className="text-xl font-bold text-brand-yellow">${tour.lodgePrice}</p>
+                          <p className="text-xs text-gray-500">per person</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Action Buttons - yellow brand color for Book Now */}
+                    <div className="flex gap-3">
+                      <Link
+                        href={`/our-itineraries/${tour.id}`}
+                        className="flex-1 bg-brand-dark text-white text-center py-3 px-4 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
+                      >
+                        View Details
+                      </Link>
+                      <BookingModal tourName={tour.name}>
+                        <button className="flex-1 bg-brand-yellow text-brand-dark py-3 px-4 rounded-lg font-semibold hover:bg-opacity-90 transition-colors whitespace-nowrap">
+                          Book Now
                         </button>
                       </BookingModal>
                     </div>
@@ -275,7 +478,7 @@ export default function OurItinerariesPage() {
         </section>
 
         {/* What's Included Section */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-dark text-center mb-12">
@@ -284,78 +487,100 @@ export default function OurItinerariesPage() {
 
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Included */}
-                <div className="bg-white p-8 rounded-lg shadow">
+                <div className="bg-green-50 p-8 rounded-lg border-l-4 border-brand-green">
                   <h3 className="text-2xl font-bold text-brand-green mb-6 flex items-center gap-2">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Included
+                    Safari Package Inclusions
                   </h3>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start gap-2">
                       <span className="text-brand-green mt-1">✓</span>
-                      Airport pickup & drop-off
+                      All park fees
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-brand-green mt-1">✓</span>
-                      Full board accommodation (Breakfast, Lunch, Dinner)
+                      Ngorongoro Crater fees
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-brand-green mt-1">✓</span>
-                      Experienced English-speaking driver/guide
+                      Hotel pick-up and drop-off
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-brand-green mt-1">✓</span>
-                      All park entrance fees & government taxes
+                      Transportation in 4x4 vehicles with viewing roof and qualified driver/guide
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-brand-green mt-1">✓</span>
-                      Extensive game drives in 4x4 with pop-up roof
+                      Salary for cook and driver
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-brand-green mt-1">✓</span>
-                      2.5L drinking water per person per day
+                      Camping equipment (for camping safaris): tent, table, chairs, sleeping mattress, cooking gas
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-green mt-1">✓</span>3 meals per day during the safari
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-green mt-1">✓</span>
+                      Bottled water/drinks (1.5 liters per person on the first day)
                     </li>
                   </ul>
                 </div>
 
                 {/* Excluded */}
-                <div className="bg-white p-8 rounded-lg shadow">
+                <div className="bg-red-50 p-8 rounded-lg border-l-4 border-red-500">
                   <h3 className="text-2xl font-bold text-red-600 mb-6 flex items-center gap-2">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
-                    Not Included
+                    Safari Package Exclusions
                   </h3>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start gap-2">
                       <span className="text-red-600 mt-1">✗</span>
-                      International flights & visas
+                      Tips for driver and cook
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-600 mt-1">✗</span>
-                      Travel/medical insurance
+                      Meals outside the regular itinerary
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-600 mt-1">✗</span>
-                      Alcoholic & soft drinks
+                      Medical/evacuation trip insurance
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-600 mt-1">✗</span>
-                      Tips & gratuities
+                      International visa for Tanzania
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-600 mt-1">✗</span>
-                      Optional activities (balloon safari, etc.)
+                      Airfares and airport taxes
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-600 mt-1">✗</span>
-                      Personal items & laundry
+                      Single room supplement for hotels
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 bg-brand-dark">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Start Your Safari?</h2>
+            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              Contact us today to customize your perfect Tanzania safari adventure.
+            </p>
+            <BookingModal tourName="Custom Safari Inquiry">
+              <button className="bg-brand-yellow text-brand-dark px-8 py-4 rounded-lg font-bold text-lg hover:bg-opacity-90 transition-colors">
+                Plan Your Safari
+              </button>
+            </BookingModal>
           </div>
         </section>
       </div>

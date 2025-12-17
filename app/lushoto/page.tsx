@@ -6,6 +6,12 @@ import Link from "next/link"
 import Image from "next/image"
 import { Check } from "lucide-react"
 
+export const metadata = {
+  title: "Lushoto Tours - Usambara Mountains Hiking | KiliSafari",
+  description:
+    "Discover the scenic Usambara Mountains in Lushoto with hiking trails, waterfalls, cultural village visits, and cool mountain climate. Perfect nature retreat in Tanzania.",
+}
+
 export default function LushotoPage() {
   return (
     <div className="min-h-screen">

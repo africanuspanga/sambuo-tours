@@ -26,7 +26,12 @@ export const metadata: Metadata = {
     "Experience authentic safaris, epic mountain treks, and cultural adventures in Tanzania with KiliSafari Organizing. 10+ years of expertise in creating unforgettable African journeys.",
   keywords:
     "Tanzania safari, Kilimanjaro trekking, Serengeti tours, Zanzibar holidays, Northern Circuit safari, Tanzania tour operator, African wildlife safari, Mount Kilimanjaro climb",
-    generator: 'v0.app'
+  generator: "v0.app",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 }
 
 export default function RootLayout({

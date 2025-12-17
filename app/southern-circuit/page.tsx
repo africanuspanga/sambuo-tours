@@ -32,7 +32,7 @@ const destinations = [
   },
   {
     title: "Saadani National Park",
-    image: "/images/saadani-national-park.jpg",
+    image: "/images/hippo-saadani.jpg",
     description:
       "The only wildlife sanctuary in Tanzania bordering the sea, where the bush meets the beach. Saadani offers a unique combination of traditional safari experiences with Indian Ocean coastline relaxation. Watch elephants stroll along pristine beaches, enjoy boat safaris on the Wami River spotting hippos and crocodiles, and experience both wildlife and beach paradise in one destination.",
     highlights: [
@@ -67,6 +67,12 @@ const destinations = [
     ],
   },
 ]
+
+export const metadata = {
+  title: "Southern Circuit Safaris - Ruaha, Nyerere & Mikumi | KiliSafari",
+  description:
+    "Discover Tanzania's remote Southern Circuit with Ruaha National Park, Nyerere (Selous), Saadani, Mikumi, and Udzungwa Mountains. Boat safaris, walking safaris, and pristine wilderness.",
+}
 
 export default function SouthernCircuitPage() {
   return (

@@ -91,8 +91,13 @@ export default function AboutPage() {
         {/* Company Story Section with First Image */}
         <section className="py-16 md:py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="relative h-96 rounded-2xl overflow-hidden mb-12">
-              <Image src="/images/about-1.jpg" alt="Safari vehicle adventure" fill className="object-cover" />
+            <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden mb-12">
+              <Image
+                src="/images/about-1.jpg"
+                alt="Safari vehicle adventure"
+                fill
+                className="object-cover object-center"
+              />
             </div>
 
             <div className="max-w-4xl mx-auto">
@@ -101,9 +106,9 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
                 <p>
-                  KiliSafari Organizing is an experienced group of tour operators in Tanzania with over 10 years of
-                  expertise in creating unforgettable African adventures. We are passionate about sharing the incredible
-                  beauty and diversity of Tanzania with travelers from around the world.
+                  KiliSafari Organizing is an experienced tour operator in Tanzania with over 10 years of expertise in
+                  creating unforgettable African adventures. We are passionate about sharing the incredible beauty and
+                  diversity of Tanzania with travelers from around the world.
                 </p>
                 <p>
                   We ensure safety, reliability, and 24-hour support for all our clients. From the moment you arrive in
