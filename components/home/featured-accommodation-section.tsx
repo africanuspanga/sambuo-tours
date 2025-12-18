@@ -81,8 +81,8 @@ export function FeaturedAccommodationSection() {
                 </div>
 
                 <BookingModal tourName={`${accommodation.name} - ${accommodation.location}`}>
-                  <button className="w-full bg-brand-orange text-white py-3 rounded-lg font-bold hover:bg-opacity-90 transition-colors">
-                    BOOK NOW
+                  <button className="w-full bg-brand-orange text-white py-3 px-6 rounded-lg font-semibold hover:bg-brand-orange/90 transition-all duration-200 shadow-md hover:shadow-lg active:scale-[0.98]">
+                    Book Now
                   </button>
                 </BookingModal>
               </div>
@@ -90,13 +90,12 @@ export function FeaturedAccommodationSection() {
           ))}
         </div>
 
-        {/* View All Link */}
         <div className="text-center">
           <Link
             href="/accommodation"
-            className="inline-flex items-center gap-2 bg-brand-dark text-white px-8 py-4 rounded-lg font-bold hover:bg-opacity-90 transition-colors group"
+            className="inline-flex items-center gap-2 bg-brand-dark text-white px-8 py-4 rounded-lg font-semibold hover:bg-brand-dark/90 transition-all duration-200 shadow-md hover:shadow-lg group"
           >
-            VIEW ALL ACCOMMODATION
+            View All Accommodation
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

@@ -9,7 +9,7 @@ import Image from "next/image"
 export const metadata = {
   title: "Mount Kilimanjaro Climbing Tours | KiliSafari Organizing",
   description:
-    "Climb Africa's highest peak with expert guides. Choose from Machame, Marangu, Lemosho, Rongai, and Northern Circuit routes. High success rates and professional support.",
+    "Climb Africa's highest peak with expert guides. Choose from Machame, Marangu, Lemosho, Rongai, Northern Circuit, and Umbwe routes. High success rates and professional support.",
 }
 
 const routes = [
@@ -63,6 +63,16 @@ const routes = [
     slug: "northern-circuit",
     image: "/images/kilimanjaro-uhuru-peak.jpg",
   },
+  {
+    title: "Umbwe Route",
+    subtitle: "Double Whiskey Route",
+    duration: "6 Days",
+    description:
+      "The most challenging and steepest route for experienced trekkers. Features steep ridges and scrambling through rainforest before joining the southern circuit.",
+    pricePerPerson: "$2,835",
+    slug: "umbwe",
+    image: "/images/umbwe-route.jpg",
+  },
 ]
 
 export default function KilimanjaroPage() {
@@ -92,7 +102,7 @@ export default function KilimanjaroPage() {
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
               With KiliSafari, you'll benefit from our experienced guides, excellent safety record, and high success
-              rates. Choose from five distinct routes, each offering unique landscapes and challenges on your journey to
+              rates. Choose from six distinct routes, each offering unique landscapes and challenges on your journey to
               the summit.
             </p>
           </div>
