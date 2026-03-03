@@ -1,55 +1,60 @@
-import Image from "next/image"
+"use client"
 
-const logos = [
-  {
-    name: "Tanzania Tourist Board",
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tanzania-tourist-board-NrZOQxuulh6HBTIpJwLJMlBQRUzH2b.jpg",
-  },
-  {
-    name: "Google Reviews",
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/google-reviews-logo-FwQXeCYohpP20v8DclggchAgedEq4x.png",
-  },
-  {
-    name: "SafariGo",
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-removebg-preview-Pj48aYRfcZvNxphmJy0RzTFKy1Xeko.png",
-  },
-  {
-    name: "APTA",
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/association_for_the_promotion_of_tourism_to_africa_small-e1605455307548-KJJGEdjWLU8jwR531dKlvqAQjShTwA.jpg",
-  },
-  {
-    name: "Get Your Guide",
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/get-your-guide-old6003.logowik.com-removebg-preview-mNfItKFEgZJffTh279fZRFCnxZ0X3E.png",
-  },
-  {
-    name: "TripAdvisor",
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tripadvisor-logo-vector-png-trip-advisor-logo-png-720-p2BSnLSFZsNgxpfcxqVfUiEQ5yDolV.webp",
-  },
-  {
-    name: "Trustpilot",
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Trustpilot4-removebg-preview-uXRXzPrajQsJBYzEiDvgzhXBsyqxed.png",
-  },
+import { useEffect, useRef, useState } from "react"
+
+const partners = [
+  { name: "Tanzania Tourist Board", abbr: "TTB" },
+  { name: "Tanzania National Parks", abbr: "TANAPA" },
+  { name: "Kilimanjaro National Park", abbr: "KINAPA" },
+  { name: "Ngorongoro Conservation", abbr: "NCAA" },
+  { name: "Zanzibar Commission", abbr: "ZCT" },
 ]
 
 export function RecommendedBySection() {
-  return (
-    <section className="py-16 md:py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-4">Recommended By</h2>
-          <p className="text-lg text-gray-600">Trusted by leading travel platforms and organizations</p>
-        </div>
+  const [isVisible, setIsVisible] = useState(false)
+  const sectionRef = useRef<HTMLElement>(null)
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-8 items-center justify-items-center">
-          {logos.map((logo, index) => (
-            <div key={index} className="hover:scale-110 transition-transform duration-300">
-              <Image
-                src={logo.src || "/placeholder.svg"}
-                alt={logo.name}
-                width={120}
-                height={60}
-                className="object-contain h-16 w-auto"
-              />
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.1 }
+    )
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current)
+    }
+
+    return () => observer.disconnect()
+  }, [])
+
+  return (
+    <section ref={sectionRef} className="py-12 md:py-16 bg-brand-sand/50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p
+          className={`text-center text-sm text-gray-500 uppercase tracking-widest mb-8 transition-all duration-1000 ${
+            isVisible ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          Licensed & Approved By
+        </p>
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+          {partners.map((partner, index) => (
+            <div
+              key={index}
+              className={`flex items-center gap-2 transition-all duration-700 ${
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              }`}
+              style={{ transitionDelay: `${index * 100}ms` }}
+            >
+              <div className="w-10 h-10 bg-brand-chocolate/10 rounded-lg flex items-center justify-center">
+                <span className="text-brand-chocolate font-bold text-xs">{partner.abbr}</span>
+              </div>
+              <span className="text-brand-chocolate/70 font-medium text-sm hidden sm:block">{partner.name}</span>
             </div>
           ))}
         </div>

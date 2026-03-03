@@ -4,87 +4,88 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* KiliSafari Brand Colors */
-  --brand-dark: #251b0b;
-  --brand-orange: #ff9800;
-  --brand-green: #536e2b;
-  /* Added brand-yellow color for CTA buttons */
-  --brand-yellow: #f5a623;
+  /* SAMBUO TOURS Brand Colors */
+  --brand-chocolate: #3B2314;
+  --brand-gold: #D4A017;
+  --brand-ocean: #1F6FA9;
+  --brand-cream: #FDF8F3;
+  --brand-sand: #F5E6D3;
 
   /* Design System Colors */
-  --background: #ffffff;
-  --foreground: #251b0b;
+  --background: #FDF8F3;
+  --foreground: #3B2314;
   --card: #ffffff;
-  --card-foreground: #251b0b;
+  --card-foreground: #3B2314;
   --popover: #ffffff;
-  --popover-foreground: #251b0b;
-  --primary: #ff9800;
-  --primary-foreground: #ffffff;
-  --secondary: #536e2b;
+  --popover-foreground: #3B2314;
+  --primary: #D4A017;
+  --primary-foreground: #3B2314;
+  --secondary: #1F6FA9;
   --secondary-foreground: #ffffff;
-  --muted: #f5f5f5;
-  --muted-foreground: #6b7280;
-  --accent: #ff9800;
-  --accent-foreground: #ffffff;
+  --muted: #F5E6D3;
+  --muted-foreground: #6b5b4f;
+  --accent: #3B2314;
+  --accent-foreground: #FDF8F3;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: #e5e7eb;
-  --input: #e5e7eb;
-  --ring: #ff9800;
-  --radius: 0.5rem;
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --border: #e5ddd4;
+  --input: #e5ddd4;
+  --ring: #D4A017;
+  --radius: 0.75rem;
+  --chart-1: #D4A017;
+  --chart-2: #1F6FA9;
+  --chart-3: #3B2314;
+  --chart-4: #F5E6D3;
+  --chart-5: #6b5b4f;
+  --sidebar: #FDF8F3;
+  --sidebar-foreground: #3B2314;
+  --sidebar-primary: #D4A017;
+  --sidebar-primary-foreground: #3B2314;
+  --sidebar-accent: #F5E6D3;
+  --sidebar-accent-foreground: #3B2314;
+  --sidebar-border: #e5ddd4;
+  --sidebar-ring: #D4A017;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --background: #1a1410;
+  --foreground: #FDF8F3;
+  --card: #2a2018;
+  --card-foreground: #FDF8F3;
+  --popover: #2a2018;
+  --popover-foreground: #FDF8F3;
+  --primary: #D4A017;
+  --primary-foreground: #3B2314;
+  --secondary: #1F6FA9;
+  --secondary-foreground: #ffffff;
+  --muted: #3a3028;
+  --muted-foreground: #a09080;
+  --accent: #D4A017;
+  --accent-foreground: #3B2314;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #4a4038;
+  --input: #4a4038;
+  --ring: #D4A017;
+  --chart-1: #D4A017;
+  --chart-2: #1F6FA9;
+  --chart-3: #3B2314;
+  --chart-4: #F5E6D3;
+  --chart-5: #a09080;
+  --sidebar: #2a2018;
+  --sidebar-foreground: #FDF8F3;
+  --sidebar-primary: #D4A017;
+  --sidebar-primary-foreground: #3B2314;
+  --sidebar-accent: #3a3028;
+  --sidebar-accent-foreground: #FDF8F3;
+  --sidebar-border: #4a4038;
+  --sidebar-ring: #D4A017;
 }
 
 @theme inline {
-  --font-sans: var(--font-open-sans);
-  --font-serif: var(--font-montserrat);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+  --font-display: var(--font-playfair);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -108,11 +109,11 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-brand-dark: var(--brand-dark);
-  --color-brand-orange: var(--brand-orange);
-  --color-brand-green: var(--brand-green);
-  /* Added brand-yellow to theme */
-  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-chocolate: var(--brand-chocolate);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-ocean: var(--brand-ocean);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-sand: var(--brand-sand);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -135,66 +136,226 @@
   body {
     @apply bg-background text-foreground;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     @apply font-serif;
   }
 }
 
-/* Custom utility classes */
-.text-brand-dark {
-  color: var(--brand-dark);
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
-.text-brand-orange {
-  color: var(--brand-orange);
+/* Custom utility classes for SAMBUO brand */
+.text-brand-chocolate {
+  color: var(--brand-chocolate);
 }
 
-.text-brand-green {
-  color: var(--brand-green);
+.text-brand-gold {
+  color: var(--brand-gold);
 }
 
-.bg-brand-dark {
-  background-color: var(--brand-dark);
+.text-brand-ocean {
+  color: var(--brand-ocean);
 }
 
-.bg-brand-orange {
-  background-color: var(--brand-orange);
+.bg-brand-chocolate {
+  background-color: var(--brand-chocolate);
 }
 
-.bg-brand-green {
-  background-color: var(--brand-green);
+.bg-brand-gold {
+  background-color: var(--brand-gold);
 }
 
-/* Added brand-yellow utility classes */
-.text-brand-yellow {
-  color: var(--brand-yellow);
+.bg-brand-ocean {
+  background-color: var(--brand-ocean);
 }
 
-.bg-brand-yellow {
-  background-color: var(--brand-yellow);
+.bg-brand-cream {
+  background-color: var(--brand-cream);
 }
 
-.border-brand-yellow {
-  border-color: var(--brand-yellow);
+.bg-brand-sand {
+  background-color: var(--brand-sand);
 }
 
-.hover\:bg-brand-yellow:hover {
-  background-color: var(--brand-yellow);
+.border-brand-gold {
+  border-color: var(--brand-gold);
 }
 
-.border-brand-orange {
-  border-color: var(--brand-orange);
+.border-brand-chocolate {
+  border-color: var(--brand-chocolate);
 }
 
-.hover\:text-brand-orange:hover {
-  color: var(--brand-orange);
+.hover\:text-brand-gold:hover {
+  color: var(--brand-gold);
 }
 
-.hover\:bg-brand-orange:hover {
-  background-color: var(--brand-orange);
+.hover\:bg-brand-gold:hover {
+  background-color: var(--brand-gold);
+}
+
+.hover\:bg-brand-chocolate:hover {
+  background-color: var(--brand-chocolate);
+}
+
+/* Animation utilities */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.6s ease-out forwards;
+}
+
+/* Stagger animation delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* Gradient overlays */
+.gradient-overlay {
+  background: linear-gradient(to top, rgba(59, 35, 20, 0.9) 0%, rgba(59, 35, 20, 0.4) 50%, rgba(59, 35, 20, 0.2) 100%);
+}
+
+.gradient-overlay-light {
+  background: linear-gradient(to top, rgba(59, 35, 20, 0.7) 0%, rgba(59, 35, 20, 0.2) 60%, transparent 100%);
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.glass-dark {
+  background: rgba(59, 35, 20, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px -12px rgba(59, 35, 20, 0.25);
+}
+
+/* Image zoom on hover */
+.img-zoom {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-zoom:hover {
+  transform: scale(1.08);
+}
+
+/* Button shine effect */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.btn-shine:hover::after {
+  left: 100%;
+}
+
+/* Text gradient */
+.text-gradient {
+  background: linear-gradient(135deg, var(--brand-gold) 0%, #F5E6D3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

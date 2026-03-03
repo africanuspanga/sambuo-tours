@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://kilisafariorgansing.com/</loc>
+    <loc>https://sambuotours.com/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -10,19 +10,13 @@
   
   <!-- Main Pages -->
   <url>
-    <loc>https://kilisafariorgansing.com/about/</loc>
+    <loc>https://sambuotours.com/about/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/contact/</loc>
-    <lastmod>2024-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kilisafariorgansing.com/accommodation/</loc>
+    <loc>https://sambuotours.com/contact/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -30,25 +24,25 @@
   
   <!-- Safari Circuits -->
   <url>
-    <loc>https://kilisafariorgansing.com/northern-circuit/</loc>
+    <loc>https://sambuotours.com/northern-circuit/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/southern-circuit/</loc>
+    <loc>https://sambuotours.com/southern-circuit/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/day-safaris/</loc>
+    <loc>https://sambuotours.com/day-safaris/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/cultural-safaris/</loc>
+    <loc>https://sambuotours.com/cultural-safaris/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -56,43 +50,43 @@
   
   <!-- Kilimanjaro Routes -->
   <url>
-    <loc>https://kilisafariorgansing.com/kilimanjaro/</loc>
+    <loc>https://sambuotours.com/kilimanjaro/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/kilimanjaro/marangu/</loc>
+    <loc>https://sambuotours.com/kilimanjaro/marangu/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/kilimanjaro/machame/</loc>
+    <loc>https://sambuotours.com/kilimanjaro/machame/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/kilimanjaro/lemosho/</loc>
+    <loc>https://sambuotours.com/kilimanjaro/lemosho/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/kilimanjaro/rongai/</loc>
+    <loc>https://sambuotours.com/kilimanjaro/rongai/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/kilimanjaro/northern-circuit/</loc>
+    <loc>https://sambuotours.com/kilimanjaro/northern-circuit/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/kilimanjaro/umbwe/</loc>
+    <loc>https://sambuotours.com/kilimanjaro/umbwe/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -100,7 +94,7 @@
   
   <!-- Zanzibar -->
   <url>
-    <loc>https://kilisafariorgansing.com/zanzibar/</loc>
+    <loc>https://sambuotours.com/zanzibar/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -108,19 +102,19 @@
   
   <!-- Mountain Treks -->
   <url>
-    <loc>https://kilisafariorgansing.com/mt-meru/</loc>
+    <loc>https://sambuotours.com/mt-meru/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/udzungwa/</loc>
+    <loc>https://sambuotours.com/udzungwa/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/lushoto/</loc>
+    <loc>https://sambuotours.com/lushoto/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -128,13 +122,13 @@
   
   <!-- Itineraries -->
   <url>
-    <loc>https://kilisafariorgansing.com/itineraries/</loc>
+    <loc>https://sambuotours.com/itineraries/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/</loc>
+    <loc>https://sambuotours.com/our-itineraries/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -142,43 +136,43 @@
   
   <!-- Northern Safari Itineraries -->
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/2-days-tarangire-ngorongoro/</loc>
+    <loc>https://sambuotours.com/our-itineraries/2-days-tarangire-ngorongoro/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/3-days-tarangire-ngorongoro-manyara/</loc>
+    <loc>https://sambuotours.com/our-itineraries/3-days-tarangire-ngorongoro-manyara/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/4-days-tarangire-serengeti-ngorongoro/</loc>
+    <loc>https://sambuotours.com/our-itineraries/4-days-tarangire-serengeti-ngorongoro/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/5-days-tarangire-serengeti-ngorongoro/</loc>
+    <loc>https://sambuotours.com/our-itineraries/5-days-tarangire-serengeti-ngorongoro/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/6-days-tarangire-ngorongoro-serengeti-manyara/</loc>
+    <loc>https://sambuotours.com/our-itineraries/6-days-tarangire-ngorongoro-serengeti-manyara/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/7-days-arusha-tarangire-manyara-serengeti-ngorongoro/</loc>
+    <loc>https://sambuotours.com/our-itineraries/7-days-arusha-tarangire-manyara-serengeti-ngorongoro/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/8-days-arusha-tarangire-manyara-serengeti-ngorongoro/</loc>
+    <loc>https://sambuotours.com/our-itineraries/8-days-arusha-tarangire-manyara-serengeti-ngorongoro/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -186,67 +180,67 @@
   
   <!-- Southern Circuit Itineraries -->
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/1-day-mikumi/</loc>
+    <loc>https://sambuotours.com/our-itineraries/1-day-mikumi/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/1-day-ruaha-dodoma/</loc>
+    <loc>https://sambuotours.com/our-itineraries/1-day-ruaha-dodoma/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/1-day-ruaha-iringa/</loc>
+    <loc>https://sambuotours.com/our-itineraries/1-day-ruaha-iringa/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/1-day-saadani/</loc>
+    <loc>https://sambuotours.com/our-itineraries/1-day-saadani/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/1-day-selous/</loc>
+    <loc>https://sambuotours.com/our-itineraries/1-day-selous/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/2-days-mikumi-selous/</loc>
+    <loc>https://sambuotours.com/our-itineraries/2-days-mikumi-selous/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/2-days-saadani-mikumi/</loc>
+    <loc>https://sambuotours.com/our-itineraries/2-days-saadani-mikumi/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/3-days-southern-circuit/</loc>
+    <loc>https://sambuotours.com/our-itineraries/3-days-southern-circuit/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/4-days-mikumi-selous/</loc>
+    <loc>https://sambuotours.com/our-itineraries/4-days-mikumi-selous/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/5-days-complete-south/</loc>
+    <loc>https://sambuotours.com/our-itineraries/5-days-complete-south/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kilisafariorgansing.com/our-itineraries/6-days-ultimate-south/</loc>
+    <loc>https://sambuotours.com/our-itineraries/6-days-ultimate-south/</loc>
     <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

@@ -1,152 +1,204 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
-import { Button } from "@/components/ui/button"
+import { company } from "@/lib/sambuo-data"
 import Link from "next/link"
-import { Check } from "lucide-react"
+import Image from "next/image"
+import { Check, Compass, Anchor, Trees } from "lucide-react"
 
 const destinations = [
   {
+    title: "Selous Game Reserve (Nyerere NP)",
+    image: "/images/tour-crocodile.jpg",
+    description:
+      "Africa's largest stand-alone national park and one of the largest in the world. Selous offers diverse activities including boat safaris on the Rufiji River, walking safaris, and classic game drives. It's home to massive elephant herds, hippos, crocodiles, and wild dogs.",
+    highlights: [
+      "Boat safaris on Rufiji River",
+      "Guided walking safaris",
+      "Huge elephant populations",
+      "African wild dog packs",
+    ],
+  },
+  {
     title: "Ruaha National Park",
-    image: "/images/ruaha.jpg",
+    image: "/images/tour-ruaha-buffalo.jpg",
     description:
-      "Tanzania's largest national park, remote and wild with pristine wilderness. Ruaha is famous for large elephant populations and exceptional predator sightings including lions, leopards, and cheetahs. The park's rugged landscape and the Great Ruaha River create dramatic scenery and excellent game viewing, especially during the dry season when animals concentrate around water sources.",
+      "Tanzania's second-largest national park and one of Africa's best-kept secrets. Ruaha boasts incredible predator concentrations, including large lion prides and endangered wild dogs. The Great Ruaha River attracts diverse wildlife, especially during the dry season.",
     highlights: [
-      "Tanzania's largest park",
-      "Remote wilderness experience",
-      "Exceptional predator sightings",
-      "Large elephant populations",
-    ],
-  },
-  {
-    title: "Nyerere National Park (Selous)",
-    image: "/images/nyerere.jpg",
-    description:
-      "One of Africa's largest protected areas and a UNESCO World Heritage Site. Nyerere offers unique boat safaris, walking safaris, and traditional game drives in pristine wilderness. The Rufiji River system creates a network of channels and lakes that attract incredible wildlife diversity, making this one of Tanzania's most scenic and varied safari destinations.",
-    highlights: [
-      "Boat and walking safaris",
-      "UNESCO World Heritage Site",
-      "Diverse wildlife and landscapes",
-      "Africa's largest protected area",
-    ],
-  },
-  {
-    title: "Saadani National Park",
-    image: "/images/hippo-saadani.jpg",
-    description:
-      "The only wildlife sanctuary in Tanzania bordering the sea, where the bush meets the beach. Saadani offers a unique combination of traditional safari experiences with Indian Ocean coastline relaxation. Watch elephants stroll along pristine beaches, enjoy boat safaris on the Wami River spotting hippos and crocodiles, and experience both wildlife and beach paradise in one destination.",
-    highlights: [
-      "Only park where bush meets beach",
-      "Elephants on the beach",
-      "Boat safaris on Wami River",
-      "Unique coastal safari experience",
+      "Large lion prides",
+      "Endangered wild dogs",
+      "Greater kudu & sable antelope",
+      "Dramatic baobab landscapes",
     ],
   },
   {
     title: "Mikumi National Park",
-    image: "/images/mikumi.jpg",
+    image: "/images/tour-baobab.jpg",
     description:
-      "Easily accessible park with reliable wildlife viewing, located along the main highway between Dar es Salaam and Iringa. Part of the greater Selous ecosystem, Mikumi offers abundant plains game including elephants, giraffes, zebras, and wildebeest. The Mkata Floodplain provides excellent game viewing with beautiful mountain backdrops.",
+      "The most accessible Southern Circuit park, Mikumi offers excellent wildlife viewing along the Mkata Floodplain. Often called 'Little Serengeti,' it features similar wildlife concentrations including elephants, zebras, giraffes, and lions, all within easy reach of Dar es Salaam.",
     highlights: [
+      "Mkata Floodplain game viewing",
       "Easy access from Dar es Salaam",
-      "Reliable wildlife sightings",
-      "Beautiful landscapes",
-      "Part of Selous ecosystem",
+      "Big Five opportunities",
+      "African wild dog sightings",
     ],
   },
   {
-    title: "Udzungwa Mountains National Park",
-    image: "/images/udzungwa-southern.jpg",
+    title: "Saadani National Park",
+    image: "/images/tour-saadani-beach.jpg",
     description:
-      "A biodiversity hotspot with endemic primate species found nowhere else on Earth. Udzungwa offers hiking through pristine montane forests to spectacular waterfalls, including the impressive 170-meter Sanje Falls. The park is a paradise for hikers and nature lovers, with unique flora and fauna including several endemic bird species.",
+      "Tanzania's only coastal wildlife sanctuary where the bush meets the beach. Saadani offers a unique combination of game viewing and Indian Ocean relaxation. Spot wildlife on the beach, take boat safaris on the Wami River, and enjoy pristine coastal scenery.",
     highlights: [
-      "Unique primate species",
-      "Hiking and waterfalls",
+      "Beach & bush combination",
+      "Wami River boat safaris",
+      "Swimming with dolphins nearby",
+      "Historical Saadani village",
+    ],
+  },
+  {
+    title: "Udzungwa Mountains NP",
+    image: "/images/udzungwa-waterfall.jpg",
+    description:
+      "Known as the 'Galapagos of Africa' for its rich biodiversity, Udzungwa is a hiker's paradise with no roads—only trails. Discover endemic primates, colorful butterflies, and stunning waterfalls including the 170m Sanje Falls with panoramic views.",
+    highlights: [
+      "Hiking & trekking paradise",
+      "Endemic primates",
+      "Spectacular waterfalls",
       "Biodiversity hotspot",
-      "Endemic species sanctuary",
     ],
   },
 ]
 
 export const metadata = {
-  title: "Southern Circuit Safaris - Ruaha, Nyerere & Mikumi | KiliSafari",
+  title: `Southern Circuit Safaris - Selous & Ruaha | ${company.name}`,
   description:
-    "Discover Tanzania's remote Southern Circuit with Ruaha National Park, Nyerere (Selous), Saadani, Mikumi, and Udzungwa Mountains. Boat safaris, walking safaris, and pristine wilderness.",
+    "Explore Tanzania's hidden Southern Circuit including Selous Game Reserve, Ruaha National Park, Mikumi, and Saadani. Experience untouched wilderness with fewer crowds.",
 }
 
 export default function SouthernCircuitPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-brand-cream">
       <Navigation />
       <main>
         {/* Hero Section */}
-        <section className="relative h-[50vh] min-h-[400px] w-full flex items-center justify-center bg-gradient-to-r from-brand-dark to-brand-green">
-          <div className="absolute inset-0 bg-black/20" />
-          <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4">Southern Circuit Safaris</h1>
-            <p className="text-lg md:text-xl text-white/90">Tanzania's Wild and Remote Wilderness</p>
+        <section className="relative pt-32 pb-20 bg-brand-ocean">
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute inset-0 bg-[url('/images/tour-elephants.jpg')] bg-cover bg-center" />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-brand-ocean/80 to-brand-ocean" />
+          <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span className="inline-block px-4 py-2 bg-white/10 rounded-full text-brand-gold text-sm font-medium tracking-widest uppercase mb-6">
+              Hidden Gems
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
+              Southern Circuit Safaris
+            </h1>
+            <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+              Discover Tanzania&apos;s best-kept secrets—untouched wilderness, diverse activities, 
+              and incredible wildlife without the crowds.
+            </p>
           </div>
         </section>
 
         {/* Introduction Section */}
-        <section className="py-16 md:py-20 bg-white">
+        <section className="py-16 md:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-6">Discover Untamed Wilderness</h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              The Southern Circuit offers a more remote and exclusive safari experience, with vast wilderness areas and
-              fewer tourists. These parks provide authentic African bush experiences with diverse landscapes ranging
-              from miombo woodlands to riverine forests.
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-6">
+              The Road Less Traveled
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              While the Northern Circuit draws the crowds, Tanzania&apos;s Southern Circuit offers 
+              something truly special—vast wilderness areas where you can experience authentic 
+              safari moments without jostling for position. Here, nature reigns supreme.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              From boat safaris on the Rufiji River to hiking in the Udzungwa Mountains, the Southern Circuit showcases
-              Tanzania's incredible diversity. Experience wildlife encounters in pristine settings where nature remains
-              largely undisturbed.
+              From boat safaris on the Rufiji River to tracking wild dogs in Ruaha, the Southern 
+              Circuit delivers diverse activities and exceptional wildlife viewing. It&apos;s perfect 
+              for travelers seeking a more exclusive safari experience.
             </p>
           </div>
         </section>
 
-        {/* Destinations Grid */}
-        <section className="py-16 md:py-20 bg-gray-50">
+        {/* Activities Highlight */}
+        <section className="py-12 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="space-y-12">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {[
+                { icon: Anchor, title: "Boat Safaris", desc: "On Rufiji & Wami Rivers" },
+                { icon: Trees, title: "Walking Safaris", desc: "Guided bush walks" },
+                { icon: Compass, title: "Game Drives", desc: "Classic 4x4 safaris" },
+                { icon: Check, title: "Fly Camping", desc: "Wilderness camping" },
+              ].map((activity, index) => (
+                <div key={index} className="text-center p-6 bg-brand-cream rounded-2xl">
+                  <div className="w-14 h-14 bg-brand-gold/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <activity.icon size={24} className="text-brand-gold" />
+                  </div>
+                  <h3 className="font-serif font-bold text-brand-chocolate mb-1">{activity.title}</h3>
+                  <p className="text-sm text-gray-600">{activity.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Destinations Grid */}
+        <section className="py-16 md:py-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="space-y-16">
               {destinations.map((destination, index) => (
                 <div
                   key={index}
-                  className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${
+                  className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center ${
                     index % 2 === 1 ? "lg:flex-row-reverse" : ""
                   }`}
                 >
                   {/* Image */}
-                  <div
-                    className={`relative h-96 rounded-2xl overflow-hidden bg-gray-200 ${
-                      index % 2 === 1 ? "lg:order-2" : ""
-                    }`}
-                  >
-                    <img
+                  <div className={`relative h-[350px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl ${
+                    index % 2 === 1 ? "lg:order-2" : ""
+                  }`}>
+                    <Image
                       src={destination.image || "/placeholder.svg"}
                       alt={destination.title}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-chocolate/60 to-transparent" />
                   </div>
 
                   {/* Content */}
                   <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                    <h3 className="text-3xl font-black text-brand-dark mb-4">{destination.title}</h3>
-                    <p className="text-gray-700 leading-relaxed mb-6">{destination.description}</p>
+                    <div className="flex items-center gap-2 text-brand-ocean text-sm font-medium mb-3">
+                      <Compass size={16} />
+                      <span className="uppercase tracking-wider">Southern Circuit</span>
+                    </div>
+                    <h3 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-4">
+                      {destination.title}
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                      {destination.description}
+                    </p>
 
                     {/* Highlights */}
-                    <div className="space-y-2 mb-6">
+                    <div className="space-y-3 mb-8">
                       {destination.highlights.map((highlight, idx) => (
                         <div key={idx} className="flex items-start gap-3">
-                          <Check size={20} className="text-brand-green mt-1 flex-shrink-0" />
+                          <div className="w-6 h-6 bg-brand-gold/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <Check size={14} className="text-brand-gold" />
+                          </div>
                           <span className="text-gray-700">{highlight}</span>
                         </div>
                       ))}
                     </div>
 
-                    <Button asChild className="bg-brand-orange hover:bg-brand-orange/90 text-white">
-                      <Link href="/contact">Book Now</Link>
-                    </Button>
+                    <Link
+                      href="/our-itineraries"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-brand-gold text-brand-chocolate font-semibold rounded-full hover:bg-brand-gold/90 transition-all duration-300"
+                    >
+                      View Safari Packages
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -155,24 +207,28 @@ export default function SouthernCircuitPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-20 bg-brand-dark text-white">
+        <section className="py-16 md:py-24 bg-brand-gold">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-black mb-6">Ready for Your Southern Circuit Adventure?</h2>
-            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-              Explore Tanzania's remote wilderness with exclusive safari experiences
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-6">
+              Experience the Wild South
+            </h2>
+            <p className="text-lg text-brand-chocolate/80 mb-8 max-w-2xl mx-auto">
+              Escape the crowds and discover Tanzania&apos;s hidden wilderness. 
+              Your exclusive safari adventure awaits.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white">
-                <Link href="/contact">Book Now</Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-brand-dark bg-transparent"
+              <Link
+                href="/our-itineraries"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-brand-chocolate text-white font-semibold rounded-full hover:bg-brand-chocolate/90 transition-all duration-300 hover:scale-105"
               >
-                <Link href="/contact">Contact Us</Link>
-              </Button>
+                View Packages
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-brand-chocolate text-brand-chocolate font-semibold rounded-full hover:bg-brand-chocolate hover:text-white transition-all duration-300"
+              >
+                Contact Us
+              </Link>
             </div>
           </div>
         </section>

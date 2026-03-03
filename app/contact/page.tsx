@@ -1,9 +1,10 @@
 import ContactClientPage from "./contact-client"
+import { company } from "@/lib/sambuo-data"
 
 export const metadata = {
-  title: "Contact Us - KiliSafari Organizing | Plan Your Tanzania Adventure",
+  title: `Contact Us - ${company.name} | Plan Your Tanzania Adventure`,
   description:
-    "Get in touch with KiliSafari to plan your perfect Tanzania safari, Kilimanjaro trek, or Zanzibar beach holiday. Expert advice and custom itineraries available.",
+    `Get in touch with ${company.name} to plan your perfect Tanzania safari, Kilimanjaro trek, or Zanzibar beach holiday. Expert advice and custom itineraries available.`,
 }
 
 export default function ContactPage() {

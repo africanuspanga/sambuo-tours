@@ -6,9 +6,10 @@ import { BookingModal } from "@/components/booking-modal"
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowLeft, Check, X, Users } from "lucide-react"
+import { company } from "@/lib/sambuo-data"
 
 export const metadata = {
-  title: "Northern Circuit Route (9 Days) - The Grand Traverse | KiliSafari",
+  title: `Northern Circuit Route (9 Days) - The Grand Traverse | ${company.shortName}`,
   description:
     "Climb Kilimanjaro via the Northern Circuit Route. The longest route with the highest success rate. 9-day trek to Uhuru Peak.",
 }
@@ -102,7 +103,7 @@ const pricing = [
 
 export default function NorthernCircuitRoutePage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-brand-cream">
       <Navigation />
       <main>
         {/* Hero Section */}
@@ -110,13 +111,13 @@ export default function NorthernCircuitRoutePage() {
           <div className="absolute inset-0 bg-black/30" />
           <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-black text-white mb-4">Northern Circuit</h1>
-            <p className="text-2xl md:text-3xl text-yellow-400 font-bold mb-4">The Grand Traverse</p>
+            <p className="text-2xl md:text-3xl text-brand-gold font-bold mb-4">The Grand Traverse</p>
             <p className="text-lg md:text-xl text-white/90">9 Days / 8 Nights</p>
           </div>
         </section>
 
         {/* Back Button */}
-        <section className="bg-white border-b">
+        <section className="bg-brand-cream border-b">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <Button asChild variant="ghost" className="gap-2">
               <Link href="/kilimanjaro">
@@ -128,10 +129,10 @@ export default function NorthernCircuitRoutePage() {
         </section>
 
         {/* Overview */}
-        <section className="py-12 md:py-16 bg-white">
+        <section className="py-12 md:py-16 bg-brand-cream">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-6">About the Route</h2>
+              <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-6">About the Route</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 This is the ultimate Kilimanjaro experience. As the longest route, it circles the quiet northern slopes
                 and offers nearly 360-degree views of the mountain.
@@ -145,12 +146,12 @@ export default function NorthernCircuitRoutePage() {
           </div>
         </section>
 
-        <section className="py-12 md:py-16 bg-white">
+        <section className="py-12 md:py-16 bg-brand-sand">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-12 text-center">Daily Itinerary</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-12 text-center">Daily Itinerary</h2>
             <div className="max-w-5xl mx-auto space-y-8">
               {itinerary.map((day) => (
-                <div key={day.day} className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                <div key={day.day} className="bg-brand-cream rounded-xl overflow-hidden border border-gray-200 shadow-sm">
                   <div className="grid grid-cols-1 md:grid-cols-3">
                     {/* Image */}
                     <div className="relative h-48 md:h-full md:min-h-[200px]">
@@ -159,11 +160,11 @@ export default function NorthernCircuitRoutePage() {
                     {/* Content */}
                     <div className="md:col-span-2 p-6 md:p-8">
                       <div className="flex items-start gap-4">
-                        <div className="flex-shrink-0 w-12 h-12 bg-yellow-500 text-gray-900 rounded-full flex items-center justify-center font-black text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-brand-gold text-brand-chocolate rounded-full flex items-center justify-center font-black text-lg">
                           {day.day}
                         </div>
                         <div className="flex-1">
-                          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">{day.title}</h3>
+                          <h3 className="text-xl md:text-2xl font-bold text-brand-chocolate mb-2">{day.title}</h3>
                           <p className="text-gray-700 leading-relaxed">{day.description}</p>
                         </div>
                       </div>
@@ -176,14 +177,14 @@ export default function NorthernCircuitRoutePage() {
         </section>
 
         {/* Pricing */}
-        <section className="py-12 md:py-16 bg-gray-50">
+        <section className="py-12 md:py-16 bg-brand-cream">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-12 text-center">Pricing</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-12 text-center">Pricing</h2>
             <div className="max-w-3xl mx-auto">
-              <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-                <div className="bg-gradient-to-r from-teal-700 to-teal-600 p-6 text-white">
+              <div className="bg-brand-cream rounded-2xl shadow-xl overflow-hidden">
+                <div className="bg-gradient-to-r from-brand-ocean to-blue-600 p-6 text-white">
                   <h3 className="text-2xl font-black mb-2">Northern Circuit</h3>
-                  <p className="text-teal-100">9 Days / 8 Nights</p>
+                  <p className="text-blue-100">9 Days / 8 Nights</p>
                 </div>
                 <div className="p-6 md:p-8">
                   <div className="space-y-4">
@@ -193,10 +194,10 @@ export default function NorthernCircuitRoutePage() {
                         className="flex items-center justify-between py-4 border-b border-gray-200 last:border-0"
                       >
                         <div className="flex items-center gap-3">
-                          <Users size={20} className="text-teal-700" />
+                          <Users size={20} className="text-brand-ocean" />
                           <span className="font-semibold text-gray-900">{item.pax}</span>
                         </div>
-                        <span className="text-xl md:text-2xl font-black text-gray-900">{item.price}</span>
+                        <span className="text-xl md:text-2xl font-black text-brand-chocolate">{item.price}</span>
                       </div>
                     ))}
                   </div>
@@ -207,12 +208,12 @@ export default function NorthernCircuitRoutePage() {
         </section>
 
         {/* Included/Excluded */}
-        <section className="py-12 md:py-16 bg-white">
+        <section className="py-12 md:py-16 bg-brand-sand">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-12 text-center">Package Details</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-12 text-center">Package Details</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              <div className="bg-green-50 rounded-2xl p-6 md:p-8 border-2 border-green-200">
-                <h3 className="text-2xl font-black text-gray-900 mb-6 flex items-center gap-3">
+              <div className="bg-brand-cream rounded-2xl p-6 md:p-8 border-2 border-green-200">
+                <h3 className="text-2xl font-black text-brand-chocolate mb-6 flex items-center gap-3">
                   <Check className="text-green-600" size={28} />
                   Included
                 </h3>
@@ -226,8 +227,8 @@ export default function NorthernCircuitRoutePage() {
                 </ul>
               </div>
 
-              <div className="bg-red-50 rounded-2xl p-6 md:p-8 border-2 border-red-200">
-                <h3 className="text-2xl font-black text-gray-900 mb-6 flex items-center gap-3">
+              <div className="bg-brand-cream rounded-2xl p-6 md:p-8 border-2 border-red-200">
+                <h3 className="text-2xl font-black text-brand-chocolate mb-6 flex items-center gap-3">
                   <X className="text-red-600" size={28} />
                   Not Included
                 </h3>
@@ -245,10 +246,10 @@ export default function NorthernCircuitRoutePage() {
         </section>
 
         {/* Health & Prep */}
-        <section className="py-12 md:py-16 bg-gray-50">
+        <section className="py-12 md:py-16 bg-brand-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-blue-50 rounded-2xl p-6 md:p-8 border-2 border-blue-200">
-              <h3 className="text-2xl font-black text-gray-900 mb-4">Health & Preparation</h3>
+              <h3 className="text-2xl font-black text-brand-chocolate mb-4">Health & Preparation</h3>
               <p className="text-gray-700 leading-relaxed">
                 Most able-bodied persons aged 10+ can hike; however, preparation and care are essential for safety. We
                 recommend 1 month of physical preparation and ensuring you have waterproof equipment for the rainy
@@ -267,7 +268,7 @@ export default function NorthernCircuitRoutePage() {
               trigger={
                 <button
                   className="inline-flex items-center justify-center rounded-md text-lg font-bold px-8 py-4 transition-all hover:scale-105"
-                  style={{ backgroundColor: "#f5a623", color: "#251b0b" }}
+                  style={{ backgroundColor: "#D4A017", color: "#3B2314" }}
                 >
                   BOOK NOW
                 </button>

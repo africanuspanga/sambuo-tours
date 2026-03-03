@@ -5,20 +5,21 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
 import { Check } from "lucide-react"
+import { company } from "@/lib/sambuo-data"
 
 export const metadata = {
-  title: "Lushoto Tours - Usambara Mountains Hiking | KiliSafari",
+  title: `Lushoto Tours - Usambara Mountains Hiking | ${company.shortName}`,
   description:
     "Discover the scenic Usambara Mountains in Lushoto with hiking trails, waterfalls, cultural village visits, and cool mountain climate. Perfect nature retreat in Tanzania.",
 }
 
 export default function LushotoPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-brand-cream">
       <Navigation />
       <main>
         {/* Hero Section */}
-        <section className="relative h-[50vh] min-h-[400px] w-full flex items-center justify-center bg-gradient-to-r from-green-700 to-blue-600">
+        <section className="relative h-[50vh] min-h-[400px] w-full flex items-center justify-center bg-gradient-to-r from-brand-ocean to-brand-chocolate">
           <div className="absolute inset-0 bg-black/30" />
           <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4">Lushoto</h1>
@@ -27,9 +28,9 @@ export default function LushotoPage() {
         </section>
 
         {/* Introduction Section */}
-        <section className="py-16 md:py-20 bg-white">
+        <section className="py-16 md:py-20 bg-brand-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-6 text-center">
+            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-6 text-center">
               Escape to the Cool Mountain Town
             </h2>
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
@@ -52,8 +53,8 @@ export default function LushotoPage() {
             </div>
 
             {/* Highlights */}
-            <div className="mt-12 bg-gray-50 rounded-lg p-8">
-              <h3 className="text-2xl font-black text-brand-dark mb-6">Highlights</h3>
+            <div className="mt-12 bg-brand-sand rounded-lg p-8">
+              <h3 className="text-2xl font-black text-brand-chocolate mb-6">Highlights</h3>
               <ul className="space-y-3">
                 {[
                   "Scenic mountain landscapes and viewpoints",
@@ -65,7 +66,7 @@ export default function LushotoPage() {
                   "Panoramic views of surrounding valleys",
                 ].map((highlight, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <Check size={20} className="text-brand-green mt-1 flex-shrink-0" />
+                    <Check size={20} className="text-brand-ocean mt-1 flex-shrink-0" />
                     <span className="text-gray-700">{highlight}</span>
                   </li>
                 ))}
@@ -74,16 +75,16 @@ export default function LushotoPage() {
 
             {/* Trail Options */}
             <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <h4 className="font-bold text-brand-dark mb-2">2 Days</h4>
+              <div className="bg-brand-cream border border-gray-200 rounded-lg p-6">
+                <h4 className="font-bold text-brand-chocolate mb-2">2 Days</h4>
                 <p className="text-sm text-gray-600">Village walks and viewpoint hikes</p>
               </div>
-              <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <h4 className="font-bold text-brand-dark mb-2">3-4 Days</h4>
+              <div className="bg-brand-cream border border-gray-200 rounded-lg p-6">
+                <h4 className="font-bold text-brand-chocolate mb-2">3-4 Days</h4>
                 <p className="text-sm text-gray-600">Extended cultural and nature trails</p>
               </div>
-              <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <h4 className="font-bold text-brand-dark mb-2">5+ Days</h4>
+              <div className="bg-brand-cream border border-gray-200 rounded-lg p-6">
+                <h4 className="font-bold text-brand-chocolate mb-2">5+ Days</h4>
                 <p className="text-sm text-gray-600">Comprehensive Usambara exploration</p>
               </div>
             </div>
@@ -91,7 +92,7 @@ export default function LushotoPage() {
         </section>
 
         {/* Image Section */}
-        <section className="py-16 md:py-20 bg-gray-50">
+        <section className="py-16 md:py-20 bg-brand-sand">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative h-[500px] rounded-2xl overflow-hidden">
               <Image
@@ -105,13 +106,13 @@ export default function LushotoPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-20 bg-brand-dark text-white">
+        <section className="py-16 md:py-20 bg-brand-chocolate text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-black mb-6">Discover Lushoto</h2>
             <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
               Experience the cool mountain climate and rich culture of the Usambara Mountains
             </p>
-            <Button asChild size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white">
+            <Button asChild size="lg" className="bg-brand-gold hover:bg-brand-gold/90 text-brand-chocolate">
               <Link href="/contact">Plan Your Visit</Link>
             </Button>
           </div>

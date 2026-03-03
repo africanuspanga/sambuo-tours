@@ -4,10 +4,11 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { BookingModal } from "@/components/booking-modal"
+import { company } from "@/lib/sambuo-data"
 import { Clock, MapPin, Users, Calendar } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "5 Days Tarangire, Serengeti (2N) & Ngorongoro Safari | KiliSafari",
+  title: `5 Days Tarangire, Serengeti (2N) & Ngorongoro Safari | Sambuo Tours`,
   description:
     "Experience two nights in the Serengeti with extended game drives. Visit Tarangire elephants and descend into Ngorongoro Crater.",
 }
@@ -76,7 +77,7 @@ export default function FiveDaysTarangireSerengetiNgorongoroPage() {
     <>
       <Navigation />
 
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-brand-cream">
         <section className="relative h-[50vh] md:h-[60vh]">
           <Image
             src="/images/safari-5-days.jpg"
@@ -106,23 +107,23 @@ export default function FiveDaysTarangireSerengetiNgorongoroPage() {
         </section>
 
         {/* Quick Info Bar */}
-        <section className="bg-brand-dark text-white py-6">
+        <section className="bg-brand-chocolate text-white py-6">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center gap-8 md:gap-16">
               <div className="flex items-center gap-2">
-                <Clock className="w-5 h-5 text-brand-yellow" />
+                <Clock className="w-5 h-5 text-brand-gold" />
                 <span>5 Days / 4 Nights</span>
               </div>
               <div className="flex items-center gap-2">
-                <MapPin className="w-5 h-5 text-brand-yellow" />
+                <MapPin className="w-5 h-5 text-brand-gold" />
                 <span>Tarangire, Serengeti, Ngorongoro</span>
               </div>
               <div className="flex items-center gap-2">
-                <Users className="w-5 h-5 text-brand-yellow" />
+                <Users className="w-5 h-5 text-brand-gold" />
                 <span>2-6 People</span>
               </div>
               <div className="flex items-center gap-2">
-                <Calendar className="w-5 h-5 text-brand-yellow" />
+                <Calendar className="w-5 h-5 text-brand-gold" />
                 <span>Year Round</span>
               </div>
             </div>
@@ -135,7 +136,7 @@ export default function FiveDaysTarangireSerengetiNgorongoroPage() {
             <div className="max-w-4xl mx-auto">
               {/* Overview */}
               <div className="mb-12">
-                <h2 className="text-3xl font-bold text-brand-dark mb-6">Safari Overview</h2>
+                <h2 className="text-3xl font-bold text-brand-chocolate mb-6">Safari Overview</h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   This 5-day safari gives you two full nights in the Serengeti, allowing for extended game viewing and
                   better chances to witness predator action and the Great Migration (seasonal). Combined with
@@ -145,16 +146,16 @@ export default function FiveDaysTarangireSerengetiNgorongoroPage() {
               </div>
 
               <div className="mb-12">
-                <h2 className="text-3xl font-bold text-brand-dark mb-8">Day by Day Itinerary</h2>
+                <h2 className="text-3xl font-bold text-brand-chocolate mb-8">Day by Day Itinerary</h2>
                 <div className="space-y-8">
                   {itinerary.map((day) => (
-                    <div key={day.day} className="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div key={day.day} className="bg-white rounded-2xl shadow-lg overflow-hidden">
                       <div className="p-6">
                         <div className="flex items-center gap-4 mb-4">
-                          <span className="bg-brand-yellow text-brand-dark px-4 py-2 rounded-full font-bold">
+                          <span className="bg-brand-gold text-brand-chocolate px-4 py-2 rounded-full font-bold">
                             Day {day.day}
                           </span>
-                          <h3 className="text-xl font-bold text-brand-dark">{day.title}</h3>
+                          <h3 className="text-xl font-bold text-brand-chocolate">{day.title}</h3>
                         </div>
                         <p className="text-gray-700 mb-4 leading-relaxed">{day.description}</p>
                         <div className="flex flex-wrap gap-4 text-sm">
@@ -171,28 +172,28 @@ export default function FiveDaysTarangireSerengetiNgorongoroPage() {
 
               {/* Pricing */}
               <div className="mb-12">
-                <h2 className="text-3xl font-bold text-brand-dark mb-8">Pricing</h2>
+                <h2 className="text-3xl font-bold text-brand-chocolate mb-8">Pricing</h2>
                 <div className="grid md:grid-cols-2 gap-8">
-                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-brand-green">
-                    <h3 className="text-xl font-bold text-brand-green mb-4">Basic Camping</h3>
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-brand-ocean">
+                    <h3 className="text-xl font-bold text-brand-ocean mb-4">Basic Camping</h3>
                     <div className="space-y-3">
                       {pricingCamping.map((item) => (
                         <div key={item.people} className="flex justify-between items-center">
                           <span className="text-gray-700">{item.people}</span>
-                          <span className="text-xl font-bold text-brand-green">{item.price}</span>
+                          <span className="text-xl font-bold text-brand-ocean">{item.price}</span>
                         </div>
                       ))}
                     </div>
                     <p className="text-sm text-gray-600 mt-4">Price per person</p>
                   </div>
 
-                  <div className="bg-amber-50 rounded-lg p-6 border-l-4 border-brand-yellow">
-                    <h3 className="text-xl font-bold text-brand-yellow mb-4">Mid-Range Lodge</h3>
+                  <div className="bg-amber-50 rounded-lg p-6 border-l-4 border-brand-gold">
+                    <h3 className="text-xl font-bold text-brand-gold mb-4">Mid-Range Lodge</h3>
                     <div className="space-y-3">
                       {pricingLodge.map((item) => (
                         <div key={item.people} className="flex justify-between items-center">
                           <span className="text-gray-700">{item.people}</span>
-                          <span className="text-xl font-bold text-brand-yellow">{item.price}</span>
+                          <span className="text-xl font-bold text-brand-gold">{item.price}</span>
                         </div>
                       ))}
                     </div>
@@ -203,38 +204,38 @@ export default function FiveDaysTarangireSerengetiNgorongoroPage() {
 
               {/* What's Included/Excluded */}
               <div className="mb-12">
-                <h2 className="text-3xl font-bold text-brand-dark mb-8">What's Included</h2>
+                <h2 className="text-3xl font-bold text-brand-chocolate mb-8">What's Included</h2>
                 <div className="grid md:grid-cols-2 gap-8">
-                  <div className="bg-green-50 p-6 rounded-lg border-l-4 border-brand-green">
-                    <h3 className="text-xl font-bold text-brand-green mb-4">Included</h3>
+                  <div className="bg-green-50 p-6 rounded-2xl border-l-4 border-brand-ocean">
+                    <h3 className="text-xl font-bold text-brand-ocean mb-4">Included</h3>
                     <ul className="space-y-2 text-gray-700">
                       <li className="flex items-start gap-2">
-                        <span className="text-brand-green">✓</span>All park fees
+                        <span className="text-brand-ocean">✓</span>All park fees
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-brand-green">✓</span>Ngorongoro Crater fees
+                        <span className="text-brand-ocean">✓</span>Ngorongoro Crater fees
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-brand-green">✓</span>Hotel pick-up and drop-off
+                        <span className="text-brand-ocean">✓</span>Hotel pick-up and drop-off
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-brand-green">✓</span>4x4 vehicle with viewing roof
+                        <span className="text-brand-ocean">✓</span>4x4 vehicle with viewing roof
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-brand-green">✓</span>Qualified driver/guide
+                        <span className="text-brand-ocean">✓</span>Qualified driver/guide
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-brand-green">✓</span>Camping equipment (for camping)
+                        <span className="text-brand-ocean">✓</span>Camping equipment (for camping)
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-brand-green">✓</span>3 meals per day
+                        <span className="text-brand-ocean">✓</span>3 meals per day
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-brand-green">✓</span>Bottled water
+                        <span className="text-brand-ocean">✓</span>Bottled water
                       </li>
                     </ul>
                   </div>
-                  <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+                  <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-red-500">
                     <h3 className="text-xl font-bold text-red-600 mb-4">Not Included</h3>
                     <ul className="space-y-2 text-gray-700">
                       <li className="flex items-start gap-2">
@@ -261,11 +262,11 @@ export default function FiveDaysTarangireSerengetiNgorongoroPage() {
               </div>
 
               {/* CTA */}
-              <div className="bg-brand-dark rounded-lg p-8 text-center">
+              <div className="bg-brand-chocolate rounded-lg p-8 text-center">
                 <h3 className="text-2xl font-bold text-white mb-4">Ready to Book This Safari?</h3>
                 <p className="text-gray-300 mb-6">Contact us today to start planning your Tanzanian adventure.</p>
                 <BookingModal tourName="5 Days: Tarangire, Serengeti (2N) & Ngorongoro">
-                  <button className="bg-brand-yellow text-brand-dark px-8 py-4 rounded-lg font-bold text-lg hover:bg-opacity-90 transition-colors">
+                  <button className="bg-brand-gold text-brand-chocolate px-8 py-4 rounded-lg font-bold text-lg hover:bg-opacity-90 transition-colors">
                     Book This Safari
                   </button>
                 </BookingModal>

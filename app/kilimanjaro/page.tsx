@@ -5,9 +5,10 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Mountain, ArrowRight } from "lucide-react"
 import Image from "next/image"
+import { company } from "@/lib/sambuo-data"
 
 export const metadata = {
-  title: "Mount Kilimanjaro Climbing Tours | KiliSafari Organizing",
+  title: `Mount Kilimanjaro Climbing Tours | ${company.name}`,
   description:
     "Climb Africa's highest peak with expert guides. Choose from Machame, Marangu, Lemosho, Rongai, Northern Circuit, and Umbwe routes. High success rates and professional support.",
 }
@@ -77,7 +78,7 @@ const routes = [
 
 export default function KilimanjaroPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-brand-cream">
       <Navigation />
       <main>
         {/* Hero Section */}
@@ -92,16 +93,16 @@ export default function KilimanjaroPage() {
         </section>
 
         {/* Introduction Section */}
-        <section className="py-16 md:py-24 bg-white">
+        <section className="py-16 md:py-24 bg-brand-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-8">Reach the Roof of Africa</h2>
+            <h2 className="text-3xl md:text-5xl font-black text-brand-chocolate mb-8">Reach the Roof of Africa</h2>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
               Mount Kilimanjaro stands at 5,895 meters, making it the highest peak in Africa and the world's tallest
               free-standing mountain. This dormant volcano offers one of the most accessible high altitude climbs,
               requiring no technical climbing skills.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-              With KiliSafari, you'll benefit from our experienced guides, excellent safety record, and high success
+              With {company.shortName}, you'll benefit from our experienced guides, excellent safety record, and high success
               rates. Choose from six distinct routes, each offering unique landscapes and challenges on your journey to
               the summit.
             </p>
@@ -109,10 +110,10 @@ export default function KilimanjaroPage() {
         </section>
 
         {/* Routes Section */}
-        <section className="py-16 md:py-24 bg-gray-50">
+        <section className="py-16 md:py-24 bg-brand-sand">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4">Choose Your Route</h2>
+              <h2 className="text-3xl md:text-5xl font-black text-brand-chocolate mb-4">Choose Your Route</h2>
               <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Each route offers a unique experience and varying difficulty levels. Select the one that best matches
                 your adventure style and fitness level.
@@ -123,7 +124,7 @@ export default function KilimanjaroPage() {
               {routes.map((route, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 flex flex-col"
+                  className="bg-brand-cream rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 flex flex-col"
                 >
                   <div className="relative h-64 w-full bg-gray-200">
                     <Image src={route.image || "/placeholder.svg"} alt={route.title} fill className="object-cover" />
@@ -131,23 +132,23 @@ export default function KilimanjaroPage() {
 
                   <div className="p-8 flex-1 flex flex-col">
                     <div className="mb-6">
-                      <h3 className="text-2xl md:text-3xl font-black text-gray-900 mb-2">{route.title}</h3>
-                      <p className="text-teal-700 font-bold text-lg mb-1">{route.subtitle}</p>
+                      <h3 className="text-2xl md:text-3xl font-black text-brand-chocolate mb-2">{route.title}</h3>
+                      <p className="text-brand-ocean font-bold text-lg mb-1">{route.subtitle}</p>
                       <p className="text-gray-600 font-semibold">{route.duration}</p>
                     </div>
 
                     <p className="text-gray-700 text-base leading-relaxed mb-6 flex-1">{route.description}</p>
 
                     <div className="mt-auto">
-                      <div className="bg-gray-50 rounded-xl p-4 mb-6">
+                      <div className="bg-brand-sand rounded-xl p-4 mb-6">
                         <p className="text-sm text-gray-600 mb-1">Starting from</p>
-                        <p className="text-3xl font-black text-gray-900">{route.pricePerPerson}</p>
+                        <p className="text-3xl font-black text-brand-chocolate">{route.pricePerPerson}</p>
                         <p className="text-sm text-gray-600">per person</p>
                       </div>
 
                       <Button
                         asChild
-                        className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-6 text-base"
+                        className="w-full bg-brand-gold hover:bg-brand-gold/90 text-brand-chocolate font-bold py-6 text-base"
                       >
                         <Link href={`/kilimanjaro/${route.slug}`}>
                           View Details
@@ -172,7 +173,7 @@ export default function KilimanjaroPage() {
             <Button
               asChild
               size="lg"
-              className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold px-8 py-6 text-lg"
+              className="bg-brand-gold hover:bg-brand-gold/90 text-brand-chocolate font-bold px-8 py-6 text-lg"
             >
               <Link href="/contact">Contact Us Today</Link>
             </Button>

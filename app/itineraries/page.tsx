@@ -9,7 +9,7 @@ import Image from "next/image"
 import { Calendar, MapPin, DollarSign } from "lucide-react"
 
 export const metadata = {
-  title: "Safari Itineraries & Tour Packages | KiliSafari Organizing",
+  title: "Safari Itineraries & Tour Packages | Sambuo Tours",
   description:
     "Browse our curated Tanzania safari itineraries including Serengeti, Ngorongoro, Zanzibar beach escapes, and Kilimanjaro treks. Custom packages available.",
 }
@@ -167,7 +167,7 @@ export default function ItinerariesPage() {
       <Navigation />
       <main>
         {/* Hero Section */}
-        <section className="relative h-[50vh] min-h-[400px] w-full flex items-center justify-center bg-gradient-to-r from-brand-dark to-brand-green">
+        <section className="relative h-[50vh] min-h-[400px] w-full flex items-center justify-center bg-gradient-to-r from-brand-chocolate to-brand-ocean">
           <div className="absolute inset-0 bg-black/20" />
           <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4">Safari Itineraries</h1>
@@ -179,7 +179,7 @@ export default function ItinerariesPage() {
         <section className="py-16 md:py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-4">Our Featured Tours</h2>
+              <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-4">Our Featured Tours</h2>
               <p className="text-lg text-gray-700 max-w-3xl mx-auto">
                 Discover our handpicked safari and beach experiences, each designed to showcase the very best of
                 Tanzania
@@ -192,12 +192,12 @@ export default function ItinerariesPage() {
                   <div className="relative h-64 w-full">
                     <Image src={tour.image || "/placeholder.svg"} alt={tour.shortTitle} fill className="object-cover" />
                     <div className="absolute top-4 right-4">
-                      <Badge className="bg-brand-orange text-white text-sm px-3 py-1">From ${tour.price}</Badge>
+                      <Badge className="bg-brand-gold text-white text-sm px-3 py-1">From ${tour.price}</Badge>
                     </div>
                   </div>
 
                   <CardHeader>
-                    <CardTitle className="text-2xl font-black text-brand-dark mb-2">{tour.shortTitle}</CardTitle>
+                    <CardTitle className="text-2xl font-black text-brand-chocolate mb-2">{tour.shortTitle}</CardTitle>
                     <CardDescription className="text-base text-gray-600">{tour.description}</CardDescription>
                   </CardHeader>
 
@@ -214,11 +214,11 @@ export default function ItinerariesPage() {
                     </div>
 
                     <div className="space-y-2">
-                      <h4 className="font-bold text-brand-dark text-sm">Tour Highlights:</h4>
+                      <h4 className="font-bold text-brand-chocolate text-sm">Tour Highlights:</h4>
                       <ul className="space-y-1">
                         {tour.highlights.slice(0, 3).map((highlight, index) => (
                           <li key={index} className="text-sm text-gray-600 flex items-start gap-2">
-                            <MapPin className="h-4 w-4 text-brand-orange flex-shrink-0 mt-0.5" />
+                            <MapPin className="h-4 w-4 text-brand-gold flex-shrink-0 mt-0.5" />
                             <span>{highlight}</span>
                           </li>
                         ))}
@@ -227,10 +227,10 @@ export default function ItinerariesPage() {
                   </CardContent>
 
                   <CardFooter className="flex gap-3">
-                    <Button asChild className="flex-1 bg-brand-dark hover:bg-brand-dark/90 text-white">
+                    <Button asChild className="flex-1 bg-brand-chocolate hover:bg-brand-chocolate/90 text-white">
                       <Link href={`/itineraries/${tour.id}`}>View Tour</Link>
                     </Button>
-                    <Button asChild className="flex-1 bg-brand-orange hover:bg-brand-orange/90 text-white">
+                    <Button asChild className="flex-1 bg-brand-gold hover:bg-brand-gold/90 text-white">
                       <Link href="/contact">Book Now</Link>
                     </Button>
                   </CardFooter>
@@ -241,7 +241,7 @@ export default function ItinerariesPage() {
         </section>
 
         {/* Custom Itinerary CTA */}
-        <section className="py-16 md:py-20 bg-brand-dark text-white">
+        <section className="py-16 md:py-20 bg-brand-chocolate text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-black mb-6">Need a Custom Itinerary?</h2>
             <p className="text-lg text-white/90 mb-8">
@@ -251,7 +251,7 @@ export default function ItinerariesPage() {
             <Button
               asChild
               size="lg"
-              className="bg-brand-orange hover:bg-brand-orange/90 text-white text-lg px-8 py-6 h-auto"
+              className="bg-brand-gold hover:bg-brand-gold/90 text-white text-lg px-8 py-6 h-auto"
             >
               <Link href="/contact">Plan Your Custom Safari</Link>
             </Button>

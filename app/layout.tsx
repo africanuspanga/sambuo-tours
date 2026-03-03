@@ -1,37 +1,37 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Montserrat } from "next/font/google"
-import { Open_Sans } from "next/font/google"
+import { Playfair_Display, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
 
-const montserrat = Montserrat({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "600", "700", "900"],
-  variable: "--font-montserrat",
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-playfair",
   display: "swap",
 })
 
-const openSans = Open_Sans({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-open-sans",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-inter",
   display: "swap",
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kilisafariorgansing.com"),
+  metadataBase: new URL("https://sambuotours.com"),
   title: {
-    default: "KiliSafari Organizing | Tanzania Safari Tours, Kilimanjaro Treks & Zanzibar Holidays",
-    template: "%s | KiliSafari Organizing",
+    default: "SAMBUO TOURS & SAFARIS | Authentic Tanzania Safari Adventures",
+    template: "%s | SAMBUO TOURS & SAFARIS",
   },
   description:
-    "Experience authentic Tanzania safaris, Mount Kilimanjaro treks, and Zanzibar beach holidays with KiliSafari. Expert guides, custom itineraries, and unforgettable adventures await. 10+ years of expertise.",
+    "Discover authentic Tanzania with SAMBUO TOURS & SAFARIS. Expert-guided safaris, Kilimanjaro treks, Zanzibar beach holidays & cultural experiences. Based in Tanga Region, Tanzania. Book your adventure today!",
   keywords: [
     "Tanzania safari",
+    "SAMBUO TOURS",
+    "Tanga safari",
     "Kilimanjaro trekking",
-    "Kilimanjaro climbing",
     "Serengeti tours",
     "Ngorongoro Crater safari",
     "Zanzibar holidays",
@@ -42,17 +42,18 @@ export const metadata: Metadata = {
     "Mount Kilimanjaro climb",
     "Marangu route",
     "Machame route",
-    "Lemosho route",
     "Tanzania travel",
-    "African adventure",
     "Big Five safari",
     "Great Migration",
+    "Mikumi National Park",
+    "Selous Game Reserve",
+    "Ruaha National Park",
   ],
-  authors: [{ name: "KiliSafari Organizing" }],
-  creator: "KiliSafari Organizing",
-  publisher: "KiliSafari Organizing",
+  authors: [{ name: "SAMBUO TOURS & SAFARIS" }],
+  creator: "SAMBUO TOURS & SAFARIS",
+  publisher: "SAMBUO TOURS & SAFARIS",
   generator: "Next.js",
-  applicationName: "KiliSafari Organizing",
+  applicationName: "SAMBUO TOURS & SAFARIS",
   referrer: "origin-when-cross-origin",
   formatDetection: {
     email: false,
@@ -62,25 +63,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://kilisafariorgansing.com",
-    siteName: "KiliSafari Organizing",
-    title: "KiliSafari Organizing | Tanzania Safari Tours, Kilimanjaro Treks & Zanzibar Holidays",
+    url: "https://sambuotours.com",
+    siteName: "SAMBUO TOURS & SAFARIS",
+    title: "SAMBUO TOURS & SAFARIS | Authentic Tanzania Safari Adventures",
     description:
-      "Experience authentic Tanzania safaris, Mount Kilimanjaro treks, and Zanzibar beach holidays with expert guides and custom itineraries.",
+      "Discover authentic Tanzania with expert-guided safaris, Kilimanjaro treks, and Zanzibar beach holidays. Your adventure starts here.",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "KiliSafari Organizing - Tanzania Safari Adventures",
+        alt: "SAMBUO TOURS & SAFARIS - Tanzania Safari Adventures",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "KiliSafari Organizing | Tanzania Safari Tours & Kilimanjaro Treks",
+    title: "SAMBUO TOURS & SAFARIS | Authentic Tanzania Safari Adventures",
     description:
-      "Experience authentic Tanzania safaris, Mount Kilimanjaro treks, and Zanzibar beach holidays with expert guides.",
+      "Discover authentic Tanzania with expert-guided safaris, Kilimanjaro treks, and Zanzibar beach holidays.",
     images: ["/images/og-image.jpg"],
   },
   robots: {
@@ -95,15 +96,15 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/icon.svg",
   },
   verification: {
     google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://kilisafariorgansing.com",
+    canonical: "https://sambuotours.com",
   },
 }
 
@@ -113,11 +114,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${openSans.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <head>
-        <link rel="canonical" href="https://kilisafariorgansing.com" />
+        <link rel="canonical" href="https://sambuotours.com" />
       </head>
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased bg-brand-cream">
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>

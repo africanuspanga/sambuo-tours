@@ -1,124 +1,135 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { featuredTours } from "@/lib/sambuo-data"
 import { BookingModal } from "@/components/booking-modal"
-
-const featuredTours = [
-  {
-    id: "1-day-mikumi",
-    name: "1 Day Safari to Mikumi NP",
-    subtitle: "The Dar Escape",
-    duration: "1 Day",
-    priceFrom: 790,
-    image: "/images/tour-baobab.jpg",
-    highlights: ["Perfect day trip from Dar es Salaam", "Elephants, zebras, giraffes & lions"],
-  },
-  {
-    id: "3-days-southern-circuit",
-    name: "3 Days 2 Nights: Mikumi & Selous",
-    subtitle: "The Classic Combo",
-    duration: "3 Days / 2 Nights",
-    priceFrom: 1210,
-    image: "/images/tour-crocodile.jpg",
-    highlights: ["Multiple boat safaris", "African wild dog tracking"],
-  },
-  {
-    id: "1-day-saadani",
-    name: "1 Day Safari to Saadani NP",
-    subtitle: "Bush Meets Beach",
-    duration: "1 Day",
-    priceFrom: 680,
-    image: "/images/tour-saadani-beach.jpg",
-    highlights: ["Tanzania's only coastal park", "Beach & bush combination"],
-  },
-  {
-    id: "5-days-complete-south",
-    name: "5 Days 4 Nights: Mikumi, Selous & Ruaha",
-    subtitle: "The Grand Adventure",
-    duration: "5 Days / 4 Nights",
-    priceFrom: 2218,
-    image: "/images/tour-lion.jpg",
-    highlights: ["Three major Southern parks", "Massive lion prides"],
-  },
-]
+import { useEffect, useRef, useState } from "react"
+import { Clock, MapPin, Star } from "lucide-react"
 
 export function FeaturedItinerariesSection() {
+  const [isVisible, setIsVisible] = useState(false)
+  const sectionRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.1 }
+    )
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current)
+    }
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section ref={sectionRef} className="py-20 md:py-32 bg-brand-cream overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark mb-4">
-            Featured Safari Itineraries
+        <div
+          className={`text-center mb-16 transition-all duration-1000 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <span className="inline-block px-4 py-2 bg-brand-ocean/10 rounded-full text-brand-ocean text-sm font-medium tracking-widest uppercase mb-6">
+            Safari Packages
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-brand-chocolate mb-6">
+            Curated Safari Experiences
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore our most popular Southern Circuit safari packages. From single-day adventures to extended
-            expeditions across Tanzania's wildest parks.
+            Handpicked itineraries designed to showcase the very best of Tanzania&apos;s 
+            wildlife, landscapes, and cultural treasures.
           </p>
         </div>
 
         {/* Tours Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {featuredTours.map((tour) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12">
+          {featuredTours.map((tour, index) => (
             <div
               key={tour.id}
-              className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              className={`group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 ${
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+              }`}
+              style={{ transitionDelay: `${200 + index * 100}ms` }}
             >
               {/* Tour Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-52 overflow-hidden">
                 <Image
                   src={tour.image || "/placeholder.svg"}
                   alt={tour.name}
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute top-3 right-3 bg-brand-orange text-white px-3 py-1 rounded-full text-sm font-semibold">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                
+                {/* Duration Badge */}
+                <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm text-brand-chocolate px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5">
+                  <Clock size={12} />
                   {tour.duration}
+                </div>
+
+                {/* Rating */}
+                <div className="absolute top-4 right-4 bg-brand-gold text-brand-chocolate px-2 py-1 rounded-lg text-xs font-bold flex items-center gap-1">
+                  <Star size={10} fill="currentColor" />
+                  4.9
                 </div>
               </div>
 
               {/* Tour Content */}
               <div className="p-5">
-                <h3 className="text-lg font-bold text-brand-dark mb-1 line-clamp-2">{tour.name}</h3>
-                <p className="text-brand-orange font-semibold text-sm mb-3">{tour.subtitle}</p>
+                <div className="flex items-center gap-1 text-brand-ocean text-xs font-medium mb-2">
+                  <MapPin size={12} />
+                  <span className="uppercase tracking-wide">Tanzania</span>
+                </div>
+
+                <h3 className="text-lg font-serif font-bold text-brand-chocolate mb-1 line-clamp-2 group-hover:text-brand-ocean transition-colors">
+                  {tour.name}
+                </h3>
+                <p className="text-brand-gold font-medium text-sm mb-4">{tour.subtitle}</p>
 
                 {/* Highlights */}
-                <ul className="space-y-1.5 mb-4">
-                  {tour.highlights.map((highlight, index) => (
-                    <li key={index} className="flex items-start gap-2 text-xs text-gray-700">
+                <ul className="space-y-2 mb-5">
+                  {tour.highlights.map((highlight, idx) => (
+                    <li key={idx} className="flex items-start gap-2 text-sm text-gray-600">
                       <svg
-                        className="w-4 h-4 text-brand-green flex-shrink-0 mt-0.5"
+                        className="w-4 h-4 text-brand-ocean flex-shrink-0 mt-0.5"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
                       >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      {highlight}
+                      <span className="line-clamp-1">{highlight}</span>
                     </li>
                   ))}
                 </ul>
 
                 {/* Price */}
-                <div className="mb-4 pb-4 border-b border-gray-200">
-                  <div className="flex items-baseline gap-1.5">
-                    <span className="text-xs text-gray-600">From</span>
-                    <span className="text-2xl font-bold text-brand-orange">${tour.priceFrom}</span>
-                    <span className="text-xs text-gray-600">pp</span>
-                  </div>
+                <div className="flex items-baseline gap-1.5 mb-5 pt-4 border-t border-gray-100">
+                  <span className="text-xs text-gray-500">From</span>
+                  <span className="text-2xl font-serif font-bold text-brand-chocolate">${tour.priceFrom}</span>
+                  <span className="text-xs text-gray-500">/person</span>
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex flex-col gap-2">
+                <div className="flex gap-2">
                   <Link
                     href={`/our-itineraries/${tour.id}`}
-                    className="w-full bg-brand-dark text-white text-center py-2.5 px-4 rounded-lg text-sm font-semibold hover:bg-opacity-90 transition-colors"
+                    className="flex-1 bg-brand-chocolate/5 text-brand-chocolate text-center py-2.5 px-3 rounded-xl text-sm font-semibold hover:bg-brand-chocolate hover:text-white transition-all duration-300"
                   >
-                    View Details
+                    Details
                   </Link>
                   <BookingModal tourName={tour.name}>
-                    <button className="w-full bg-brand-orange text-white py-2.5 px-4 rounded-lg text-sm font-semibold hover:bg-opacity-90 transition-colors">
-                      Book Tour
+                    <button className="flex-1 bg-brand-gold text-brand-chocolate py-2.5 px-3 rounded-xl text-sm font-semibold hover:bg-brand-gold/90 transition-all duration-300">
+                      Book Now
                     </button>
                   </BookingModal>
                 </div>
@@ -128,14 +139,20 @@ export function FeaturedItinerariesSection() {
         </div>
 
         {/* View All Button */}
-        <div className="text-center">
-          <Button
-            asChild
-            size="lg"
-            className="bg-brand-orange hover:bg-brand-orange/90 text-white px-8 py-6 text-lg font-semibold"
+        <div
+          className={`text-center transition-all duration-1000 delay-700 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <Link
+            href="/our-itineraries"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-brand-chocolate text-white font-semibold rounded-full hover:bg-brand-chocolate/90 transition-all duration-300 hover:scale-105"
           >
-            <Link href="/our-itineraries">View All Itineraries</Link>
-          </Button>
+            View All Safari Packages
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
         </div>
       </div>
     </section>

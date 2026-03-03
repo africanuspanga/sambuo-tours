@@ -4,9 +4,10 @@ import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Check } from "lucide-react"
+import { company } from "@/lib/sambuo-data"
 
 export const metadata = {
-  title: "Cultural Tours & Heritage Sites in Tanzania | KiliSafari",
+  title: `Cultural Tours & Heritage Sites in Tanzania | ${company.shortName}`,
   description:
     "Explore Tanzania's rich cultural heritage with visits to Stone Town, Bagamoyo, Kilwa Ruins, National Museum, and Amboni Caves. Authentic cultural experiences and historical tours.",
 }
@@ -93,11 +94,11 @@ const destinations = [
 
 export default function CulturalSafarisPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-brand-cream">
       <Navigation />
       <main>
         {/* Hero Section */}
-        <section className="relative h-[50vh] min-h-[400px] w-full flex items-center justify-center bg-gradient-to-r from-brand-dark to-brand-green">
+        <section className="relative h-[50vh] min-h-[400px] w-full flex items-center justify-center bg-gradient-to-r from-brand-chocolate to-brand-ocean">
           <div className="absolute inset-0 bg-black/20" />
           <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4">Cultural Tours</h1>
@@ -106,9 +107,9 @@ export default function CulturalSafarisPage() {
         </section>
 
         {/* Introduction Section */}
-        <section className="py-16 md:py-20 bg-white">
+        <section className="py-16 md:py-20 bg-brand-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-6">
+            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-6">
               Discover Tanzania's Cultural Treasures
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -117,7 +118,7 @@ export default function CulturalSafarisPage() {
               nation's story is written in stone, song, and the vibrant spirit of its people.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              A cultural tour with KiliSafari is more than a holiday; it's a journey into the heart of East Africa. We
+              A cultural tour with {company.shortName} is more than a holiday; it's a journey into the heart of East Africa. We
               invite you to walk through living history, explore mystical sites, and connect with the traditions that
               make Tanzania truly unique.
             </p>
@@ -125,7 +126,7 @@ export default function CulturalSafarisPage() {
         </section>
 
         {/* Destinations Grid */}
-        <section className="py-16 md:py-20 bg-gray-50">
+        <section className="py-16 md:py-20 bg-brand-sand">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="space-y-16">
               {destinations.map((destination, index) => (
@@ -150,30 +151,30 @@ export default function CulturalSafarisPage() {
 
                     {/* Content */}
                     <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                      <h3 className="text-3xl font-black text-brand-dark mb-2">{destination.title}</h3>
-                      <p className="text-xl text-brand-green font-bold mb-4 italic">{destination.subtitle}</p>
+                      <h3 className="text-3xl font-black text-brand-chocolate mb-2">{destination.title}</h3>
+                      <p className="text-xl text-brand-ocean font-bold mb-4 italic">{destination.subtitle}</p>
                       <p className="text-gray-700 leading-relaxed mb-4">{destination.description}</p>
 
                       {/* Historical Significance */}
-                      <div className="bg-white p-4 rounded-lg mb-6">
-                        <h4 className="font-bold text-brand-dark mb-2">Historical Significance:</h4>
+                      <div className="bg-brand-cream p-4 rounded-lg mb-6">
+                        <h4 className="font-bold text-brand-chocolate mb-2">Historical Significance:</h4>
                         <p className="text-gray-700 text-sm leading-relaxed">{destination.historicalSignificance}</p>
                       </div>
 
                       {/* Highlights */}
                       <div className="mb-6">
-                        <h4 className="font-bold text-brand-dark mb-3">What Makes It Special to Visit?</h4>
+                        <h4 className="font-bold text-brand-chocolate mb-3">What Makes It Special to Visit?</h4>
                         <div className="space-y-2">
                           {destination.highlights.map((highlight, idx) => (
                             <div key={idx} className="flex items-start gap-3">
-                              <Check size={20} className="text-brand-green mt-1 flex-shrink-0" />
+                              <Check size={20} className="text-brand-ocean mt-1 flex-shrink-0" />
                               <span className="text-gray-700 text-sm">{highlight}</span>
                             </div>
                           ))}
                         </div>
                       </div>
 
-                      <Button asChild className="bg-brand-orange hover:bg-brand-orange/90 text-white">
+                      <Button asChild className="bg-brand-gold hover:bg-brand-gold/90 text-brand-chocolate">
                         <Link href="/contact">Book This Experience</Link>
                       </Button>
                     </div>
@@ -188,21 +189,21 @@ export default function CulturalSafarisPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-20 bg-brand-dark text-white">
+        <section className="py-16 md:py-20 bg-brand-chocolate text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-black mb-6">Ready to Explore Tanzania's Cultural Heritage?</h2>
             <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
               Let us create a meaningful cultural experience that connects you with the heart and soul of Tanzania
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white">
+              <Button asChild size="lg" className="bg-brand-gold hover:bg-brand-gold/90 text-brand-chocolate">
                 <Link href="/contact">Book Now</Link>
               </Button>
               <Button
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-brand-dark bg-transparent"
+                className="border-white text-white hover:bg-white hover:text-brand-chocolate bg-transparent"
               >
                 <Link href="/contact">Contact Us</Link>
               </Button>

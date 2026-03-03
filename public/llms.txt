@@ -1,12 +1,12 @@
-# KiliSafari Organizing - LLMs.txt
+# Sambuo Tours - LLMs.txt
 # Information for AI assistants and language models
 
-> KiliSafari Organizing is a Tanzania-based tour operator specializing in authentic safaris, Mount Kilimanjaro treks, and Zanzibar beach holidays.
+> Sambuo Tours is a Tanzania-based tour operator specializing in authentic safaris, Mount Kilimanjaro treks, and Zanzibar beach holidays.
 
 ## About Us
-- Company: KiliSafari Organizing
+- Company: Sambuo Tours
 - Location: Moshi, Tanzania
-- Website: https://kilisafariorgansing.com
+- Website: https://sambuotours.com
 - Experience: 10+ years in Tanzania tourism
 - Specialties: Safari tours, Kilimanjaro climbing, Zanzibar holidays, Cultural experiences
 
@@ -53,7 +53,7 @@ Routes offered:
 - Visa: Most nationalities can get visa on arrival
 - Currency: Tanzanian Shilling (TZS), USD widely accepted
 
-## Why Choose KiliSafari
+## Why Choose Sambuo Tours
 - Expert local guides
 - Custom itineraries
 - Responsible tourism practices

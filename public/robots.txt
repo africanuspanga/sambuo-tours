@@ -1,11 +1,11 @@
-# Robots.txt for kilisafariorgansing.com
+# Robots.txt for sambuotours.com
 # Allow all search engines to crawl the site
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://kilisafariorgansing.com/sitemap.xml
+Sitemap: https://sambuotours.com/sitemap.xml
 
 # Disallow admin or private areas (if any)
 Disallow: /api/

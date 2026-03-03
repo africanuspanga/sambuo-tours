@@ -4,9 +4,9 @@ import type { Metadata } from "next"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { BookingModal } from "@/components/booking-modal"
-
+import { company } from "@/lib/sambuo-data"
 export const metadata: Metadata = {
-  title: "1 Day Ruaha Safari from Iringa | KiliSafari",
+  title: `1 Day Ruaha Safari from Iringa | Sambuo Tours`,
   description:
     "Most efficient way to experience Ruaha! Iringa is the gateway city, minimizing driving time and maximizing game drive hours.",
 }
@@ -16,7 +16,7 @@ export default function RuahaIringaPage() {
     <>
       <Navigation />
 
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-brand-cream">
         {/* Hero Section */}
         <div className="relative h-[400px] md:h-[500px]">
           <Image
@@ -30,7 +30,7 @@ export default function RuahaIringaPage() {
             <div className="text-center text-white px-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">1 Day Safari to Ruaha NP from Iringa</h1>
               <p className="text-xl md:text-2xl">The Shortest Route</p>
-              <div className="mt-6 inline-block bg-brand-orange text-white px-6 py-2 rounded-full font-semibold">
+              <div className="mt-6 inline-block bg-brand-gold text-brand-chocolate px-6 py-2 rounded-full font-semibold">
                 1 Day Safari
               </div>
             </div>
@@ -38,11 +38,11 @@ export default function RuahaIringaPage() {
         </div>
 
         {/* Quick Info Bar */}
-        <div className="bg-brand-dark text-white py-6">
+        <div className="bg-brand-chocolate text-white py-6">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold text-brand-orange">$566</div>
+                <div className="text-3xl font-bold text-brand-gold">$566</div>
                 <div className="text-sm text-gray-300">Starting Price (1 pax)</div>
               </div>
               <div>
@@ -62,7 +62,7 @@ export default function RuahaIringaPage() {
           <div className="max-w-6xl mx-auto">
             {/* Tour Overview */}
             <section className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-6">Tour Overview</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-chocolate mb-6">Tour Overview</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 The most efficient way to experience Ruaha! Iringa is the gateway city, minimizing driving time and
                 maximizing game drive hours. This tour allows for a comfortable start time and extensive game viewing in
@@ -73,16 +73,16 @@ export default function RuahaIringaPage() {
 
             {/* Detailed Itinerary */}
             <section className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-8">Detailed Itinerary</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-chocolate mb-8">Detailed Itinerary</h2>
 
               <div className="space-y-8">
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-brand-orange">
+                <div className="bg-white p-6 rounded-2xl shadow-md border-l-4 border-brand-gold">
                   <div className="flex items-start gap-4">
-                    <div className="bg-brand-orange text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 font-bold">
+                    <div className="bg-brand-gold text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 font-bold">
                       06:00
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-brand-dark mb-2">Morning Pickup & Departure</h3>
+                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Morning Pickup & Departure</h3>
                       <p className="text-gray-700">
                         Your guide will pick you up from your hotel in Iringa. Begin the relatively short and
                         comfortable drive (approx. 2.5 hours) to Ruaha National Park through scenic highland landscapes.
@@ -91,13 +91,13 @@ export default function RuahaIringaPage() {
                   </div>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-brand-green">
+                <div className="bg-white p-6 rounded-2xl shadow-md border-l-4 border-brand-ocean">
                   <div className="flex items-start gap-4">
-                    <div className="bg-brand-green text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 font-bold">
+                    <div className="bg-brand-ocean text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 font-bold">
                       08:30
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-brand-dark mb-2">Arrival & Morning Game Drive</h3>
+                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Arrival & Morning Game Drive</h3>
                       <p className="text-gray-700">
                         Arrive at the Msembe Gate and start your full-day game drive. The park is less crowded, allowing
                         for private viewing experiences of African Wild Dogs, Cheetahs, and unique antelopes like the
@@ -107,13 +107,13 @@ export default function RuahaIringaPage() {
                   </div>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-brand-orange">
+                <div className="bg-white p-6 rounded-2xl shadow-md border-l-4 border-brand-gold">
                   <div className="flex items-start gap-4">
-                    <div className="bg-brand-orange text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 font-bold">
+                    <div className="bg-brand-gold text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 font-bold">
                       13:00
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-brand-dark mb-2">Picnic Lunch</h3>
+                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Picnic Lunch</h3>
                       <p className="text-gray-700">
                         Enjoy a hot or cold picnic lunch at a designated viewing point overlooking the river or a
                         baobab-studded landscape. Watch wildlife at a distance while you dine in the African bush.
@@ -122,13 +122,13 @@ export default function RuahaIringaPage() {
                   </div>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-brand-green">
+                <div className="bg-white p-6 rounded-2xl shadow-md border-l-4 border-brand-ocean">
                   <div className="flex items-start gap-4">
-                    <div className="bg-brand-green text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 font-bold">
+                    <div className="bg-brand-ocean text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 font-bold">
                       14:00
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-brand-dark mb-2">Afternoon Game Drive</h3>
+                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Afternoon Game Drive</h3>
                       <p className="text-gray-700">
                         Continue your game drive, following the course of the Ruaha River, a magnet for wildlife during
                         the dry season. Watch for crocodiles, hippos, and the magnificent Greater Kudu. Massive elephant
@@ -138,13 +138,13 @@ export default function RuahaIringaPage() {
                   </div>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-brand-orange">
+                <div className="bg-white p-6 rounded-2xl shadow-md border-l-4 border-brand-gold">
                   <div className="flex items-start gap-4">
-                    <div className="bg-brand-orange text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 font-bold">
+                    <div className="bg-brand-gold text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 font-bold">
                       17:00
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-brand-dark mb-2">Departure to Iringa</h3>
+                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Departure to Iringa</h3>
                       <p className="text-gray-700">
                         Conclude your safari and begin the return drive to Iringa, enjoying the sunset views along the
                         way.
@@ -153,13 +153,13 @@ export default function RuahaIringaPage() {
                   </div>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-brand-green">
+                <div className="bg-white p-6 rounded-2xl shadow-md border-l-4 border-brand-ocean">
                   <div className="flex items-start gap-4">
-                    <div className="bg-brand-green text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 font-bold">
+                    <div className="bg-brand-ocean text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 font-bold">
                       19:30
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-brand-dark mb-2">Evening Drop-off</h3>
+                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Evening Drop-off</h3>
                       <p className="text-gray-700">Arrive back in Iringa and transfer to your hotel.</p>
                     </div>
                   </div>
@@ -169,10 +169,10 @@ export default function RuahaIringaPage() {
 
             {/* Pricing Table */}
             <section className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-8">Pricing</h2>
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-chocolate mb-8">Pricing</h2>
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                 <table className="w-full">
-                  <thead className="bg-brand-dark text-white">
+                  <thead className="bg-brand-chocolate text-white">
                     <tr>
                       <th className="py-4 px-6 text-left">Number of People</th>
                       <th className="py-4 px-6 text-right">Price Per Person</th>
@@ -181,23 +181,23 @@ export default function RuahaIringaPage() {
                   <tbody className="divide-y divide-gray-200">
                     <tr className="hover:bg-gray-50">
                       <td className="py-4 px-6 font-semibold">1 Person</td>
-                      <td className="py-4 px-6 text-right text-brand-orange font-bold text-lg">$566</td>
+                      <td className="py-4 px-6 text-right text-brand-gold font-bold text-lg">$566</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
                       <td className="py-4 px-6 font-semibold">2 People</td>
-                      <td className="py-4 px-6 text-right text-brand-orange font-bold text-lg">$364</td>
+                      <td className="py-4 px-6 text-right text-brand-gold font-bold text-lg">$364</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
                       <td className="py-4 px-6 font-semibold">3 People</td>
-                      <td className="py-4 px-6 text-right text-brand-orange font-bold text-lg">$299</td>
+                      <td className="py-4 px-6 text-right text-brand-gold font-bold text-lg">$299</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
                       <td className="py-4 px-6 font-semibold">4 People</td>
-                      <td className="py-4 px-6 text-right text-brand-orange font-bold text-lg">$262</td>
+                      <td className="py-4 px-6 text-right text-brand-gold font-bold text-lg">$262</td>
                     </tr>
-                    <tr className="hover:bg-gray-50 bg-brand-orange/5">
+                    <tr className="hover:bg-gray-50 bg-brand-gold/5">
                       <td className="py-4 px-6 font-semibold">5-10 People</td>
-                      <td className="py-4 px-6 text-right text-brand-orange font-bold text-lg">$258</td>
+                      <td className="py-4 px-6 text-right text-brand-gold font-bold text-lg">$258</td>
                     </tr>
                   </tbody>
                 </table>
@@ -206,10 +206,10 @@ export default function RuahaIringaPage() {
 
             {/* Inclusions & Exclusions */}
             <section className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-8">What's Included</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-chocolate mb-8">What's Included</h2>
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-green-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-bold text-brand-green mb-4 flex items-center gap-2">
+                <div className="bg-green-50 p-6 rounded-2xl">
+                  <h3 className="text-xl font-bold text-brand-ocean mb-4 flex items-center gap-2">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
@@ -217,37 +217,37 @@ export default function RuahaIringaPage() {
                   </h3>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start gap-2">
-                      <span className="text-brand-green mt-1">✓</span>
+                      <span className="text-brand-ocean mt-1">✓</span>
                       Pickup and drop-off from Iringa
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-brand-green mt-1">✓</span>
+                      <span className="text-brand-ocean mt-1">✓</span>
                       Professional driver/guide
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-brand-green mt-1">✓</span>
+                      <span className="text-brand-ocean mt-1">✓</span>
                       4x4 safari vehicle with pop-up roof
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-brand-green mt-1">✓</span>
+                      <span className="text-brand-ocean mt-1">✓</span>
                       All park entrance fees
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-brand-green mt-1">✓</span>
+                      <span className="text-brand-ocean mt-1">✓</span>
                       Picnic lunch
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-brand-green mt-1">✓</span>
+                      <span className="text-brand-ocean mt-1">✓</span>
                       2.5L drinking water per person
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-brand-green mt-1">✓</span>
+                      <span className="text-brand-ocean mt-1">✓</span>
                       Government taxes
                     </li>
                   </ul>
                 </div>
 
-                <div className="bg-red-50 p-6 rounded-lg">
+                <div className="bg-red-50 p-6 rounded-2xl">
                   <h3 className="text-xl font-bold text-red-600 mb-4 flex items-center gap-2">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -281,13 +281,13 @@ export default function RuahaIringaPage() {
             </section>
 
             {/* Call to Action */}
-            <section className="bg-brand-dark text-white rounded-lg p-8 md:p-12 text-center">
+            <section className="bg-brand-chocolate text-white rounded-lg p-8 md:p-12 text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Experience Ruaha?</h2>
               <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
                 Book your adventure from Iringa and discover the wild beauty of Ruaha National Park
               </p>
               <BookingModal tourName="1 Day Safari to Ruaha NP from Iringa">
-                <button className="bg-brand-orange text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-colors">
+                <button className="font-bold text-lg bg-brand-gold text-brand-chocolate px-8 py-4 rounded-xl text-lg font-semibold hover:bg-opacity-90 transition-colors">
                   Book This Tour Now
                 </button>
               </BookingModal>
@@ -297,7 +297,7 @@ export default function RuahaIringaPage() {
             <div className="mt-12 text-center">
               <Link
                 href="/our-itineraries"
-                className="inline-flex items-center gap-2 text-brand-dark hover:text-brand-orange transition-colors font-semibold"
+                className="inline-flex items-center gap-2 text-brand-chocolate hover:text-brand-gold transition-colors font-semibold"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />

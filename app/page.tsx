@@ -6,22 +6,22 @@ import { AboutSection } from "@/components/home/about-section"
 import { WhyChooseUsSection } from "@/components/home/why-choose-us-section"
 import { TopDestinationsSection } from "@/components/home/top-destinations-section"
 import { FeaturedItinerariesSection } from "@/components/home/featured-itineraries-section"
-import { FeaturedAccommodationSection } from "@/components/home/featured-accommodation-section"
 import { ZanzibarSection } from "@/components/home/zanzibar-section"
 import { KilimanjaroSection } from "@/components/home/kilimanjaro-section"
 import { RecommendedBySection } from "@/components/home/recommended-by-section"
 import { TestimonialsSection } from "@/components/home/testimonials-section"
 import { FinalCtaSection } from "@/components/home/final-cta-section"
+import { company } from "@/lib/sambuo-data"
 
 export const metadata = {
-  title: "KiliSafari Organizing | Tanzania Safari Tours, Kilimanjaro Treks & Zanzibar Holidays",
+  title: `${company.name} | Authentic Tanzania Safari Adventures`,
   description:
-    "Experience authentic Tanzania safaris, Mount Kilimanjaro treks, and Zanzibar beach holidays with KiliSafari. Expert guides, custom itineraries, and unforgettable adventures await.",
+    "Discover authentic Tanzania with SAMBUO TOURS & SAFARIS. Expert-guided safaris, Kilimanjaro treks, Zanzibar beach holidays & cultural experiences. Based in Tanga Region, Tanzania.",
 }
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-brand-cream">
       <Navigation />
       <main>
         <HeroSection />
@@ -29,7 +29,6 @@ export default function HomePage() {
         <WhyChooseUsSection />
         <TopDestinationsSection />
         <FeaturedItinerariesSection />
-        <FeaturedAccommodationSection />
         <ZanzibarSection />
         <KilimanjaroSection />
         <RecommendedBySection />

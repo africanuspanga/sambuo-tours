@@ -1,33 +1,33 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
-import { Button } from "@/components/ui/button"
+import { company } from "@/lib/sambuo-data"
 import Link from "next/link"
 import Image from "next/image"
-import { Check } from "lucide-react"
+import { Check, Compass } from "lucide-react"
 
 const destinations = [
   {
     title: "Serengeti National Park",
     image: "/images/serengeti.jpg",
     description:
-      "Home to the spectacular Great Migration where 2 million wildebeest traverse endless plains. The Serengeti hosts incredible wildlife diversity including all Big Five animals. Experience the most iconic African wilderness with vast savannas stretching to the horizon, predator-prey interactions, and some of the best game viewing on the continent.",
+      "Home to the spectacular Great Migration where millions of wildebeest traverse endless plains. The Serengeti hosts incredible wildlife diversity including all Big Five animals. Experience the most iconic African wilderness with vast savannas stretching to the horizon.",
     highlights: [
-      "Home to the Great Migration",
-      "Endless plains teeming with Big Five",
-      "Iconic African wilderness experience",
-      "World-class predator sightings",
+      "Witness the Great Migration",
+      "Endless plains teeming with wildlife",
+      "Big Five encounters",
+      "World-class predator viewing",
     ],
   },
   {
     title: "Ngorongoro Crater",
     image: "/images/rhino-ngorongoro.jpg",
     description:
-      "The world's largest inactive volcanic caldera supporting 25,000 large animals year-round. This UNESCO World Heritage Site offers virtually guaranteed Big Five sightings in a unique ecosystem. Often called 'Africa's Eden,' the crater floor provides one of the highest concentrations of wildlife anywhere on Earth, all contained within the dramatic walls of this ancient volcano.",
+      "The world's largest inactive volcanic caldera supporting 25,000 large animals year-round. This UNESCO World Heritage Site offers virtually guaranteed wildlife sightings in a unique ecosystem. Often called 'Africa's Eden' for its incredible concentration of wildlife.",
     highlights: [
-      '"Africa\'s Eden" - highest concentration of wildlife',
+      "Africa's highest wildlife density",
       "Unique crater ecosystem",
-      "Guaranteed wildlife viewing",
+      "Black rhino sanctuary",
       "UNESCO World Heritage Site",
     ],
   },
@@ -35,11 +35,11 @@ const destinations = [
     title: "Lake Manyara National Park",
     image: "/images/lake-manyara-new.jpg",
     description:
-      "Renowned for unique tree-climbing lions and massive flocks of pink flamingos. Lake Manyara offers incredible diversity with groundwater forests, acacia woodlands, and the alkaline lake itself. Despite its compact size, the park hosts an impressive variety of habitats and wildlife, making it a photographer's paradise with stunning landscapes and diverse species.",
+      "Renowned for unique tree-climbing lions and massive flocks of pink flamingos. Lake Manyara offers incredible diversity with groundwater forests, acacia woodlands, and the alkaline lake itself—a photographer's paradise with stunning landscapes.",
     highlights: [
-      "Pink flamingo spectacles",
       "Tree-climbing lions",
-      "Diverse ecosystems in compact area",
+      "Pink flamingo spectacles",
+      "Diverse ecosystems",
       "Excellent bird watching",
     ],
   },
@@ -47,9 +47,9 @@ const destinations = [
     title: "Tarangire National Park",
     image: "/images/tarangire.jpg",
     description:
-      "Famous for massive elephant herds and iconic baobab trees dotting the landscape. During the dry season (June-October), Tarangire attracts enormous wildlife concentrations as animals gather around the Tarangire River. The park offers a more intimate safari experience with fewer crowds and spectacular scenery dominated by ancient baobabs.",
+      "Famous for massive elephant herds and iconic baobab trees dotting the landscape. During the dry season, Tarangire attracts enormous wildlife concentrations along the Tarangire River, offering a more intimate safari experience.",
     highlights: [
-      "Massive elephant herds",
+      "Large elephant herds",
       "Ancient baobab trees",
       "Seasonal wildlife concentrations",
       "Less crowded than Serengeti",
@@ -59,92 +59,124 @@ const destinations = [
     title: "Arusha National Park",
     image: "/images/arusha-national-park.jpg",
     description:
-      "Small but diverse park dominated by the majestic Mount Meru, Tanzania's second-highest peak. Arusha National Park offers unique walking safaris and canoeing adventures on Momella Lakes. The park's varied landscapes include montane forests, crater lakes, and open savanna, providing habitat for colobus monkeys, giraffes, and numerous bird species.",
+      "Small but diverse park dominated by majestic Mount Meru. Arusha National Park offers unique walking safaris and canoeing adventures on Momella Lakes, with varied landscapes including montane forests and crater lakes.",
     highlights: [
-      "Walking safaris and canoeing",
-      "Mount Meru backdrop",
+      "Walking safaris permitted",
+      "Canoeing on Momella Lakes",
+      "Mount Meru trekking gateway",
       "Close to Arusha city",
-      "Diverse landscapes and habitats",
     ],
   },
 ]
 
 export const metadata = {
-  title: "Northern Circuit Safaris - Serengeti & Ngorongoro | KiliSafari",
+  title: `Northern Circuit Safaris - Serengeti & Ngorongoro | ${company.name}`,
   description:
     "Explore Tanzania's Northern Circuit including Serengeti National Park, Ngorongoro Crater, Lake Manyara, Tarangire, and Arusha. Witness the Great Migration and Big Five wildlife.",
 }
 
 export default function NorthernCircuitPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-brand-cream">
       <Navigation />
       <main>
         {/* Hero Section */}
-        <section className="relative h-[50vh] min-h-[400px] w-full flex items-center justify-center bg-gradient-to-r from-brand-dark to-brand-green">
-          <div className="absolute inset-0 bg-black/20" />
-          <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4">Northern Circuit Safaris</h1>
-            <p className="text-lg md:text-xl text-white/90">Tanzania's Wildlife Crown Jewels</p>
+        <section className="relative pt-32 pb-20 bg-brand-chocolate">
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute inset-0 bg-[url('/images/serengeti.jpg')] bg-cover bg-center" />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-brand-chocolate/80 to-brand-chocolate" />
+          <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span className="inline-block px-4 py-2 bg-brand-gold/20 rounded-full text-brand-gold text-sm font-medium tracking-widest uppercase mb-6">
+              Safari Destinations
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
+              Northern Circuit Safaris
+            </h1>
+            <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+              Discover Tanzania&apos;s most iconic wildlife destinations—where the Great Migration 
+              unfolds and the Big Five roam free.
+            </p>
           </div>
         </section>
 
         {/* Introduction Section */}
-        <section className="py-16 md:py-20 bg-white">
+        <section className="py-16 md:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-6">The Crown Jewel of African Safaris</h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              The Northern Circuit is Tanzania's most spectacular wildlife destination, home to the world-famous
-              Serengeti and Ngorongoro Crater. This region offers unparalleled game viewing opportunities with the
-              highest concentration of wildlife in Africa.
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-6">
+              The Crown Jewel of African Safaris
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              The Northern Circuit is Tanzania&apos;s most celebrated wildlife destination, home to 
+              the world-famous Serengeti and Ngorongoro Crater. This region offers unparalleled 
+              game viewing opportunities with the highest concentration of wildlife in Africa.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              From the Great Migration to guaranteed Big Five sightings, the Northern Circuit delivers the ultimate
-              safari experience. These parks are considered the crown jewels of African wildlife destinations, offering
-              landscapes and wildlife encounters that will stay with you forever.
+              From the Great Migration to guaranteed Big Five sightings, the Northern Circuit 
+              delivers the ultimate safari experience. These parks represent the pinnacle of 
+              African wildlife destinations.
             </p>
           </div>
         </section>
 
         {/* Destinations Grid */}
-        <section className="py-16 md:py-20 bg-gray-50">
+        <section className="py-16 md:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="space-y-12">
+            <div className="space-y-16">
               {destinations.map((destination, index) => (
                 <div
                   key={index}
-                  className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${
+                  className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center ${
                     index % 2 === 1 ? "lg:flex-row-reverse" : ""
                   }`}
                 >
                   {/* Image */}
-                  <div className={`relative h-96 rounded-2xl overflow-hidden ${index % 2 === 1 ? "lg:order-2" : ""}`}>
+                  <div className={`relative h-[350px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl ${
+                    index % 2 === 1 ? "lg:order-2" : ""
+                  }`}>
                     <Image
                       src={destination.image || "/placeholder.svg"}
                       alt={destination.title}
                       fill
                       className="object-cover"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-chocolate/60 to-transparent" />
                   </div>
 
                   {/* Content */}
                   <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                    <h3 className="text-3xl font-black text-brand-dark mb-4">{destination.title}</h3>
-                    <p className="text-gray-700 leading-relaxed mb-6">{destination.description}</p>
+                    <div className="flex items-center gap-2 text-brand-ocean text-sm font-medium mb-3">
+                      <Compass size={16} />
+                      <span className="uppercase tracking-wider">Northern Circuit</span>
+                    </div>
+                    <h3 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-4">
+                      {destination.title}
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                      {destination.description}
+                    </p>
 
                     {/* Highlights */}
-                    <div className="space-y-2 mb-6">
+                    <div className="space-y-3 mb-8">
                       {destination.highlights.map((highlight, idx) => (
                         <div key={idx} className="flex items-start gap-3">
-                          <Check size={20} className="text-brand-green mt-1 flex-shrink-0" />
+                          <div className="w-6 h-6 bg-brand-gold/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <Check size={14} className="text-brand-gold" />
+                          </div>
                           <span className="text-gray-700">{highlight}</span>
                         </div>
                       ))}
                     </div>
 
-                    <Button asChild className="bg-brand-orange hover:bg-brand-orange/90 text-white">
-                      <Link href="/contact">Book Now</Link>
-                    </Button>
+                    <Link
+                      href="/our-itineraries"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-brand-gold text-brand-chocolate font-semibold rounded-full hover:bg-brand-gold/90 transition-all duration-300"
+                    >
+                      View Safari Packages
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -153,24 +185,28 @@ export default function NorthernCircuitPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-20 bg-brand-dark text-white">
+        <section className="py-16 md:py-24 bg-brand-chocolate text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-black mb-6">Ready for Your Northern Circuit Adventure?</h2>
-            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-              Experience the best wildlife viewing in Africa with our expert guides
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
+              Ready for Your Northern Circuit Adventure?
+            </h2>
+            <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
+              Experience the best wildlife viewing in Africa with our expert local guides 
+              and carefully crafted itineraries.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white">
-                <Link href="/contact">Book Now</Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-brand-dark bg-transparent"
+              <Link
+                href="/our-itineraries"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-brand-gold text-brand-chocolate font-semibold rounded-full hover:bg-brand-gold/90 transition-all duration-300 hover:scale-105"
               >
-                <Link href="/contact">Contact Us</Link>
-              </Button>
+                View Packages
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/50 text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300"
+              >
+                Contact Us
+              </Link>
             </div>
           </div>
         </section>

@@ -5,9 +5,10 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
 import { Clock, Check } from "lucide-react"
+import { company } from "@/lib/sambuo-data"
 
 export const metadata = {
-  title: "Zanzibar Beach Holidays & Tours | KiliSafari Organizing",
+  title: `Zanzibar Beach Holidays & Tours | ${company.name}`,
   description:
     "Explore Zanzibar's pristine beaches, Stone Town, spice tours, and island experiences. Custom beach holidays, snorkeling, diving, and cultural tours available.",
 }
@@ -108,7 +109,7 @@ const tours = [
 
 export default function ZanzibarPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-brand-cream">
       <Navigation />
       <main>
         {/* Hero Section */}
@@ -121,9 +122,9 @@ export default function ZanzibarPage() {
         </section>
 
         {/* Introduction Section */}
-        <section className="py-16 md:py-20 bg-white">
+        <section className="py-16 md:py-20 bg-brand-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-6">
+            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-6">
               Where Pristine Beaches Meet Rich Cultural Heritage
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -145,10 +146,10 @@ export default function ZanzibarPage() {
         </section>
 
         {/* Tours Grid */}
-        <section className="py-16 md:py-20 bg-gray-50">
+        <section className="py-16 md:py-20 bg-brand-sand">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-4">Zanzibar Experiences</h2>
+              <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-4">Zanzibar Experiences</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Discover the magic of Zanzibar with our curated tours and experiences
               </p>
@@ -158,7 +159,7 @@ export default function ZanzibarPage() {
               {tours.map((tour, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-brand-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   {/* Image Container */}
                   <div className="relative h-64 bg-gray-200 overflow-hidden">
@@ -169,23 +170,23 @@ export default function ZanzibarPage() {
                   {/* Content */}
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
-                      <Clock size={16} className="text-brand-orange" />
-                      <span className="text-sm font-semibold text-brand-orange">{tour.duration}</span>
+                      <Clock size={16} className="text-brand-gold" />
+                      <span className="text-sm font-semibold text-brand-gold">{tour.duration}</span>
                     </div>
-                    <h3 className="text-xl font-bold text-brand-dark mb-3">{tour.title}</h3>
+                    <h3 className="text-xl font-bold text-brand-chocolate mb-3">{tour.title}</h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-4">{tour.description}</p>
 
                     {/* Highlights */}
                     <div className="space-y-1 mb-4">
                       {tour.highlights.map((highlight, idx) => (
                         <div key={idx} className="flex items-start gap-2">
-                          <Check size={16} className="text-brand-green mt-0.5 flex-shrink-0" />
+                          <Check size={16} className="text-brand-ocean mt-0.5 flex-shrink-0" />
                           <span className="text-xs text-gray-600">{highlight}</span>
                         </div>
                       ))}
                     </div>
 
-                    <Button asChild className="w-full bg-brand-orange hover:bg-brand-orange/90 text-white">
+                    <Button asChild className="w-full bg-brand-gold hover:bg-brand-gold/90 text-brand-chocolate">
                       <Link href="/contact">Book Experience</Link>
                     </Button>
                   </div>
@@ -196,7 +197,7 @@ export default function ZanzibarPage() {
         </section>
 
         {/* Beach Paradise Section */}
-        <section className="py-16 md:py-20 bg-white">
+        <section className="py-16 md:py-20 bg-brand-cream">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Image */}
@@ -211,14 +212,14 @@ export default function ZanzibarPage() {
 
               {/* Content */}
               <div>
-                <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-6">Paradise Beaches Await</h2>
+                <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-6">Paradise Beaches Await</h2>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   Zanzibar's beaches are legendary, featuring powdery white sand and warm, crystal-clear waters perfect
                   for swimming, snorkeling, and diving. From the lively beaches of Nungwi and Kendwa in the north to the
                   tranquil shores of Paje and Jambiani in the east, each beach offers its own unique charm.
                 </p>
 
-                <h3 className="text-xl font-bold text-brand-dark mb-4">Beach Activities</h3>
+                <h3 className="text-xl font-bold text-brand-chocolate mb-4">Beach Activities</h3>
                 <ul className="space-y-2 mb-6">
                   {[
                     "Snorkeling and diving in coral reefs",
@@ -229,13 +230,13 @@ export default function ZanzibarPage() {
                     "Fresh seafood dining by the ocean",
                   ].map((activity, idx) => (
                     <li key={idx} className="flex items-start gap-3">
-                      <Check size={20} className="text-brand-green mt-1 flex-shrink-0" />
+                      <Check size={20} className="text-brand-ocean mt-1 flex-shrink-0" />
                       <span className="text-gray-700">{activity}</span>
                     </li>
                   ))}
                 </ul>
 
-                <Button asChild className="bg-brand-orange hover:bg-brand-orange/90 text-white">
+                <Button asChild className="bg-brand-gold hover:bg-brand-gold/90 text-brand-chocolate">
                   <Link href="/contact">Plan Your Beach Escape</Link>
                 </Button>
               </div>
@@ -244,21 +245,21 @@ export default function ZanzibarPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-20 bg-brand-dark text-white">
+        <section className="py-16 md:py-20 bg-brand-chocolate text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-black mb-6">Ready to Experience Zanzibar Magic?</h2>
             <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
               Let us create your perfect island paradise getaway with customized tours and experiences
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white">
+              <Button asChild size="lg" className="bg-brand-gold hover:bg-brand-gold/90 text-brand-chocolate">
                 <Link href="/contact">Plan Your Trip</Link>
               </Button>
               <Button
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-brand-dark bg-transparent"
+                className="border-white text-white hover:bg-white hover:text-brand-chocolate bg-transparent"
               >
                 <Link href="/contact">Get Quote</Link>
               </Button>

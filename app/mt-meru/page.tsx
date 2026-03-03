@@ -7,16 +7,17 @@ import { BookingModal } from "@/components/booking-modal"
 import Link from "next/link"
 import Image from "next/image"
 import { TrendingUp, Check, Mountain, MapPin, Shield, Clock } from "lucide-react"
+import { company } from "@/lib/sambuo-data"
 
 export const metadata = {
-  title: "Mount Meru Climbing - Tanzania's Second Highest Peak | KiliSafari",
+  title: `Mount Meru Climbing - Tanzania's Second Highest Peak | ${company.shortName}`,
   description:
     "Climb Mount Meru (4,566m) in Arusha National Park. Perfect Kilimanjaro warm-up trek with wildlife viewing, crater views, and 90% success rate. 3-4 day climbs available.",
 }
 
 export default function MtMeruPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-brand-cream">
       <Navigation />
       <main>
         {/* Hero Section */}
@@ -42,11 +43,11 @@ export default function MtMeruPage() {
         </section>
 
         {/* Introduction Section */}
-        <section className="py-16 md:py-20 bg-white">
+        <section className="py-16 md:py-20 bg-brand-cream">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-6">Why Climb Mount Meru?</h2>
+                <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-6">Why Climb Mount Meru?</h2>
                 <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                   <p>
                     Meru is a great preparation hike for climbing Kilimanjaro, or a spectacular trek for those not
@@ -77,9 +78,9 @@ export default function MtMeruPage() {
         </section>
 
         {/* Key Features Grid */}
-        <section className="py-16 md:py-20 bg-gray-50">
+        <section className="py-16 md:py-20 bg-brand-sand">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-12 text-center">Trek Highlights</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-12 text-center">Trek Highlights</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
@@ -103,10 +104,10 @@ export default function MtMeruPage() {
                   description: "Armed Ranger Escort",
                 },
               ].map((feature, idx) => (
-                <Card key={idx} className="text-center">
+                <Card key={idx} className="text-center bg-brand-cream">
                   <CardContent className="pt-6">
-                    <feature.icon className="w-12 h-12 text-brand-orange mx-auto mb-4" />
-                    <h3 className="text-xl font-bold text-brand-dark mb-2">{feature.title}</h3>
+                    <feature.icon className="w-12 h-12 text-brand-gold mx-auto mb-4" />
+                    <h3 className="text-xl font-bold text-brand-chocolate mb-2">{feature.title}</h3>
                     <p className="text-gray-600">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -116,10 +117,10 @@ export default function MtMeruPage() {
         </section>
 
         {/* Trek Options */}
-        <section className="py-16 md:py-20 bg-white">
+        <section className="py-16 md:py-20 bg-brand-cream">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-4">Choose Your Trek</h2>
+              <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-4">Choose Your Trek</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Select between our standard 3-day trek or the recommended 4-day trek for better acclimatization
               </p>
@@ -127,27 +128,27 @@ export default function MtMeruPage() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* 3 Day Trek */}
-              <Card className="relative overflow-hidden border-2 hover:border-brand-orange transition-colors">
+              <Card className="relative overflow-hidden border-2 hover:border-brand-gold transition-colors bg-brand-cream">
                 <CardHeader className="bg-gradient-to-br from-gray-50 to-white pb-8">
-                  <CardTitle className="text-2xl md:text-3xl font-black text-brand-dark">3 Days 2 Nights</CardTitle>
+                  <CardTitle className="text-2xl md:text-3xl font-black text-brand-chocolate">3 Days 2 Nights</CardTitle>
                   <CardDescription className="text-base">Standard Itinerary</CardDescription>
                 </CardHeader>
                 <CardContent className="pt-6">
                   {/* Pricing Table */}
-                  <div className="mb-6 bg-gray-50 rounded-lg p-4">
-                    <h4 className="font-bold text-brand-dark mb-3">Pricing Per Person (USD)</h4>
+                  <div className="mb-6 bg-brand-sand rounded-lg p-4">
+                    <h4 className="font-bold text-brand-chocolate mb-3">Pricing Per Person (USD)</h4>
                     <div className="space-y-2">
                       <div className="flex justify-between items-center py-2 border-b border-gray-200">
                         <span className="text-gray-700">1 Person</span>
-                        <span className="font-bold text-lg text-brand-dark">$1,580</span>
+                        <span className="font-bold text-lg text-brand-chocolate">$1,580</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-200">
                         <span className="text-gray-700">2 People</span>
-                        <span className="font-bold text-lg text-brand-green">$1,175</span>
+                        <span className="font-bold text-lg text-brand-ocean">$1,175</span>
                       </div>
                       <div className="flex justify-between items-center py-2">
                         <span className="text-gray-700">4+ People</span>
-                        <span className="font-bold text-lg text-brand-green">$880</span>
+                        <span className="font-bold text-lg text-brand-ocean">$880</span>
                       </div>
                     </div>
                   </div>
@@ -155,33 +156,33 @@ export default function MtMeruPage() {
                   {/* Itinerary Overview */}
                   <div className="space-y-4 mb-6">
                     <div className="flex gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-orange text-white flex items-center justify-center font-bold text-sm">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-gold text-brand-chocolate flex items-center justify-center font-bold text-sm">
                         1
                       </div>
                       <div>
-                        <h5 className="font-bold text-brand-dark mb-1">Momela Gate to Miriakamba Hut</h5>
+                        <h5 className="font-bold text-brand-chocolate mb-1">Momela Gate to Miriakamba Hut</h5>
                         <p className="text-sm text-gray-600">
                           Hike through montane forest with wildlife viewing opportunities
                         </p>
                       </div>
                     </div>
                     <div className="flex gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-orange text-white flex items-center justify-center font-bold text-sm">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-gold text-brand-chocolate flex items-center justify-center font-bold text-sm">
                         2
                       </div>
                       <div>
-                        <h5 className="font-bold text-brand-dark mb-1">Miriakamba to Saddle Hut</h5>
+                        <h5 className="font-bold text-brand-chocolate mb-1">Miriakamba to Saddle Hut</h5>
                         <p className="text-sm text-gray-600">
                           Steep climb through moorland, optional Little Meru summit (3,820m)
                         </p>
                       </div>
                     </div>
                     <div className="flex gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-orange text-white flex items-center justify-center font-bold text-sm">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-gold text-brand-chocolate flex items-center justify-center font-bold text-sm">
                         3
                       </div>
                       <div>
-                        <h5 className="font-bold text-brand-dark mb-1">Summit Day & Descent</h5>
+                        <h5 className="font-bold text-brand-chocolate mb-1">Summit Day & Descent</h5>
                         <p className="text-sm text-gray-600">
                           Midnight start, summit Socialist Peak (4,566m), return to gate
                         </p>
@@ -192,7 +193,7 @@ export default function MtMeruPage() {
                   <BookingModal
                     tourName="Mount Meru 3-Day Trek"
                     trigger={
-                      <Button className="w-full bg-brand-orange hover:bg-brand-orange/90 text-white" size="lg">
+                      <Button className="w-full bg-brand-gold hover:bg-brand-gold/90 text-brand-chocolate" size="lg">
                         Book 3-Day Trek
                       </Button>
                     }
@@ -201,30 +202,30 @@ export default function MtMeruPage() {
               </Card>
 
               {/* 4 Day Trek */}
-              <Card className="relative overflow-hidden border-2 border-brand-green hover:border-brand-orange transition-colors">
-                <div className="absolute top-4 right-4 bg-brand-green text-white px-3 py-1 rounded-full text-sm font-bold">
+              <Card className="relative overflow-hidden border-2 border-brand-ocean hover:border-brand-gold transition-colors bg-brand-cream">
+                <div className="absolute top-4 right-4 bg-brand-ocean text-white px-3 py-1 rounded-full text-sm font-bold">
                   Recommended
                 </div>
-                <CardHeader className="bg-gradient-to-br from-green-50 to-white pb-8">
-                  <CardTitle className="text-2xl md:text-3xl font-black text-brand-dark">4 Days 3 Nights</CardTitle>
+                <CardHeader className="bg-gradient-to-br from-blue-50 to-white pb-8">
+                  <CardTitle className="text-2xl md:text-3xl font-black text-brand-chocolate">4 Days 3 Nights</CardTitle>
                   <CardDescription className="text-base">Better Acclimatization</CardDescription>
                 </CardHeader>
                 <CardContent className="pt-6">
                   {/* Pricing Table */}
-                  <div className="mb-6 bg-gray-50 rounded-lg p-4">
-                    <h4 className="font-bold text-brand-dark mb-3">Pricing Per Person (USD)</h4>
+                  <div className="mb-6 bg-brand-sand rounded-lg p-4">
+                    <h4 className="font-bold text-brand-chocolate mb-3">Pricing Per Person (USD)</h4>
                     <div className="space-y-2">
                       <div className="flex justify-between items-center py-2 border-b border-gray-200">
                         <span className="text-gray-700">1 Person</span>
-                        <span className="font-bold text-lg text-brand-dark">$1,950</span>
+                        <span className="font-bold text-lg text-brand-chocolate">$1,950</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-200">
                         <span className="text-gray-700">2 People</span>
-                        <span className="font-bold text-lg text-brand-green">$1,335</span>
+                        <span className="font-bold text-lg text-brand-ocean">$1,335</span>
                       </div>
                       <div className="flex justify-between items-center py-2">
                         <span className="text-gray-700">4+ People</span>
-                        <span className="font-bold text-lg text-brand-green">$865</span>
+                        <span className="font-bold text-lg text-brand-ocean">$865</span>
                       </div>
                     </div>
                   </div>
@@ -232,42 +233,42 @@ export default function MtMeruPage() {
                   {/* Itinerary Overview */}
                   <div className="space-y-4 mb-6">
                     <div className="flex gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-green text-white flex items-center justify-center font-bold text-sm">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-ocean text-white flex items-center justify-center font-bold text-sm">
                         1
                       </div>
                       <div>
-                        <h5 className="font-bold text-brand-dark mb-1">Momela Gate to Miriakamba Hut</h5>
+                        <h5 className="font-bold text-brand-chocolate mb-1">Momela Gate to Miriakamba Hut</h5>
                         <p className="text-sm text-gray-600">
                           Gradual ascent through forest with wildlife and scenic clearings
                         </p>
                       </div>
                     </div>
                     <div className="flex gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-green text-white flex items-center justify-center font-bold text-sm">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-ocean text-white flex items-center justify-center font-bold text-sm">
                         2
                       </div>
                       <div>
-                        <h5 className="font-bold text-brand-dark mb-1">Miriakamba to Saddle Hut</h5>
+                        <h5 className="font-bold text-brand-chocolate mb-1">Miriakamba to Saddle Hut</h5>
                         <p className="text-sm text-gray-600">
                           Alpine zone climb, afternoon acclimatization hike to Little Meru
                         </p>
                       </div>
                     </div>
                     <div className="flex gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-green text-white flex items-center justify-center font-bold text-sm">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-ocean text-white flex items-center justify-center font-bold text-sm">
                         3
                       </div>
                       <div>
-                        <h5 className="font-bold text-brand-dark mb-1">Summit Day to Miriakamba</h5>
+                        <h5 className="font-bold text-brand-chocolate mb-1">Summit Day to Miriakamba</h5>
                         <p className="text-sm text-gray-600">Early summit push, return to Miriakamba Hut for rest</p>
                       </div>
                     </div>
                     <div className="flex gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-green text-white flex items-center justify-center font-bold text-sm">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-ocean text-white flex items-center justify-center font-bold text-sm">
                         4
                       </div>
                       <div>
-                        <h5 className="font-bold text-brand-dark mb-1">Descent to Momela Gate</h5>
+                        <h5 className="font-bold text-brand-chocolate mb-1">Descent to Momela Gate</h5>
                         <p className="text-sm text-gray-600">
                           Relaxed descent with waterfall visit and final game viewing
                         </p>
@@ -278,7 +279,7 @@ export default function MtMeruPage() {
                   <BookingModal
                     tourName="Mount Meru 4-Day Trek"
                     trigger={
-                      <Button className="w-full bg-brand-green hover:bg-brand-green/90 text-white" size="lg">
+                      <Button className="w-full bg-brand-ocean hover:bg-brand-ocean/90 text-white" size="lg">
                         Book 4-Day Trek
                       </Button>
                     }
@@ -290,13 +291,13 @@ export default function MtMeruPage() {
         </section>
 
         {/* What's Included */}
-        <section className="py-16 md:py-20 bg-gray-50">
+        <section className="py-16 md:py-20 bg-brand-sand">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-12 text-center">What's Included</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-12 text-center">What's Included</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card>
+              <Card className="bg-brand-cream">
                 <CardHeader>
-                  <CardTitle className="text-brand-green flex items-center gap-2">
+                  <CardTitle className="text-brand-ocean flex items-center gap-2">
                     <Check className="w-6 h-6" />
                     Included
                   </CardTitle>
@@ -314,7 +315,7 @@ export default function MtMeruPage() {
                       "Pre-trek briefing",
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3">
-                        <Check size={20} className="text-brand-green mt-1 flex-shrink-0" />
+                        <Check size={20} className="text-brand-ocean mt-1 flex-shrink-0" />
                         <span className="text-gray-700">{item}</span>
                       </li>
                     ))}
@@ -322,7 +323,7 @@ export default function MtMeruPage() {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="bg-brand-cream">
                 <CardHeader>
                   <CardTitle className="text-gray-600">Not Included</CardTitle>
                 </CardHeader>
@@ -351,10 +352,10 @@ export default function MtMeruPage() {
         </section>
 
         {/* Important Information */}
-        <section className="py-16 md:py-20 bg-white">
+        <section className="py-16 md:py-20 bg-brand-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-8 text-center">Important Information</h2>
-            <Card className="bg-orange-50 border-brand-orange">
+            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-8 text-center">Important Information</h2>
+            <Card className="bg-amber-50 border-brand-gold">
               <CardContent className="pt-6">
                 <ul className="space-y-3">
                   {[
@@ -367,7 +368,7 @@ export default function MtMeruPage() {
                     "The 4-day trek is recommended for better acclimatization and higher success rates",
                   ].map((info, idx) => (
                     <li key={idx} className="flex items-start gap-3">
-                      <Shield size={20} className="text-brand-orange mt-1 flex-shrink-0" />
+                      <Shield size={20} className="text-brand-gold mt-1 flex-shrink-0" />
                       <span className="text-gray-700">{info}</span>
                     </li>
                   ))}
@@ -378,9 +379,9 @@ export default function MtMeruPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-20 bg-brand-dark text-white">
+        <section className="py-16 md:py-20 bg-brand-chocolate text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <Mountain className="w-16 h-16 mx-auto mb-6 text-brand-orange" />
+            <Mountain className="w-16 h-16 mx-auto mb-6 text-brand-gold" />
             <h2 className="text-3xl md:text-4xl font-black mb-6">Ready to Climb Mount Meru?</h2>
             <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
               Contact us today to book your Mount Meru adventure or to customize your trek to fit your schedule and
@@ -390,12 +391,12 @@ export default function MtMeruPage() {
               <BookingModal
                 tourName="Mount Meru Trek"
                 trigger={
-                  <Button size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white">
+                  <Button size="lg" className="bg-brand-gold hover:bg-brand-gold/90 text-brand-chocolate">
                     Book Your Trek
                   </Button>
                 }
               />
-              <Button asChild size="lg" variant="outline" className="bg-white text-brand-dark hover:bg-gray-100">
+              <Button asChild size="lg" variant="outline" className="bg-white text-brand-chocolate hover:bg-gray-100">
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>

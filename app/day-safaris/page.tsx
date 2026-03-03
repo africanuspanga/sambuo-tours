@@ -6,9 +6,10 @@ import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import Image from "next/image"
 import { Clock, MapPin } from "lucide-react"
+import { company } from "@/lib/sambuo-data"
 
 export const metadata = {
-  title: "Day Safaris & Excursions in Tanzania | KiliSafari Organizing",
+  title: `Day Safaris & Excursions in Tanzania | ${company.name}`,
   description:
     "Discover Tanzania's best day trips including Materuni Waterfalls, Chemka Hot Springs, Lake Duluti, and Kilimanjaro day hikes. Perfect adventures for any schedule.",
 }
@@ -103,11 +104,11 @@ const dayTrips = [
 
 export default function DaySafarisPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-brand-cream">
       <Navigation />
       <main>
         {/* Hero Section */}
-        <section className="relative h-[50vh] min-h-[400px] w-full flex items-center justify-center bg-gradient-to-r from-brand-dark to-brand-green">
+        <section className="relative h-[50vh] min-h-[400px] w-full flex items-center justify-center bg-gradient-to-r from-brand-chocolate to-brand-ocean">
           <div className="absolute inset-0 bg-black/20" />
           <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4">Day Safaris & Excursions</h1>
@@ -116,9 +117,9 @@ export default function DaySafarisPage() {
         </section>
 
         {/* Introduction */}
-        <section className="py-16 md:py-20 bg-white">
+        <section className="py-16 md:py-20 bg-brand-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-6">Experience Tanzania in a Day</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-6">Experience Tanzania in a Day</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
               Our carefully curated day trips offer the perfect blend of adventure, culture, and natural beauty. Whether
               you're short on time or looking to complement your safari with unique experiences, these excursions
@@ -128,11 +129,11 @@ export default function DaySafarisPage() {
         </section>
 
         {/* Day Trips Grid */}
-        <section className="py-16 md:py-20 bg-gray-50">
+        <section className="py-16 md:py-20 bg-brand-sand">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {dayTrips.map((trip) => (
-                <Card key={trip.id} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <Card key={trip.id} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 bg-brand-cream">
                   <div className="relative h-64 w-full">
                     <Image src={trip.image || "/placeholder.svg"} alt={trip.title} fill className="object-cover" />
                   </div>
@@ -147,20 +148,20 @@ export default function DaySafarisPage() {
                         <span>{trip.duration}</span>
                       </div>
                     </div>
-                    <h3 className="text-xl font-black text-brand-dark mb-3">{trip.title}</h3>
+                    <h3 className="text-xl font-black text-brand-chocolate mb-3">{trip.title}</h3>
                     <p className="text-gray-700 mb-4 leading-relaxed line-clamp-4">{trip.description}</p>
                     <div className="mb-6">
-                      <h4 className="font-bold text-brand-dark mb-2 text-sm">Highlights:</h4>
+                      <h4 className="font-bold text-brand-chocolate mb-2 text-sm">Highlights:</h4>
                       <ul className="space-y-1">
                         {trip.highlights.slice(0, 3).map((highlight, index) => (
                           <li key={index} className="text-sm text-gray-600 flex items-start">
-                            <span className="text-brand-orange mr-2">•</span>
+                            <span className="text-brand-gold mr-2">•</span>
                             <span>{highlight}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
-                    <Button asChild className="w-full bg-brand-orange hover:bg-brand-orange/90 text-white font-bold">
+                    <Button asChild className="w-full bg-brand-gold hover:bg-brand-gold/90 text-brand-chocolate font-bold">
                       <Link href="/contact">Book Now</Link>
                     </Button>
                   </CardContent>
@@ -171,14 +172,14 @@ export default function DaySafarisPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-20 bg-brand-dark text-white">
+        <section className="py-16 md:py-20 bg-brand-chocolate text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-black mb-6">Ready for Your Adventure?</h2>
             <p className="text-lg text-white/90 mb-8">
               Contact us to customize your perfect day trip experience or combine multiple excursions for an
               unforgettable journey
             </p>
-            <Button asChild className="bg-brand-orange hover:bg-brand-orange/90 text-white font-bold">
+            <Button asChild className="bg-brand-gold hover:bg-brand-gold/90 text-brand-chocolate font-bold">
               <Link href="/contact">Get in Touch</Link>
             </Button>
           </div>
