@@ -28,7 +28,7 @@ export default function SaadaniPage() {
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <div className="text-center text-white px-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-4">
                 1 Day Safari to Saadani NP from Dar es Salaam
               </h1>
               <p className="text-xl md:text-2xl">Bush Meets Beach</p>
@@ -60,7 +60,7 @@ export default function SaadaniPage() {
           <div className="max-w-6xl mx-auto">
             {/* Tour Overview */}
             <section className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-chocolate mb-6">Tour Overview</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-6">Tour Overview</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Saadani is Tanzania's only park bordering the Indian Ocean. A unique day trip offering a rare
                 combination of bush game drives and coastal wildlife. Experience the extraordinary sight of wildlife
@@ -71,7 +71,7 @@ export default function SaadaniPage() {
 
             {/* Detailed Itinerary */}
             <section className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-chocolate mb-8">Detailed Itinerary</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-8">Detailed Itinerary</h2>
 
               <div className="space-y-8">
                 <div className="bg-white p-6 rounded-2xl shadow-md border-l-4 border-brand-gold">
@@ -80,7 +80,7 @@ export default function SaadaniPage() {
                       05:00
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Early Morning Pickup & Departure</h3>
+                      <h3 className="text-xl font-serif font-bold text-brand-chocolate mb-2">Early Morning Pickup & Departure</h3>
                       <p className="text-gray-700">
                         Your guide will pick you up from your Dar es Salaam hotel. Begin the drive (approx. 4-5 hours)
                         north via the coastal route to Saadani National Park. Enjoy views of the Indian Ocean and rural
@@ -96,7 +96,7 @@ export default function SaadaniPage() {
                       10:00
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Arrival & Morning Game Drive</h3>
+                      <h3 className="text-xl font-serif font-bold text-brand-chocolate mb-2">Arrival & Morning Game Drive</h3>
                       <p className="text-gray-700">
                         Enter the park and immediately begin your game drive. Saadani is known for wildlife spotting
                         near the beach, including giraffes and elephants that sometimes venture onto the sand. Look out
@@ -112,7 +112,7 @@ export default function SaadaniPage() {
                       13:00
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Picnic Lunch on the Beach</h3>
+                      <h3 className="text-xl font-serif font-bold text-brand-chocolate mb-2">Picnic Lunch on the Beach</h3>
                       <p className="text-gray-700">
                         Enjoy a packed lunch at a scenic spot near the Indian Ocean coastline. Feel the ocean breeze
                         while dining in this unique setting where the beach meets the bush.
@@ -127,7 +127,7 @@ export default function SaadaniPage() {
                       14:00
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Wami River Boat Safari</h3>
+                      <h3 className="text-xl font-serif font-bold text-brand-chocolate mb-2">Wami River Boat Safari</h3>
                       <p className="text-gray-700">
                         Embark on a spectacular boat trip on the Wami River. This river is packed with wildlife,
                         including large pods of Hippos, Crocodiles, and a huge variety of water birds including
@@ -143,7 +143,7 @@ export default function SaadaniPage() {
                       16:00
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Departure to Dar es Salaam</h3>
+                      <h3 className="text-xl font-serif font-bold text-brand-chocolate mb-2">Departure to Dar es Salaam</h3>
                       <p className="text-gray-700">
                         Conclude your boat safari and begin the return drive to Dar es Salaam via the coastal route.
                       </p>
@@ -157,7 +157,7 @@ export default function SaadaniPage() {
                       21:00
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Late Evening Drop-off</h3>
+                      <h3 className="text-xl font-serif font-bold text-brand-chocolate mb-2">Late Evening Drop-off</h3>
                       <p className="text-gray-700">Arrive back in Dar es Salaam and transfer to your hotel.</p>
                     </div>
                   </div>
@@ -167,10 +167,10 @@ export default function SaadaniPage() {
 
             {/* Inclusions & Exclusions */}
             <section className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-chocolate mb-8">What's Included</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-8">What's Included</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-green-50 p-6 rounded-2xl">
-                  <h3 className="text-xl font-bold text-brand-ocean mb-4 flex items-center gap-2">
+                  <h3 className="text-xl font-serif font-bold text-brand-ocean mb-4 flex items-center gap-2">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
@@ -213,7 +213,7 @@ export default function SaadaniPage() {
                 </div>
 
                 <div className="bg-red-50 p-6 rounded-2xl">
-                  <h3 className="text-xl font-bold text-red-600 mb-4 flex items-center gap-2">
+                  <h3 className="text-xl font-serif font-bold text-red-600 mb-4 flex items-center gap-2">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
@@ -247,7 +247,7 @@ export default function SaadaniPage() {
 
             {/* Call to Action */}
             <section className="bg-brand-chocolate text-white rounded-lg p-8 md:p-12 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Experience Saadani?</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Ready to Experience Saadani?</h2>
               <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
                 Book your adventure from Dar es Salaam and discover where the bush meets the beach
               </p>

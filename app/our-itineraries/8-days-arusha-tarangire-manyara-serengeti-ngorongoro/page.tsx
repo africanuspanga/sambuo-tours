@@ -106,7 +106,7 @@ export default function EightDaysUltimateTanzaniaSafariPage() {
                 </svg>
                 Back to All Itineraries
               </Link>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-4">
                 8 Days: Ultimate Tanzania Safari
               </h1>
               <p className="text-xl text-white/90">Arusha NP, Tarangire, Manyara, Serengeti (3N) & Ngorongoro</p>
@@ -144,7 +144,7 @@ export default function EightDaysUltimateTanzaniaSafariPage() {
             <div className="max-w-4xl mx-auto">
               {/* Overview */}
               <div className="mb-12">
-                <h2 className="text-3xl font-bold text-brand-chocolate mb-6">Safari Overview</h2>
+                <h2 className="text-3xl font-serif font-bold text-brand-chocolate mb-6">Safari Overview</h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   This is the ultimate Tanzania safari experience. With three full nights in the Serengeti, you'll have
                   maximum opportunities to witness incredible wildlife encounters, predator action, and the Great
@@ -155,7 +155,7 @@ export default function EightDaysUltimateTanzaniaSafariPage() {
               </div>
 
               <div className="mb-12">
-                <h2 className="text-3xl font-bold text-brand-chocolate mb-8">Day by Day Itinerary</h2>
+                <h2 className="text-3xl font-serif font-bold text-brand-chocolate mb-8">Day by Day Itinerary</h2>
                 <div className="space-y-8">
                   {itinerary.map((day) => (
                     <div key={day.day} className="bg-white rounded-2xl shadow-lg overflow-hidden">
@@ -164,7 +164,7 @@ export default function EightDaysUltimateTanzaniaSafariPage() {
                           <span className="bg-brand-gold text-brand-chocolate px-4 py-2 rounded-full font-bold">
                             Day {day.day}
                           </span>
-                          <h3 className="text-xl font-bold text-brand-chocolate">{day.title}</h3>
+                          <h3 className="text-xl font-serif font-bold text-brand-chocolate">{day.title}</h3>
                         </div>
                         <p className="text-gray-700 mb-4 leading-relaxed">{day.description}</p>
                         <div className="flex flex-wrap gap-4 text-sm">
@@ -181,10 +181,10 @@ export default function EightDaysUltimateTanzaniaSafariPage() {
 
               {/* What's Included/Excluded */}
               <div className="mb-12">
-                <h2 className="text-3xl font-bold text-brand-chocolate mb-8">What's Included</h2>
+                <h2 className="text-3xl font-serif font-bold text-brand-chocolate mb-8">What's Included</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="bg-green-50 p-6 rounded-2xl border-l-4 border-brand-ocean">
-                    <h3 className="text-xl font-bold text-brand-ocean mb-4">Included</h3>
+                    <h3 className="text-xl font-serif font-bold text-brand-ocean mb-4">Included</h3>
                     <ul className="space-y-2 text-gray-700">
                       <li className="flex items-start gap-2">
                         <span className="text-brand-ocean">✓</span>All park fees
@@ -213,7 +213,7 @@ export default function EightDaysUltimateTanzaniaSafariPage() {
                     </ul>
                   </div>
                   <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-red-500">
-                    <h3 className="text-xl font-bold text-red-600 mb-4">Not Included</h3>
+                    <h3 className="text-xl font-serif font-bold text-red-600 mb-4">Not Included</h3>
                     <ul className="space-y-2 text-gray-700">
                       <li className="flex items-start gap-2">
                         <span className="text-red-600">✗</span>Tips for driver and cook
@@ -240,7 +240,7 @@ export default function EightDaysUltimateTanzaniaSafariPage() {
 
               {/* CTA */}
               <div className="bg-brand-chocolate rounded-lg p-8 text-center">
-                <h3 className="text-2xl font-bold text-white mb-4">Ready to Book This Safari?</h3>
+                <h3 className="text-2xl font-serif font-bold text-white mb-4">Ready to Book This Safari?</h3>
                 <p className="text-gray-300 mb-6">Contact us today to start planning your Tanzanian adventure.</p>
                 <BookingModal tourName="8 Days: Ultimate Tanzania Safari">
                   <button className="bg-brand-gold text-brand-chocolate px-8 py-4 rounded-lg font-bold text-lg hover:bg-opacity-90 transition-colors">

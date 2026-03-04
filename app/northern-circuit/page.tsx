@@ -33,7 +33,7 @@ const destinations = [
   },
   {
     title: "Ngorongoro Crater",
-    image: "/images/rhino-ngorongoro.jpg",
+    image: "/ngoro ngro crater.jpg",
     description:
       "The world's largest inactive volcanic caldera supporting 25,000 large animals year-round. This UNESCO World Heritage Site offers virtually guaranteed wildlife sightings in a unique ecosystem. Often called 'Africa's Eden' for its incredible concentration of wildlife.",
     highlights: [

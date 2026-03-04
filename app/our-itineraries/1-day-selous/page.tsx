@@ -31,7 +31,7 @@ export default function OneDaySelousPage() {
           <div className="absolute inset-0 bg-black/50" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
             <div className="container mx-auto px-4 text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">1 Day Safari to Selous (Nyerere NP)</h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-4">1 Day Safari to Selous (Nyerere NP)</h1>
               <p className="text-xl md:text-2xl font-semibold text-brand-gold">The Ultimate Day Trip</p>
               <div className="mt-4 inline-block bg-brand-gold px-6 py-2 rounded-full">
                 <span className="font-bold">1 Day</span>
@@ -48,14 +48,14 @@ export default function OneDaySelousPage() {
                 <Clock className="text-brand-gold" size={24} />
                 <div>
                   <p className="text-sm text-gray-600">Duration</p>
-                  <p className="text-xl font-bold text-brand-chocolate">1 Day</p>
+                  <p className="text-xl font-serif font-bold text-brand-chocolate">1 Day</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 justify-center">
                 <Users className="text-brand-gold" size={24} />
                 <div>
                   <p className="text-sm text-gray-600">Group Size</p>
-                  <p className="text-xl font-bold text-brand-chocolate">1-10 pax</p>
+                  <p className="text-xl font-serif font-bold text-brand-chocolate">1-10 pax</p>
                 </div>
               </div>
             </div>
@@ -66,20 +66,20 @@ export default function OneDaySelousPage() {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-chocolate mb-12 text-center">Detailed Itinerary</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-12 text-center">Detailed Itinerary</h2>
 
               <div className="space-y-6">
                 {/* Day 1 */}
                 <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                   <div className="bg-brand-gold text-white py-4 px-6">
-                    <h3 className="text-2xl font-bold">Full Day - Nyerere National Park (Selous)</h3>
+                    <h3 className="text-2xl font-serif font-bold">Full Day - Nyerere National Park (Selous)</h3>
                   </div>
                   <div className="p-6">
                     <div className="space-y-4">
                       <div className="flex gap-4">
-                        <div className="flex-shrink-0 w-24 font-bold text-brand-chocolate">03:00 AM</div>
+                        <div className="flex-shrink-0 w-24 font-serif font-bold text-brand-chocolate">03:00 AM</div>
                         <div>
-                          <h4 className="font-bold text-brand-chocolate mb-2">Very Early Morning Pickup</h4>
+                          <h4 className="font-serif font-bold text-brand-chocolate mb-2">Very Early Morning Pickup</h4>
                           <p className="text-gray-700">
                             Your guide picks you up from your hotel in Dar es Salaam for the long drive (approx. 5-6
                             hours) to Nyerere National Park (Selous). This early start ensures maximum time in the park.
@@ -88,9 +88,9 @@ export default function OneDaySelousPage() {
                       </div>
 
                       <div className="flex gap-4">
-                        <div className="flex-shrink-0 w-24 font-bold text-brand-chocolate">08:30 AM</div>
+                        <div className="flex-shrink-0 w-24 font-serif font-bold text-brand-chocolate">08:30 AM</div>
                         <div>
-                          <h4 className="font-bold text-brand-chocolate mb-2">Arrival & Morning Game Drive</h4>
+                          <h4 className="font-serif font-bold text-brand-chocolate mb-2">Arrival & Morning Game Drive</h4>
                           <p className="text-gray-700">
                             Arrive at the Mtemere Gate and immediately begin your game drive. Nyerere is famous for its
                             vast elephant herds and the elusive African wild dog.
@@ -99,9 +99,9 @@ export default function OneDaySelousPage() {
                       </div>
 
                       <div className="flex gap-4">
-                        <div className="flex-shrink-0 w-24 font-bold text-brand-chocolate">01:00 PM</div>
+                        <div className="flex-shrink-0 w-24 font-serif font-bold text-brand-chocolate">01:00 PM</div>
                         <div>
-                          <h4 className="font-bold text-brand-chocolate mb-2">Picnic Lunch</h4>
+                          <h4 className="font-serif font-bold text-brand-chocolate mb-2">Picnic Lunch</h4>
                           <p className="text-gray-700">
                             Enjoy a packed lunch at a designated picnic site inside the reserve.
                           </p>
@@ -109,9 +109,9 @@ export default function OneDaySelousPage() {
                       </div>
 
                       <div className="flex gap-4">
-                        <div className="flex-shrink-0 w-24 font-bold text-brand-chocolate">02:00 PM</div>
+                        <div className="flex-shrink-0 w-24 font-serif font-bold text-brand-chocolate">02:00 PM</div>
                         <div>
-                          <h4 className="font-bold text-brand-chocolate mb-2">Boat Safari on the Rufiji River</h4>
+                          <h4 className="font-serif font-bold text-brand-chocolate mb-2">Boat Safari on the Rufiji River</h4>
                           <p className="text-gray-700">
                             The highlight of Nyerere NP! Embark on a spectacular Boat Safari on the mighty Rufiji River
                             to see huge pods of hippos, massive crocodiles, and incredible birdlife.
@@ -120,17 +120,17 @@ export default function OneDaySelousPage() {
                       </div>
 
                       <div className="flex gap-4">
-                        <div className="flex-shrink-0 w-24 font-bold text-brand-chocolate">04:30 PM</div>
+                        <div className="flex-shrink-0 w-24 font-serif font-bold text-brand-chocolate">04:30 PM</div>
                         <div>
-                          <h4 className="font-bold text-brand-chocolate mb-2">Departure to Dar</h4>
+                          <h4 className="font-serif font-bold text-brand-chocolate mb-2">Departure to Dar</h4>
                           <p className="text-gray-700">Exit the park and begin the long drive back to Dar es Salaam.</p>
                         </div>
                       </div>
 
                       <div className="flex gap-4">
-                        <div className="flex-shrink-0 w-24 font-bold text-brand-chocolate">10:00 PM</div>
+                        <div className="flex-shrink-0 w-24 font-serif font-bold text-brand-chocolate">10:00 PM</div>
                         <div>
-                          <h4 className="font-bold text-brand-chocolate mb-2">Late Evening Drop-off</h4>
+                          <h4 className="font-serif font-bold text-brand-chocolate mb-2">Late Evening Drop-off</h4>
                           <p className="text-gray-700">Arrive back in Dar es Salaam and transfer to your hotel.</p>
                         </div>
                       </div>
@@ -149,7 +149,7 @@ export default function OneDaySelousPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Included */}
                 <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <h3 className="text-2xl font-bold text-brand-ocean mb-6 flex items-center gap-2">
+                  <h3 className="text-2xl font-serif font-bold text-brand-ocean mb-6 flex items-center gap-2">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
@@ -189,7 +189,7 @@ export default function OneDaySelousPage() {
 
                 {/* Excluded */}
                 <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <h3 className="text-2xl font-bold text-red-600 mb-6 flex items-center gap-2">
+                  <h3 className="text-2xl font-serif font-bold text-red-600 mb-6 flex items-center gap-2">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
@@ -230,7 +230,7 @@ export default function OneDaySelousPage() {
         {/* CTA Section */}
         <section className="py-16 bg-brand-chocolate text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Experience Nyerere National Park?</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Ready to Experience Nyerere National Park?</h2>
             <p className="text-xl mb-8 text-gray-300">Book your adventure today and discover Africa's largest park</p>
             <div className="flex gap-4 justify-center flex-wrap">
               <BookingModal tourName="1 Day Safari to Selous (Nyerere NP)">

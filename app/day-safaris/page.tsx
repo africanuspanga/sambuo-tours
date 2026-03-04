@@ -171,7 +171,7 @@ export default function DaySafarisPage() {
         <section className="relative h-[50vh] min-h-[400px] w-full flex items-center justify-center bg-gradient-to-r from-brand-chocolate to-brand-ocean">
           <div className="absolute inset-0 bg-black/20" />
           <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4">Day Safaris & Excursions</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-4">Day Safaris & Excursions</h1>
             <p className="text-lg md:text-xl text-white/90">Unforgettable adventures perfect for any schedule</p>
           </div>
         </section>
@@ -179,7 +179,7 @@ export default function DaySafarisPage() {
         {/* Introduction */}
         <section className="py-16 md:py-20 bg-brand-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-6">Experience Tanzania in a Day</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-6">Experience Tanzania in a Day</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
               Our carefully curated day trips offer the perfect blend of adventure, culture, and natural beauty. Whether
               you're short on time or looking to complement your safari with unique experiences, these excursions
@@ -208,7 +208,7 @@ export default function DaySafarisPage() {
                         <span>{trip.duration}</span>
                       </div>
                     </div>
-                    <h3 className="text-xl font-black text-brand-chocolate mb-3">{trip.title}</h3>
+                    <h3 className="text-xl font-serif font-bold text-brand-chocolate mb-3">{trip.title}</h3>
                     <p className="text-gray-700 mb-4 leading-relaxed line-clamp-4">{trip.description}</p>
                     <div className="mb-6">
                       <h4 className="font-bold text-brand-chocolate mb-2 text-sm">Highlights:</h4>
@@ -234,7 +234,7 @@ export default function DaySafarisPage() {
         {/* CTA Section */}
         <section className="py-16 md:py-20 bg-brand-chocolate text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-black mb-6">Ready for Your Adventure?</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Ready for Your Adventure?</h2>
             <p className="text-lg text-white/90 mb-8">
               Contact us to customize your perfect day trip experience or combine multiple excursions for an
               unforgettable journey

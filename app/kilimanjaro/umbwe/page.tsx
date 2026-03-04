@@ -105,7 +105,7 @@ export default function UmbweRoutePage() {
           <Image src="/images/umbwe-route.jpg" alt="Umbwe Route - Kilimanjaro" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/30" />
           <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-3 sm:mb-4 drop-shadow-lg">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-serif font-bold text-white mb-3 sm:mb-4 drop-shadow-lg">
               Umbwe Route
             </h1>
             <p className="text-xl sm:text-2xl md:text-3xl text-brand-gold font-bold mb-3 sm:mb-4 drop-shadow-lg">
@@ -147,7 +147,7 @@ export default function UmbweRoutePage() {
         <section className="py-10 sm:py-12 md:py-16 bg-brand-cream">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-brand-chocolate mb-4 sm:mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-4 sm:mb-6">
                 About the Route
               </h2>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
@@ -171,7 +171,7 @@ export default function UmbweRoutePage() {
         {/* Itinerary */}
         <section className="py-10 sm:py-12 md:py-16 bg-brand-sand">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-brand-chocolate mb-8 sm:mb-12 text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-8 sm:mb-12 text-center">
               Daily Itinerary
             </h2>
             <div className="max-w-4xl mx-auto space-y-6 sm:space-y-8">
@@ -192,7 +192,7 @@ export default function UmbweRoutePage() {
 
                   <div className="p-4 sm:p-6 md:p-8">
                     <div className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-brand-gold text-brand-chocolate rounded-full flex items-center justify-center font-black text-lg">
+                      <div className="flex-shrink-0 w-12 h-12 bg-brand-gold text-brand-chocolate rounded-full flex items-center justify-center font-serif font-bold text-lg">
                         {day.day}
                       </div>
                       <div className="flex-1">
@@ -218,12 +218,12 @@ export default function UmbweRoutePage() {
         {/* Included/Excluded */}
         <section className="py-10 sm:py-12 md:py-16 bg-brand-sand">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-brand-chocolate mb-8 sm:mb-12 text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-8 sm:mb-12 text-center">
               Package Details
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
               <div className="bg-brand-cream rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-green-200">
-                <h3 className="text-xl sm:text-2xl font-black text-brand-chocolate mb-4 sm:mb-6 flex items-center gap-3">
+                <h3 className="text-xl sm:text-2xl font-serif font-bold text-brand-chocolate mb-4 sm:mb-6 flex items-center gap-3">
                   <Check className="text-green-600" size={24} />
                   Included
                 </h3>
@@ -238,7 +238,7 @@ export default function UmbweRoutePage() {
               </div>
 
               <div className="bg-brand-cream rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-red-200">
-                <h3 className="text-xl sm:text-2xl font-black text-brand-chocolate mb-4 sm:mb-6 flex items-center gap-3">
+                <h3 className="text-xl sm:text-2xl font-serif font-bold text-brand-chocolate mb-4 sm:mb-6 flex items-center gap-3">
                   <X className="text-red-600" size={24} />
                   Not Included
                 </h3>
@@ -259,7 +259,7 @@ export default function UmbweRoutePage() {
         <section className="py-10 sm:py-12 md:py-16 bg-brand-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-blue-50 rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-blue-200">
-              <h3 className="text-xl sm:text-2xl font-black text-brand-chocolate mb-3 sm:mb-4">Health & Preparation</h3>
+              <h3 className="text-xl sm:text-2xl font-serif font-bold text-brand-chocolate mb-3 sm:mb-4">Health & Preparation</h3>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                 The Umbwe Route requires excellent physical fitness and ideally previous high-altitude trekking
                 experience. We strongly recommend at least 2-3 months of cardiovascular training and strength exercises
@@ -274,7 +274,7 @@ export default function UmbweRoutePage() {
         {/* CTA */}
         <section className="py-10 sm:py-12 md:py-16 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 sm:mb-6">Ready for the Challenge?</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-4 sm:mb-6">Ready for the Challenge?</h2>
             <p className="text-base sm:text-lg text-white/90 mb-6 sm:mb-8">
               Contact us today to discuss if the Umbwe Route is right for you
             </p>

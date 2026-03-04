@@ -27,7 +27,7 @@ export default function OneDayMikumiPage() {
             <div className="inline-block bg-brand-gold text-white px-4 py-2 rounded-full font-semibold mb-4">
               1 Day Safari
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">1 Day Safari to Mikumi NP</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-4">1 Day Safari to Mikumi NP</h1>
             <p className="text-xl text-gray-200">The Dar Escape</p>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function OneDayMikumiPage() {
           <div className="max-w-4xl mx-auto">
             {/* Overview */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-brand-chocolate mb-6">Overview</h2>
+              <h2 className="text-3xl font-serif font-bold text-brand-chocolate mb-6">Overview</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 A perfect tour for those with limited time in Dar es Salaam who want a taste of the African wild.
                 Experience the stunning Mkata Floodplain and encounter large herds of elephants, zebras, giraffes,
@@ -65,7 +65,7 @@ export default function OneDayMikumiPage() {
 
             {/* Detailed Itinerary */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-brand-chocolate mb-8">Detailed Itinerary</h2>
+              <h2 className="text-3xl font-serif font-bold text-brand-chocolate mb-8">Detailed Itinerary</h2>
 
               <div className="space-y-6">
                 <div className="bg-gray-50 p-6 rounded-2xl">
@@ -74,7 +74,7 @@ export default function OneDayMikumiPage() {
                       05:00
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Early Morning Pickup & Departure</h3>
+                      <h3 className="text-xl font-serif font-bold text-brand-chocolate mb-2">Early Morning Pickup & Departure</h3>
                       <p className="text-gray-700">
                         Your private 4x4 safari vehicle and guide will pick you up from your hotel in Dar es Salaam.
                         Begin the scenic drive (approx. 5-6 hours) to Mikumi National Park via Morogoro.
@@ -89,7 +89,7 @@ export default function OneDayMikumiPage() {
                       11:30
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Arrival & Fresh Lunch</h3>
+                      <h3 className="text-xl font-serif font-bold text-brand-chocolate mb-2">Arrival & Fresh Lunch</h3>
                       <p className="text-gray-700">
                         Arrive just outside the park gate and head directly to Camp Bastian for a fresh, hot lunch to
                         refuel before your adventure.
@@ -104,7 +104,7 @@ export default function OneDayMikumiPage() {
                       13:00
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Afternoon Game Drive</h3>
+                      <h3 className="text-xl font-serif font-bold text-brand-chocolate mb-2">Afternoon Game Drive</h3>
                       <p className="text-gray-700">
                         Enter the park for your extensive 4 to 5-hour game drive. Explore the famous Mkata Floodplain,
                         where you can spot large herds of elephants, zebras, giraffes, buffalo, and a good chance of
@@ -120,7 +120,7 @@ export default function OneDayMikumiPage() {
                       17:30
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Exit Park & Departure to Dar</h3>
+                      <h3 className="text-xl font-serif font-bold text-brand-chocolate mb-2">Exit Park & Departure to Dar</h3>
                       <p className="text-gray-700">
                         Conclude your game drive and exit the park. Begin the drive back to Dar es Salaam.
                       </p>
@@ -134,7 +134,7 @@ export default function OneDayMikumiPage() {
                       23:00
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-brand-chocolate mb-2">Late Evening Drop-off</h3>
+                      <h3 className="text-xl font-serif font-bold text-brand-chocolate mb-2">Late Evening Drop-off</h3>
                       <p className="text-gray-700">
                         Arrive back in Dar es Salaam and be dropped off safely at your hotel, concluding your
                         exhilarating day safari.
@@ -148,7 +148,7 @@ export default function OneDayMikumiPage() {
             {/* What's Included/Excluded */}
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-green-50 p-6 rounded-2xl">
-                <h3 className="text-2xl font-bold text-brand-ocean mb-4 flex items-center gap-2">
+                <h3 className="text-2xl font-serif font-bold text-brand-ocean mb-4 flex items-center gap-2">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -165,7 +165,7 @@ export default function OneDayMikumiPage() {
               </div>
 
               <div className="bg-red-50 p-6 rounded-2xl">
-                <h3 className="text-2xl font-bold text-red-600 mb-4 flex items-center gap-2">
+                <h3 className="text-2xl font-serif font-bold text-red-600 mb-4 flex items-center gap-2">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
@@ -184,7 +184,7 @@ export default function OneDayMikumiPage() {
 
             {/* CTA Section */}
             <div className="bg-brand-chocolate text-white p-8 rounded-2xl text-center">
-              <h2 className="text-3xl font-bold mb-4">Ready to Book Your Adventure?</h2>
+              <h2 className="text-3xl font-serif font-bold mb-4">Ready to Book Your Adventure?</h2>
               <p className="text-gray-300 mb-6">Contact us now to secure your spot on this incredible day safari!</p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <BookingModal tourName="1 Day Safari to Mikumi NP">

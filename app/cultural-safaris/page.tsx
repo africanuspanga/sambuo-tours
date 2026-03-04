@@ -105,6 +105,38 @@ const destinations = [
       "Darajani Market - a sensory experience of spices, fruits, and seafood",
     ],
   },
+  {
+    title: "Maasai Boma Cultural Tour",
+    subtitle: "Experience the Unique Culture of the Maasai People",
+    image: "/maasai boma.jpg",
+    description:
+      "Experience the unique culture and traditions of the Maasai people during a visit to a traditional Maasai Boma (village). The Maasai are one of the most well-known ethnic groups in East Africa, famous for their colorful clothing, warrior traditions, and strong connection to cattle and nature. During the visit, guests can see traditional Maasai houses, learn about daily life in the village, and watch cultural dances and songs performed by the community. Visitors also have the opportunity to interact with Maasai warriors, hear stories about their traditions, and learn about their way of life that has been preserved for generations.",
+    historicalSignificance:
+      "The Maasai have inhabited the region stretching across southern Kenya and northern Tanzania for centuries. Known for their distinctive customs, dress, and warrior traditions, they have maintained their traditional way of life despite modernization. The Maasai are semi-nomadic pastoralists who have historically relied on cattle herding, and their culture is deeply intertwined with the land and animals of East Africa.",
+    highlights: [
+      "Visit a traditional Maasai village (Boma)",
+      "Learn about Maasai daily life and traditions",
+      "Watch cultural dances and songs performed by the community",
+      "Interact with Maasai warriors and hear their stories",
+      "Discover the ancient customs preserved for generations",
+    ],
+  },
+  {
+    title: "Hadzabe Hunter-Gatherer Experience",
+    subtitle: "Lake Eyasi – Discover One of the Last Hunter-Gatherer Tribes in Africa",
+    image: "/hadzabe lake eyas.jpg",
+    description:
+      "Discover one of the last remaining hunter-gatherer tribes in Africa with a visit to the Hadzabe people near Lake Eyasi. The Hadzabe have lived in this region for thousands of years and still follow a traditional lifestyle based on hunting and gathering food from the surrounding land. Visitors can join the Hadzabe early in the morning to see how they hunt using bows and arrows and search for wild fruits, honey, and roots. The experience offers a rare opportunity to learn about an ancient way of life that has remained largely unchanged for centuries and provides deep insight into human history and survival in nature.",
+    historicalSignificance:
+      "The Hadzabe are among the last true hunter-gatherer societies in the world, with a history dating back thousands of years. They speak a unique click language unrelated to any other language in the region, suggesting an ancient and isolated heritage. Their sustainable way of life offers a window into how early humans lived, making this experience not just a cultural visit but a journey into human history and our ancestral past.",
+    highlights: [
+      "Join the Hadzabe on an early morning hunt with bows and arrows",
+      "Learn about traditional gathering of wild fruits, honey, and roots",
+      "Experience an ancient way of life unchanged for centuries",
+      "Gain deep insight into human history and survival in nature",
+      "Connect with one of the world's last remaining hunter-gatherer tribes",
+    ],
+  },
 ]
 
 export default function CulturalSafarisPage() {
@@ -116,7 +148,7 @@ export default function CulturalSafarisPage() {
         <section className="relative h-[50vh] min-h-[400px] w-full flex items-center justify-center bg-gradient-to-r from-brand-chocolate to-brand-ocean">
           <div className="absolute inset-0 bg-black/20" />
           <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4">Cultural Tours</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-4">Cultural Tours</h1>
             <p className="text-lg md:text-xl text-white/90">Journey into the Heart of East Africa's Rich Heritage</p>
           </div>
         </section>
@@ -124,7 +156,7 @@ export default function CulturalSafarisPage() {
         {/* Introduction Section */}
         <section className="py-16 md:py-20 bg-brand-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-6">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-6">
               Discover Tanzania's Cultural Treasures
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -166,7 +198,7 @@ export default function CulturalSafarisPage() {
 
                     {/* Content */}
                     <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                      <h3 className="text-3xl font-black text-brand-chocolate mb-2">{destination.title}</h3>
+                      <h3 className="text-3xl font-serif font-bold text-brand-chocolate mb-2">{destination.title}</h3>
                       <p className="text-xl text-brand-ocean font-bold mb-4 italic">{destination.subtitle}</p>
                       <p className="text-gray-700 leading-relaxed mb-4">{destination.description}</p>
 
@@ -206,7 +238,7 @@ export default function CulturalSafarisPage() {
         {/* CTA Section */}
         <section className="py-16 md:py-20 bg-brand-chocolate text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-black mb-6">Ready to Explore Tanzania's Cultural Heritage?</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Ready to Explore Tanzania's Cultural Heritage?</h2>
             <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
               Let us create a meaningful cultural experience that connects you with the heart and soul of Tanzania
             </p>

@@ -31,7 +31,7 @@ export default function ThreeDaysSouthernCircuitPage() {
           <div className="absolute inset-0 bg-black/50" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
             <div className="container mx-auto px-4 text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">3 Days Mikumi & Selous Safari</h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-4">3 Days Mikumi & Selous Safari</h1>
               <p className="text-xl md:text-2xl font-semibold text-brand-gold">Southern Circuit Explorer</p>
               <div className="mt-4 inline-block bg-brand-gold px-6 py-2 rounded-full">
                 <span className="font-bold">3 Days / 2 Nights</span>
@@ -48,14 +48,14 @@ export default function ThreeDaysSouthernCircuitPage() {
                 <Clock className="text-brand-gold" size={24} />
                 <div>
                   <p className="text-sm text-gray-600">Duration</p>
-                  <p className="text-xl font-bold text-brand-chocolate">3 Days / 2 Nights</p>
+                  <p className="text-xl font-serif font-bold text-brand-chocolate">3 Days / 2 Nights</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 justify-center">
                 <Users className="text-brand-gold" size={24} />
                 <div>
                   <p className="text-sm text-gray-600">Group Size</p>
-                  <p className="text-xl font-bold text-brand-chocolate">1-10 pax</p>
+                  <p className="text-xl font-serif font-bold text-brand-chocolate">1-10 pax</p>
                 </div>
               </div>
             </div>
@@ -66,13 +66,13 @@ export default function ThreeDaysSouthernCircuitPage() {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-chocolate mb-12 text-center">Detailed Itinerary</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-12 text-center">Detailed Itinerary</h2>
 
               <div className="space-y-6">
                 {/* Day 1 */}
                 <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                   <div className="bg-brand-gold text-white py-4 px-6">
-                    <h3 className="text-2xl font-bold">Day 1: Dar to Mikumi & Full Game Drive (L, D)</h3>
+                    <h3 className="text-2xl font-serif font-bold">Day 1: Dar to Mikumi & Full Game Drive (L, D)</h3>
                   </div>
                   <div className="p-6">
                     <p className="text-gray-700 mb-4 font-semibold">Overnight at: Mikumi NP Lodge/Camp</p>
@@ -91,7 +91,7 @@ export default function ThreeDaysSouthernCircuitPage() {
                 {/* Day 2 */}
                 <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                   <div className="bg-brand-gold text-white py-4 px-6">
-                    <h3 className="text-2xl font-bold">Day 2: Mikumi to Selous & Boat Safari (B, L, D)</h3>
+                    <h3 className="text-2xl font-serif font-bold">Day 2: Mikumi to Selous & Boat Safari (B, L, D)</h3>
                   </div>
                   <div className="p-6">
                     <p className="text-gray-700 mb-4 font-semibold">Overnight at: Nyerere NP (Selous) Lodge/Camp</p>
@@ -110,7 +110,7 @@ export default function ThreeDaysSouthernCircuitPage() {
                 {/* Day 3 */}
                 <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                   <div className="bg-brand-gold text-white py-4 px-6">
-                    <h3 className="text-2xl font-bold">Day 3: Selous Game Drive & Return to Dar (B, L)</h3>
+                    <h3 className="text-2xl font-serif font-bold">Day 3: Selous Game Drive & Return to Dar (B, L)</h3>
                   </div>
                   <div className="p-6">
                     <p className="text-gray-700 mb-4 font-semibold">End Point: Dar es Salaam (Drop-off)</p>
@@ -140,7 +140,7 @@ export default function ThreeDaysSouthernCircuitPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Included */}
                 <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <h3 className="text-2xl font-bold text-brand-ocean mb-6 flex items-center gap-2">
+                  <h3 className="text-2xl font-serif font-bold text-brand-ocean mb-6 flex items-center gap-2">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
@@ -180,7 +180,7 @@ export default function ThreeDaysSouthernCircuitPage() {
 
                 {/* Excluded */}
                 <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <h3 className="text-2xl font-bold text-red-600 mb-6 flex items-center gap-2">
+                  <h3 className="text-2xl font-serif font-bold text-red-600 mb-6 flex items-center gap-2">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
@@ -221,7 +221,7 @@ export default function ThreeDaysSouthernCircuitPage() {
         {/* CTA Section */}
         <section className="py-16 bg-brand-chocolate text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Explore the Southern Circuit?</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Ready to Explore the Southern Circuit?</h2>
             <p className="text-xl mb-8 text-gray-300">Book now for a deep dive into Mikumi and Selous</p>
             <div className="flex gap-4 justify-center flex-wrap">
               <BookingModal tourName="3 Days Mikumi & Selous Safari">

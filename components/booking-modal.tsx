@@ -96,7 +96,7 @@ export function BookingModal({ tourName, trigger, children }: BookingModalProps)
                     value={formData.firstName}
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20 text-gray-900 transition-all"
-                    placeholder="John"
+                    placeholder="Cletus"
                   />
                 </div>
 
@@ -111,7 +111,7 @@ export function BookingModal({ tourName, trigger, children }: BookingModalProps)
                     value={formData.lastName}
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20 text-gray-900 transition-all"
-                    placeholder="Doe"
+                    placeholder="Olomy"
                   />
                 </div>
 

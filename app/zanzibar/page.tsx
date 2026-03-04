@@ -116,7 +116,7 @@ export default function ZanzibarPage() {
         <section className="relative h-[60vh] min-h-[500px] w-full flex items-center justify-center bg-gradient-to-r from-blue-900 to-teal-700">
           <div className="absolute inset-0 bg-black/30" />
           <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white mb-4">Zanzibar</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif font-bold text-white mb-4">Zanzibar</h1>
             <p className="text-lg md:text-2xl text-white/90">The Spice Island Paradise</p>
           </div>
         </section>
@@ -124,7 +124,7 @@ export default function ZanzibarPage() {
         {/* Introduction Section */}
         <section className="py-16 md:py-20 bg-brand-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-6">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-6">
               Where Pristine Beaches Meet Rich Cultural Heritage
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -149,7 +149,7 @@ export default function ZanzibarPage() {
         <section className="py-16 md:py-20 bg-brand-sand">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-4">Zanzibar Experiences</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-4">Zanzibar Experiences</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Discover the magic of Zanzibar with our curated tours and experiences
               </p>
@@ -212,7 +212,7 @@ export default function ZanzibarPage() {
 
               {/* Content */}
               <div>
-                <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-6">Paradise Beaches Await</h2>
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-6">Paradise Beaches Await</h2>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   Zanzibar's beaches are legendary, featuring powdery white sand and warm, crystal-clear waters perfect
                   for swimming, snorkeling, and diving. From the lively beaches of Nungwi and Kendwa in the north to the
@@ -247,7 +247,7 @@ export default function ZanzibarPage() {
         {/* CTA Section */}
         <section className="py-16 md:py-20 bg-brand-chocolate text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-black mb-6">Ready to Experience Zanzibar Magic?</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Ready to Experience Zanzibar Magic?</h2>
             <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
               Let us create your perfect island paradise getaway with customized tours and experiences
             </p>

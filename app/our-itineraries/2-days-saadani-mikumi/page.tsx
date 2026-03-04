@@ -28,7 +28,7 @@ export default function SaadaniMikumiPage() {
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <div className="text-center text-white px-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-4">
                 Safari 2 Days 1 Night: Saadani NP & Mikumi NP
               </h1>
               <p className="text-xl md:text-2xl">The Northern Cross-Over</p>
@@ -60,7 +60,7 @@ export default function SaadaniMikumiPage() {
           <div className="max-w-6xl mx-auto">
             {/* Tour Overview */}
             <section className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-chocolate mb-6">Tour Overview</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-6">Tour Overview</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 This intense 2-day tour covers two major parks, requiring quick travel but giving you maximum diversity
                 in a short time. Experience the unique coastal environment of Saadani where the savannah meets the sea,
@@ -71,12 +71,12 @@ export default function SaadaniMikumiPage() {
 
             {/* Detailed Itinerary */}
             <section className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-chocolate mb-8">Detailed Itinerary</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-8">Detailed Itinerary</h2>
 
               <div className="space-y-12">
                 {/* Day 1 */}
                 <div>
-                  <h3 className="text-2xl font-bold text-brand-gold mb-6 flex items-center gap-3">
+                  <h3 className="text-2xl font-serif font-bold text-brand-gold mb-6 flex items-center gap-3">
                     <span className="bg-brand-gold text-white rounded-full w-10 h-10 flex items-center justify-center text-lg">
                       1
                     </span>
@@ -90,7 +90,7 @@ export default function SaadaniMikumiPage() {
                           05:00
                         </div>
                         <div>
-                          <h4 className="text-lg font-bold text-brand-chocolate mb-2">
+                          <h4 className="text-lg font-serif font-bold text-brand-chocolate mb-2">
                             Early Morning Pickup & Drive to Saadani
                           </h4>
                           <p className="text-gray-700">
@@ -107,7 +107,7 @@ export default function SaadaniMikumiPage() {
                           10:00
                         </div>
                         <div>
-                          <h4 className="text-lg font-bold text-brand-chocolate mb-2">Arrival & Check-in at Lodge</h4>
+                          <h4 className="text-lg font-serif font-bold text-brand-chocolate mb-2">Arrival & Check-in at Lodge</h4>
                           <p className="text-gray-700">
                             Arrive at your Saadani lodge/camp. Check in and enjoy a hot lunch with views of the Indian
                             Ocean or the bush.
@@ -122,7 +122,7 @@ export default function SaadaniMikumiPage() {
                           14:00
                         </div>
                         <div>
-                          <h4 className="text-lg font-bold text-brand-chocolate mb-2">Afternoon Wami River Boat Safari</h4>
+                          <h4 className="text-lg font-serif font-bold text-brand-chocolate mb-2">Afternoon Wami River Boat Safari</h4>
                           <p className="text-gray-700">
                             Embark on a spectacular boat trip on the Wami River. Witness large pods of Hippos,
                             Crocodiles, and a huge variety of water birds including kingfishers, fish eagles, and
@@ -138,7 +138,7 @@ export default function SaadaniMikumiPage() {
                           16:30
                         </div>
                         <div>
-                          <h4 className="text-lg font-bold text-brand-chocolate mb-2">Short Coastal Game Drive</h4>
+                          <h4 className="text-lg font-serif font-bold text-brand-chocolate mb-2">Short Coastal Game Drive</h4>
                           <p className="text-gray-700">
                             Short game drive near the coastline. Witness the unique environment where the savannah meets
                             the sea. Look out for giraffes, elephants, and waterbuck that venture close to the beach.
@@ -153,7 +153,7 @@ export default function SaadaniMikumiPage() {
                           19:00
                         </div>
                         <div>
-                          <h4 className="text-lg font-bold text-brand-chocolate mb-2">Dinner & Overnight</h4>
+                          <h4 className="text-lg font-serif font-bold text-brand-chocolate mb-2">Dinner & Overnight</h4>
                           <p className="text-gray-700">
                             Return to your lodge for dinner and overnight stay. Enjoy the sounds of the ocean and the
                             African bush.
@@ -166,7 +166,7 @@ export default function SaadaniMikumiPage() {
 
                 {/* Day 2 */}
                 <div>
-                  <h3 className="text-2xl font-bold text-brand-gold mb-6 flex items-center gap-3">
+                  <h3 className="text-2xl font-serif font-bold text-brand-gold mb-6 flex items-center gap-3">
                     <span className="bg-brand-gold text-white rounded-full w-10 h-10 flex items-center justify-center text-lg">
                       2
                     </span>
@@ -180,7 +180,7 @@ export default function SaadaniMikumiPage() {
                           06:00
                         </div>
                         <div>
-                          <h4 className="text-lg font-bold text-brand-chocolate mb-2">Breakfast & Very Early Departure</h4>
+                          <h4 className="text-lg font-serif font-bold text-brand-chocolate mb-2">Breakfast & Very Early Departure</h4>
                           <p className="text-gray-700">
                             Early breakfast followed by check-out. Very early departure from Saadani. Drive south
                             through Dar es Salaam and west toward Mikumi NP (approx. 8-10 hours total transfer). Enjoy
@@ -196,7 +196,7 @@ export default function SaadaniMikumiPage() {
                           13:00
                         </div>
                         <div>
-                          <h4 className="text-lg font-bold text-brand-chocolate mb-2">Picnic Lunch En-Route</h4>
+                          <h4 className="text-lg font-serif font-bold text-brand-chocolate mb-2">Picnic Lunch En-Route</h4>
                           <p className="text-gray-700">
                             Stop for a picnic lunch en-route to Mikumi. Stretch your legs and enjoy the packed meal
                             before continuing the journey.
@@ -211,7 +211,7 @@ export default function SaadaniMikumiPage() {
                           15:00
                         </div>
                         <div>
-                          <h4 className="text-lg font-bold text-brand-chocolate mb-2">Arrival at Mikumi & Game Drive</h4>
+                          <h4 className="text-lg font-serif font-bold text-brand-chocolate mb-2">Arrival at Mikumi & Game Drive</h4>
                           <p className="text-gray-700">
                             Arrive at Mikumi NP and immediately enter for a 3-hour Afternoon Game Drive. Focus on the
                             Mkata Plains for large concentrations of Giraffe, Zebra, and Lion. Watch for the unique
@@ -227,7 +227,7 @@ export default function SaadaniMikumiPage() {
                           18:00
                         </div>
                         <div>
-                          <h4 className="text-lg font-bold text-brand-chocolate mb-2">Departure to Dar es Salaam</h4>
+                          <h4 className="text-lg font-serif font-bold text-brand-chocolate mb-2">Departure to Dar es Salaam</h4>
                           <p className="text-gray-700">
                             Exit Mikumi and begin the return drive to Dar es Salaam. Relax and reflect on your two-park
                             adventure.
@@ -242,7 +242,7 @@ export default function SaadaniMikumiPage() {
                           23:00
                         </div>
                         <div>
-                          <h4 className="text-lg font-bold text-brand-chocolate mb-2">Late Drop-off in Dar es Salaam</h4>
+                          <h4 className="text-lg font-serif font-bold text-brand-chocolate mb-2">Late Drop-off in Dar es Salaam</h4>
                           <p className="text-gray-700">
                             Arrive back in Dar es Salaam for late drop-off at your hotel. End of safari.
                           </p>
@@ -256,10 +256,10 @@ export default function SaadaniMikumiPage() {
 
             {/* Inclusions & Exclusions */}
             <section className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-chocolate mb-8">What's Included</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-8">What's Included</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-green-50 p-6 rounded-2xl">
-                  <h3 className="text-xl font-bold text-brand-ocean mb-4 flex items-center gap-2">
+                  <h3 className="text-xl font-serif font-bold text-brand-ocean mb-4 flex items-center gap-2">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
@@ -305,7 +305,7 @@ export default function SaadaniMikumiPage() {
                 </div>
 
                 <div className="bg-red-50 p-6 rounded-2xl">
-                  <h3 className="text-xl font-bold text-red-600 mb-4 flex items-center gap-2">
+                  <h3 className="text-xl font-serif font-bold text-red-600 mb-4 flex items-center gap-2">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
@@ -339,7 +339,7 @@ export default function SaadaniMikumiPage() {
 
             {/* Call to Action */}
             <section className="bg-brand-chocolate text-white rounded-lg p-8 md:p-12 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready for an Epic 2-Park Adventure?</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Ready for an Epic 2-Park Adventure?</h2>
               <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
                 Book now and experience the best of coastal Saadani and wildlife-rich Mikumi
               </p>

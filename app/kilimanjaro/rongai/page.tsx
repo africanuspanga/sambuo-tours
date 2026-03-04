@@ -94,7 +94,7 @@ export default function RongaiRoutePage() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
           <div className="relative z-10 w-full px-4 pb-12 md:pb-16">
             <div className="max-w-7xl mx-auto">
-              <h1 className="text-4xl md:text-6xl font-black text-white mb-4">Rongai Route</h1>
+              <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-4">Rongai Route</h1>
               <p className="text-2xl md:text-3xl text-brand-gold font-bold mb-4">The Northern Approach</p>
               <p className="text-lg md:text-xl text-white/90">7 Days / 6 Nights</p>
             </div>
@@ -117,7 +117,7 @@ export default function RongaiRoutePage() {
         <section className="py-12 md:py-16 bg-brand-cream">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-6">About the Route</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-6">About the Route</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 The Rongai route is the only path that approaches Kilimanjaro from the north near the Kenyan border. It
                 is much drier and flatter, making it the best choice during the rainy season.
@@ -133,7 +133,7 @@ export default function RongaiRoutePage() {
         {/* Itinerary */}
         <section className="py-12 md:py-16 bg-brand-sand">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-12 text-center">Daily Itinerary</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-12 text-center">Daily Itinerary</h2>
             <div className="max-w-4xl mx-auto space-y-8">
               {itinerary.map((day) => (
                 <div key={day.day} className="bg-brand-cream rounded-xl overflow-hidden border border-gray-200 shadow-sm">
@@ -155,7 +155,7 @@ export default function RongaiRoutePage() {
                   )}
                   <div className="p-6 md:p-8">
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-brand-gold text-brand-chocolate rounded-full flex items-center justify-center font-black text-lg">
+                      <div className="flex-shrink-0 w-12 h-12 bg-brand-gold text-brand-chocolate rounded-full flex items-center justify-center font-serif font-bold text-lg">
                         {day.day}
                       </div>
                       <div className="flex-1">
@@ -173,10 +173,10 @@ export default function RongaiRoutePage() {
         {/* Included/Excluded */}
         <section className="py-12 md:py-16 bg-brand-sand">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-12 text-center">Package Details</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-12 text-center">Package Details</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
               <div className="bg-brand-cream rounded-2xl p-6 md:p-8 border-2 border-green-200">
-                <h3 className="text-2xl font-black text-brand-chocolate mb-6 flex items-center gap-3">
+                <h3 className="text-2xl font-serif font-bold text-brand-chocolate mb-6 flex items-center gap-3">
                   <Check className="text-green-600" size={28} />
                   Included
                 </h3>
@@ -191,7 +191,7 @@ export default function RongaiRoutePage() {
               </div>
 
               <div className="bg-brand-cream rounded-2xl p-6 md:p-8 border-2 border-red-200">
-                <h3 className="text-2xl font-black text-brand-chocolate mb-6 flex items-center gap-3">
+                <h3 className="text-2xl font-serif font-bold text-brand-chocolate mb-6 flex items-center gap-3">
                   <X className="text-red-600" size={28} />
                   Not Included
                 </h3>
@@ -212,7 +212,7 @@ export default function RongaiRoutePage() {
         <section className="py-12 md:py-16 bg-brand-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-blue-50 rounded-2xl p-6 md:p-8 border-2 border-blue-200">
-              <h3 className="text-2xl font-black text-brand-chocolate mb-4">Health & Preparation</h3>
+              <h3 className="text-2xl font-serif font-bold text-brand-chocolate mb-4">Health & Preparation</h3>
               <p className="text-gray-700 leading-relaxed">
                 Most able-bodied persons aged 10+ can hike; however, preparation and care are essential for safety. We
                 recommend 1 month of physical preparation and ensuring you have waterproof equipment for the rainy
@@ -225,7 +225,7 @@ export default function RongaiRoutePage() {
         {/* CTA */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-black mb-6">Ready to Book This Route?</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Ready to Book This Route?</h2>
             <p className="text-lg text-white/90 mb-8">Contact us today to start planning your Kilimanjaro adventure</p>
             <BookingModal
               trigger={

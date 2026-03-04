@@ -127,7 +127,7 @@ ${formData.message || "No additional message"}
                         <Input
                           id="fullName"
                           required
-                          placeholder="John Doe"
+                          placeholder="Cletus Olomy"
                           className="mt-2 rounded-xl border-gray-200 focus:border-brand-gold focus:ring-brand-gold"
                           value={formData.fullName}
                           onChange={(e) => handleInputChange("fullName", e.target.value)}

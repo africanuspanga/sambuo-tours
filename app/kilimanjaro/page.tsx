@@ -81,7 +81,7 @@ export default function KilimanjaroPage() {
           <div className="absolute inset-0 bg-black/40" />
           <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
             <Mountain size={64} className="text-white mx-auto mb-6" />
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6">Climb Mount Kilimanjaro</h1>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6">Climb Mount Kilimanjaro</h1>
             <p className="text-xl md:text-2xl text-white/90 mb-3">Conquer Africa's Highest Peak</p>
             <p className="text-2xl md:text-4xl text-white font-bold">5,895m / 19,341ft</p>
           </div>
@@ -90,7 +90,7 @@ export default function KilimanjaroPage() {
         {/* Introduction Section */}
         <section className="py-16 md:py-24 bg-brand-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-5xl font-black text-brand-chocolate mb-8">Reach the Roof of Africa</h2>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-brand-chocolate mb-8">Reach the Roof of Africa</h2>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
               Mount Kilimanjaro stands at 5,895 meters, making it the highest peak in Africa and the world's tallest
               free-standing mountain. This dormant volcano offers one of the most accessible high altitude climbs,
@@ -108,7 +108,7 @@ export default function KilimanjaroPage() {
         <section className="py-16 md:py-24 bg-brand-sand">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-black text-brand-chocolate mb-4">Choose Your Route</h2>
+              <h2 className="text-3xl md:text-5xl font-serif font-bold text-brand-chocolate mb-4">Choose Your Route</h2>
               <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Each route offers a unique experience and varying difficulty levels. Select the one that best matches
                 your adventure style and fitness level.
@@ -127,7 +127,7 @@ export default function KilimanjaroPage() {
 
                   <div className="p-8 flex-1 flex flex-col">
                     <div className="mb-6">
-                      <h3 className="text-2xl md:text-3xl font-black text-brand-chocolate mb-2">{route.title}</h3>
+                      <h3 className="text-2xl md:text-3xl font-serif font-bold text-brand-chocolate mb-2">{route.title}</h3>
                       <p className="text-brand-ocean font-bold text-lg mb-1">{route.subtitle}</p>
                       <p className="text-gray-600 font-semibold">{route.duration}</p>
                     </div>
@@ -155,7 +155,7 @@ export default function KilimanjaroPage() {
         {/* CTA Section */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-5xl font-black mb-6">Ready to Start Your Journey?</h2>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">Ready to Start Your Journey?</h2>
             <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto">
               Our experienced team is ready to guide you to the summit of Africa's highest peak
             </p>

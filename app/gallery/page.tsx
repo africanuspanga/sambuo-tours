@@ -155,7 +155,7 @@ export default function GalleryPage() {
         <section className="relative h-[50vh] min-h-[400px] w-full flex items-center justify-center bg-gradient-to-r from-brand-chocolate to-brand-ocean">
           <div className="absolute inset-0 bg-black/20" />
           <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4">Photo Gallery</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-4">Photo Gallery</h1>
             <p className="text-lg md:text-xl text-white/90">Wildlife, Mountains & Safari Moments</p>
           </div>
         </section>
@@ -206,7 +206,7 @@ export default function GalleryPage() {
         {/* CTA Section */}
         <section className="py-16 md:py-24 bg-brand-chocolate text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-black mb-6">Ready to Create Your Own Memories?</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Ready to Create Your Own Memories?</h2>
             <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
               Let us take you on an unforgettable journey through Tanzania&apos;s most spectacular 
               wildlife destinations and mountain landscapes.

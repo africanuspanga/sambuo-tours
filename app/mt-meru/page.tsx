@@ -31,11 +31,11 @@ export default function MtMeruPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
           <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-4 drop-shadow-lg">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-4 drop-shadow-lg">
               Mount Meru Trek
             </h1>
             <p className="text-xl md:text-2xl text-white/95 mb-2 font-semibold">Tanzania's Second Highest Peak</p>
-            <p className="text-2xl md:text-4xl text-white font-black mb-6">4,566m / 14,980ft</p>
+            <p className="text-2xl md:text-4xl text-white font-serif font-bold mb-6">4,566m / 14,980ft</p>
             <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
               Spectacular views of Kilimanjaro and abundant wildlife make this the perfect preparation hike
             </p>
@@ -47,7 +47,7 @@ export default function MtMeruPage() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-6">Why Climb Mount Meru?</h2>
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-6">Why Climb Mount Meru?</h2>
                 <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                   <p>
                     Meru is a great preparation hike for climbing Kilimanjaro, or a spectacular trek for those not
@@ -80,7 +80,7 @@ export default function MtMeruPage() {
         {/* Key Features Grid */}
         <section className="py-16 md:py-20 bg-brand-sand">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-12 text-center">Trek Highlights</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-12 text-center">Trek Highlights</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
@@ -120,7 +120,7 @@ export default function MtMeruPage() {
         <section className="py-16 md:py-20 bg-brand-cream">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-4">Choose Your Trek</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-4">Choose Your Trek</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Select between our standard 3-day trek or the recommended 4-day trek for better acclimatization
               </p>
@@ -130,7 +130,7 @@ export default function MtMeruPage() {
               {/* 3 Day Trek */}
               <Card className="relative overflow-hidden border-2 hover:border-brand-gold transition-colors bg-brand-cream">
                 <CardHeader className="bg-gradient-to-br from-gray-50 to-white pb-8">
-                  <CardTitle className="text-2xl md:text-3xl font-black text-brand-chocolate">3 Days 2 Nights</CardTitle>
+                  <CardTitle className="text-2xl md:text-3xl font-serif font-bold text-brand-chocolate">3 Days 2 Nights</CardTitle>
                   <CardDescription className="text-base">Standard Itinerary</CardDescription>
                 </CardHeader>
                 <CardContent className="pt-6">
@@ -207,7 +207,7 @@ export default function MtMeruPage() {
                   Recommended
                 </div>
                 <CardHeader className="bg-gradient-to-br from-blue-50 to-white pb-8">
-                  <CardTitle className="text-2xl md:text-3xl font-black text-brand-chocolate">4 Days 3 Nights</CardTitle>
+                  <CardTitle className="text-2xl md:text-3xl font-serif font-bold text-brand-chocolate">4 Days 3 Nights</CardTitle>
                   <CardDescription className="text-base">Better Acclimatization</CardDescription>
                 </CardHeader>
                 <CardContent className="pt-6">
@@ -293,7 +293,7 @@ export default function MtMeruPage() {
         {/* What's Included */}
         <section className="py-16 md:py-20 bg-brand-sand">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-12 text-center">What's Included</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-12 text-center">What's Included</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card className="bg-brand-cream">
                 <CardHeader>
@@ -354,7 +354,7 @@ export default function MtMeruPage() {
         {/* Important Information */}
         <section className="py-16 md:py-20 bg-brand-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-8 text-center">Important Information</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-chocolate mb-8 text-center">Important Information</h2>
             <Card className="bg-amber-50 border-brand-gold">
               <CardContent className="pt-6">
                 <ul className="space-y-3">
@@ -382,7 +382,7 @@ export default function MtMeruPage() {
         <section className="py-16 md:py-20 bg-brand-chocolate text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <Mountain className="w-16 h-16 mx-auto mb-6 text-brand-gold" />
-            <h2 className="text-3xl md:text-4xl font-black mb-6">Ready to Climb Mount Meru?</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Ready to Climb Mount Meru?</h2>
             <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
               Contact us today to book your Mount Meru adventure or to customize your trek to fit your schedule and
               preferences.
