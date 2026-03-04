@@ -9,10 +9,40 @@ import { company } from "@/lib/sambuo-data"
 export const metadata = {
   title: `Cultural Tours & Heritage Sites in Tanzania | ${company.shortName}`,
   description:
-    "Explore Tanzania's rich cultural heritage with visits to Stone Town, Bagamoyo, Kilwa Ruins, National Museum, and Amboni Caves. Authentic cultural experiences and historical tours.",
+    "Explore Tanzania's rich cultural heritage with visits to Tanga City, Amboni Caves, Stone Town, Bagamoyo, Kilwa Ruins, and National Museum. Authentic cultural experiences and historical tours.",
 }
 
 const destinations = [
+  {
+    title: "Tanga City Tour",
+    subtitle: "A Historic Coastal Gem of East Africa",
+    image: "/tanga-city-sambuo.jpg",
+    description:
+      "Discover the historic coastal city of Tanga, one of the oldest towns in East Africa. The city was developed during the German colonial period in the late 1800s, when modern port facilities, railways, and administrative buildings were constructed. On this tour, visitors explore the charming old town with its colonial architecture, vibrant markets, and historic landmarks. You will also visit the famous Tanga Cement factory area and learn about the region's industrial history. The tour offers a mix of culture, history, and local life, making it a great introduction to Tanga and its unique heritage along the Indian Ocean coast.",
+    historicalSignificance:
+      "Tanga has been an important trading center for centuries, serving as a key port along the Indian Ocean trade routes. During German colonial rule, it became a major administrative and economic center. The city's architecture reflects this layered history, with German colonial buildings standing alongside traditional Swahili structures. The port of Tanga was once the starting point of the Usambara Railway, which connected the coast to the interior.",
+    highlights: [
+      "Colonial-era architecture and historic buildings",
+      "Vibrant local markets and Swahili culture",
+      "Tanga Port and railway heritage",
+      "Mix of culture, history, and local coastal life",
+    ],
+  },
+  {
+    title: "Amboni Caves Tour",
+    subtitle: "East Africa's Largest Limestone Caves",
+    image: "/Amboni_Caves.jpg",
+    description:
+      "The Amboni Caves are the largest limestone caves in East Africa and one of the most fascinating natural attractions near Tanga. Located about 8 km north of the city, these caves were formed around 150 million years ago during the Jurassic period. Visitors can explore underground chambers filled with impressive rock formations, stalactites, and stalagmites. The caves are also home to many bats and have interesting shapes in the rocks that resemble animals and famous objects. Guided tours explain the geology, history, and local legends connected to the caves, making this adventure both educational and exciting.",
+    historicalSignificance:
+      "The Amboni Caves hold both geological and cultural significance. Formed over 150 million years ago, they have been used by local communities for generations. During the colonial era, the caves served as hiding places during conflicts. Today, they remain important for local traditions and are considered sacred by some communities. The caves provide valuable insights into the region's geological history and have been a focus of scientific study.",
+    highlights: [
+      "Explore East Africa's largest limestone cave system",
+      "Impressive stalactites and stalagmite formations",
+      "Learn about 150-million-year-old geology",
+      "Discover local legends and cultural significance",
+    ],
+  },
   {
     title: "The National Museum and House of Culture, Dar es Salaam",
     subtitle: "A Journey Through Tanzania's Grand History",
@@ -57,21 +87,6 @@ const destinations = [
       "The Palace of Husuni Kubwa with over 100 rooms and an octagonal swimming pool",
       "The Gereza (Fort) offering panoramic views of the island",
       "Songo Mnara Ruins with well-preserved palaces, mosques, and city walls",
-    ],
-  },
-  {
-    title: "The Amboni Caves, Tanga",
-    subtitle: "Tanzania's Mystical Underground Cathedral",
-    image: "/images/amboni-caves.jpg",
-    description:
-      "Venture north to the region of Tanga to discover a natural wonder steeped in geological history and local spiritual beliefs: the Amboni Caves. This is the most extensive limestone cave system in East Africa, a breathtaking subterranean network of chambers, passages, and fascinating rock formations. Formed over 150 million years ago, the caves are more than just a geological marvel; they are considered a sacred site by local communities, who believe them to be the home of powerful spirits.",
-    historicalSignificance:
-      "While the caves' geological history is ancient, their human history is more recent. They were used as a hiding place by local communities during the colonial era, particularly during the Abushiri Revolt against German rule. Today, their primary significance is cultural and spiritual. For generations, local shamans and traditional healers have used the caves for rituals, prayers, and to make offerings to the spirits (mizimu) that are believed to reside within.",
-    highlights: [
-      "Awe-inspiring stalactites and stalagmites shaped over centuries",
-      "Sacred chambers used for worship and traditional rituals",
-      "Experience of complete darkness and natural cave sounds",
-      "Adventure through narrow passages and hidden chambers",
     ],
   },
   {

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import Image from "next/image"
-import { Calendar, Users, DollarSign, Check, X } from "lucide-react"
+import { Calendar, Users, Check, X } from "lucide-react"
 
 export default function SouthernTanzaniaSafariPage() {
   return (
@@ -36,19 +36,10 @@ export default function SouthernTanzaniaSafariPage() {
           </div>
         </section>
 
-        {/* Price & Quick Info */}
+        {/* Quick Info */}
         <section className="bg-brand-dark text-white py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap items-center justify-between gap-6">
-              <div className="flex items-center gap-2">
-                <DollarSign className="h-6 w-6 text-brand-orange" />
-                <div>
-                  <p className="text-sm text-white/70">Price from</p>
-                  <p className="text-3xl font-black">
-                    $8,361 <span className="text-lg font-normal">per person</span>
-                  </p>
-                </div>
-              </div>
               <div className="flex items-center gap-2">
                 <Calendar className="h-6 w-6 text-brand-orange" />
                 <div>

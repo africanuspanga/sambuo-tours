@@ -5,7 +5,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { BookingModal } from "@/components/booking-modal"
 import { company } from "@/lib/sambuo-data"
-import { ArrowLeft, Clock, Users, DollarSign } from "lucide-react"
+import { ArrowLeft, Clock, Users } from "lucide-react"
 
 export const metadata: Metadata = {
   title: `4 Days Mikumi & Selous Safari | Sambuo Tours`,
@@ -37,14 +37,7 @@ export default function FourDaysMikumiSelousPage() {
         {/* Quick Info Bar */}
         <section className="bg-white shadow-md">
           <div className="container mx-auto px-4 py-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <div className="flex items-center gap-3 justify-center">
-                <DollarSign className="text-brand-gold" size={24} />
-                <div>
-                  <p className="text-sm text-gray-600">From</p>
-                  <p className="text-xl font-bold text-brand-chocolate">$1,404 pp</p>
-                </div>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
               <div className="flex items-center gap-3 justify-center">
                 <Clock className="text-brand-gold" size={24} />
                 <div>
@@ -58,47 +51,6 @@ export default function FourDaysMikumiSelousPage() {
                   <p className="text-sm text-gray-600">Group Size</p>
                   <p className="text-xl font-bold text-brand-chocolate">1-10 pax</p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Pricing Table */}
-        <section className="py-12 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold text-brand-chocolate mb-8 text-center">Tour Pricing</h2>
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                <table className="w-full">
-                  <thead className="bg-brand-chocolate text-white">
-                    <tr>
-                      <th className="py-4 px-6 text-left">Number of People</th>
-                      <th className="py-4 px-6 text-right">Price Per Person</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b">
-                      <td className="py-4 px-6">1 Person</td>
-                      <td className="py-4 px-6 text-right font-bold text-brand-gold">$1,404 (Total Trip)</td>
-                    </tr>
-                    <tr className="border-b bg-gray-50">
-                      <td className="py-4 px-6">2 People</td>
-                      <td className="py-4 px-6 text-right font-bold">$1,040 pp</td>
-                    </tr>
-                    <tr className="border-b">
-                      <td className="py-4 px-6">3 People</td>
-                      <td className="py-4 px-6 text-right font-bold">$815 pp</td>
-                    </tr>
-                    <tr className="border-b bg-gray-50">
-                      <td className="py-4 px-6">4 People</td>
-                      <td className="py-4 px-6 text-right font-bold">$795 pp</td>
-                    </tr>
-                    <tr>
-                      <td className="py-4 px-6">5-10 People</td>
-                      <td className="py-4 px-6 text-right font-bold text-brand-ocean">$776 pp (Best Value!)</td>
-                    </tr>
-                  </tbody>
-                </table>
               </div>
             </div>
           </div>

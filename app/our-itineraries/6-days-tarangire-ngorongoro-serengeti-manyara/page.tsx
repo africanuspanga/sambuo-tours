@@ -64,22 +64,6 @@ const itinerary = [
   },
 ]
 
-const pricingCamping = [
-  { people: "2 People", price: "$1,600" },
-  { people: "3 People", price: "$1,500" },
-  { people: "4 People", price: "$1,400" },
-  { people: "5 People", price: "$1,350" },
-  { people: "6 People", price: "$1,250" },
-]
-
-const pricingLodge = [
-  { people: "2 People", price: "$3,265" },
-  { people: "3 People", price: "$3,245" },
-  { people: "4 People", price: "$2,840" },
-  { people: "5 People", price: "$2,725" },
-  { people: "6 People", price: "$2,150" },
-]
-
 export default function SixDaysTarangireNgorongoroSerengetiManyaraPage() {
   return (
     <>
@@ -175,38 +159,6 @@ export default function SixDaysTarangireNgorongoroSerengetiManyaraPage() {
                       </div>
                     </div>
                   ))}
-                </div>
-              </div>
-
-              {/* Pricing */}
-              <div className="mb-12">
-                <h2 className="text-3xl font-bold text-brand-chocolate mb-8">Pricing</h2>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-brand-ocean">
-                    <h3 className="text-xl font-bold text-brand-ocean mb-4">Basic Camping</h3>
-                    <div className="space-y-3">
-                      {pricingCamping.map((item) => (
-                        <div key={item.people} className="flex justify-between items-center">
-                          <span className="text-gray-700">{item.people}</span>
-                          <span className="text-xl font-bold text-brand-ocean">{item.price}</span>
-                        </div>
-                      ))}
-                    </div>
-                    <p className="text-sm text-gray-600 mt-4">Price per person</p>
-                  </div>
-
-                  <div className="bg-amber-50 rounded-lg p-6 border-l-4 border-brand-gold">
-                    <h3 className="text-xl font-bold text-brand-gold mb-4">Mid-Range Lodge</h3>
-                    <div className="space-y-3">
-                      {pricingLodge.map((item) => (
-                        <div key={item.people} className="flex justify-between items-center">
-                          <span className="text-gray-700">{item.people}</span>
-                          <span className="text-xl font-bold text-brand-gold">{item.price}</span>
-                        </div>
-                      ))}
-                    </div>
-                    <p className="text-sm text-gray-600 mt-4">Price per person</p>
-                  </div>
                 </div>
               </div>
 

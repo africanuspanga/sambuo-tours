@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import Image from "next/image"
-import { Calendar, Users, DollarSign, Check, X } from "lucide-react"
+import { Calendar, Users, Check, X } from "lucide-react"
 
 export default function RuahaZanzibarComboPage() {
   return (
@@ -39,13 +39,7 @@ export default function RuahaZanzibarComboPage() {
         <section className="bg-brand-dark text-white py-6">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap justify-center md:justify-around gap-6 md:gap-4">
-              <div className="flex items-center gap-2">
-                <DollarSign className="h-5 w-5 text-brand-orange" />
-                <div>
-                  <p className="text-sm text-white/70">From</p>
-                  <p className="font-bold text-lg">$3,920 per person</p>
-                </div>
-              </div>
+
               <div className="flex items-center gap-2">
                 <Calendar className="h-5 w-5 text-brand-orange" />
                 <div>

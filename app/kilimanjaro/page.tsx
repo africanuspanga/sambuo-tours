@@ -20,7 +20,6 @@ const routes = [
     duration: "6 Days",
     description:
       "The oldest and most established path with hut accommodations. Ideal for those who want a classic experience without sleeping in tents.",
-    pricePerPerson: "$2,349",
     slug: "marangu",
     image: "/images/kilimanjaro-arms-open.jpg",
   },
@@ -30,7 +29,6 @@ const routes = [
     duration: "7 Days",
     description:
       "Steeper and more challenging with excellent acclimatization. The climb high, sleep low topography offers spectacular views throughout.",
-    pricePerPerson: "$2,589",
     slug: "machame",
     image: "/images/kilimanjaro-sunset-hiker.jpg",
   },
@@ -40,7 +38,6 @@ const routes = [
     duration: "8 Days",
     description:
       "The most beautiful route with remote wilderness feel. Perfect acclimatization with 8 day duration for excellent success rates.",
-    pricePerPerson: "$2,829",
     slug: "lemosho",
     image: "/images/kilimanjaro-porters-sunrise.jpg",
   },
@@ -60,7 +57,6 @@ const routes = [
     duration: "9 Days",
     description:
       "The ultimate Kilimanjaro experience with 360 degree views. Longest route with the highest success rate of any route.",
-    pricePerPerson: "$3,069",
     slug: "northern-circuit",
     image: "/images/kilimanjaro-uhuru-peak.jpg",
   },
@@ -70,7 +66,6 @@ const routes = [
     duration: "6 Days",
     description:
       "The most challenging and steepest route for experienced trekkers. Features steep ridges and scrambling through rainforest before joining the southern circuit.",
-    pricePerPerson: "$2,835",
     slug: "umbwe",
     image: "/images/umbwe-route.jpg",
   },
@@ -139,13 +134,7 @@ export default function KilimanjaroPage() {
 
                     <p className="text-gray-700 text-base leading-relaxed mb-6 flex-1">{route.description}</p>
 
-                    <div className="mt-auto">
-                      <div className="bg-brand-sand rounded-xl p-4 mb-6">
-                        <p className="text-sm text-gray-600 mb-1">Starting from</p>
-                        <p className="text-3xl font-black text-brand-chocolate">{route.pricePerPerson}</p>
-                        <p className="text-sm text-gray-600">per person</p>
-                      </div>
-
+                    <div className="mt-auto pt-4">
                       <Button
                         asChild
                         className="w-full bg-brand-gold hover:bg-brand-gold/90 text-brand-chocolate font-bold py-6 text-base"

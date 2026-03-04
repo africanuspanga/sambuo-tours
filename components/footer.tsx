@@ -15,9 +15,9 @@ const safariLinks = [
   { label: "Day Safaris", href: "/day-safaris" },
   { label: "Cultural Safaris", href: "/cultural-safaris" },
   { label: "Our Itineraries", href: "/our-itineraries" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Mount Meru", href: "/mt-meru" },
   { label: "Udzungwa", href: "/udzungwa" },
-  { label: "Lushoto", href: "/lushoto" },
 ]
 
 export function Footer() {

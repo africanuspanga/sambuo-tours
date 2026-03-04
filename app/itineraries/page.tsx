@@ -24,7 +24,6 @@ const tours = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-2151176260-612x612-9iXIBoOwLtsgsFnC1dp2sXU9XFSAGC.jpg",
     duration: "10 Days",
-    price: "3,056",
     highlights: [
       "Stone Town UNESCO Heritage Site",
       "Spice Farm Tours",
@@ -42,7 +41,6 @@ const tours = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-1500893945-612x612-H3XutuKdkcJrIzNxduGF3GEgSJW8m3.jpg",
     duration: "13 Days",
-    price: "8,361",
     highlights: [
       "Ruaha National Park - Tanzania's Best-Kept Secret",
       "Boat Safari on Rufiji River",
@@ -60,7 +58,6 @@ const tours = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-2170086127-612x612-x6PQjdm2JNRPMlhFH9sNmdSZ2Hh15T.jpg",
     duration: "11 Days",
-    price: "2,546",
     highlights: [
       "Great Wildebeest Migration",
       "Ngorongoro Crater - 7th Wonder",
@@ -78,7 +75,6 @@ const tours = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-2119638133-612x612-5PrgfinWlkNRXJ2LdXzWqVUqHCidKa.jpg",
     duration: "14 Days",
-    price: "3,000",
     highlights: [
       "Serengeti & Ngorongoro Safari",
       "Optional Hot Air Balloon Safari",
@@ -96,7 +92,6 @@ const tours = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-1375721633-612x612-eXdErxdsJmfeKxKfjbIEHoJrCb7rwC.jpg",
     duration: "7 Days",
-    price: "3,920",
     highlights: [
       "Ruaha National Park Game Drives",
       "Prison Island Giant Tortoises",
@@ -114,7 +109,6 @@ const tours = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-172311128-612x612-2HtPQZn30zdZ1kVMyul4DqEX0WncWD.jpg",
     duration: "8 Days",
-    price: "2,486",
     highlights: [
       "Hut Accommodation on Mountain",
       "Acclimatization Day at Horombo",
@@ -132,7 +126,6 @@ const tours = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-1159163245-612x612-yKxAbhGcLslXY2NjMcaIxJvbKFQqwu.jpg",
     duration: "9 Days",
-    price: "2,486",
     highlights: [
       "Scenic Machame Route",
       "Great Barranco Wall Climb",
@@ -150,7 +143,6 @@ const tours = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-1373541504-612x612-6WH8bDJO7OqLqKeZ3NoF8ZmJS1QgTC.jpg",
     duration: "8 Days",
-    price: "2,400",
     highlights: [
       "Tarangire Elephant Herds",
       "Ngorongoro Crater Floor Safari",
@@ -191,9 +183,7 @@ export default function ItinerariesPage() {
                 <Card key={tour.id} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
                   <div className="relative h-64 w-full">
                     <Image src={tour.image || "/placeholder.svg"} alt={tour.shortTitle} fill className="object-cover" />
-                    <div className="absolute top-4 right-4">
-                      <Badge className="bg-brand-gold text-white text-sm px-3 py-1">From ${tour.price}</Badge>
-                    </div>
+
                   </div>
 
                   <CardHeader>
@@ -207,10 +197,7 @@ export default function ItinerariesPage() {
                         <Calendar className="h-4 w-4" />
                         <span>{tour.duration}</span>
                       </div>
-                      <div className="flex items-center gap-1">
-                        <DollarSign className="h-4 w-4" />
-                        <span>From ${tour.price} pp</span>
-                      </div>
+
                     </div>
 
                     <div className="space-y-2">

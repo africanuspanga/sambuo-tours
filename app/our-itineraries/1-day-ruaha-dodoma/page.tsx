@@ -42,10 +42,6 @@ export default function RuahaDodomaPage() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold text-brand-gold">$775</div>
-                <div className="text-sm text-gray-300">Starting Price (1 pax)</div>
-              </div>
-              <div>
                 <div className="text-3xl font-bold">1 Day</div>
                 <div className="text-sm text-gray-300">Duration</div>
               </div>
@@ -149,43 +145,6 @@ export default function RuahaDodomaPage() {
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
-
-            {/* Pricing Table */}
-            <section className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-chocolate mb-8">Pricing</h2>
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                <table className="w-full">
-                  <thead className="bg-brand-chocolate text-white">
-                    <tr>
-                      <th className="py-4 px-6 text-left">Number of People</th>
-                      <th className="py-4 px-6 text-right">Price Per Person</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-200">
-                    <tr className="hover:bg-gray-50">
-                      <td className="py-4 px-6 font-semibold">1 Person</td>
-                      <td className="py-4 px-6 text-right text-brand-gold font-bold text-lg">$775</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="py-4 px-6 font-semibold">2 People</td>
-                      <td className="py-4 px-6 text-right text-brand-gold font-bold text-lg">$480</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="py-4 px-6 font-semibold">3 People</td>
-                      <td className="py-4 px-6 text-right text-brand-gold font-bold text-lg">$379</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="py-4 px-6 font-semibold">4 People</td>
-                      <td className="py-4 px-6 text-right text-brand-gold font-bold text-lg">$335</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50 bg-brand-gold/5">
-                      <td className="py-4 px-6 font-semibold">5-10 People</td>
-                      <td className="py-4 px-6 text-right text-brand-gold font-bold text-lg">$325</td>
-                    </tr>
-                  </tbody>
-                </table>
               </div>
             </section>
 

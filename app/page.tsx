@@ -9,7 +9,8 @@ import { FeaturedItinerariesSection } from "@/components/home/featured-itinerari
 import { ZanzibarSection } from "@/components/home/zanzibar-section"
 import { KilimanjaroSection } from "@/components/home/kilimanjaro-section"
 import { RecommendedBySection } from "@/components/home/recommended-by-section"
-import { TestimonialsSection } from "@/components/home/testimonials-section"
+import { LandCruiserSection } from "@/components/home/land-cruiser-section"
+import { GalleryHighlightSection } from "@/components/home/gallery-highlight-section"
 import { FinalCtaSection } from "@/components/home/final-cta-section"
 import { company } from "@/lib/sambuo-data"
 
@@ -31,8 +32,9 @@ export default function HomePage() {
         <FeaturedItinerariesSection />
         <ZanzibarSection />
         <KilimanjaroSection />
+        <LandCruiserSection />
         <RecommendedBySection />
-        <TestimonialsSection />
+        <GalleryHighlightSection />
         <FinalCtaSection />
       </main>
       <Footer />

@@ -118,6 +118,12 @@ export function Navigation() {
             >
               Zanzibar
             </Link>
+            <Link
+              href="/accommodation"
+              className="text-white/90 hover:text-brand-gold transition-colors duration-300 font-medium text-sm tracking-wide uppercase"
+            >
+              Accommodation
+            </Link>
 
             <div
               className="relative"
@@ -268,6 +274,13 @@ export function Navigation() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Zanzibar
+            </Link>
+            <Link
+              href="/accommodation"
+              className="block text-white hover:text-brand-gold transition-colors py-3 font-medium uppercase tracking-wide"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Accommodation
             </Link>
 
             {/* Mobile Trekking Dropdown */}

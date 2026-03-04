@@ -16,6 +16,66 @@ export const metadata = {
 
 const dayTrips = [
   {
+    id: "tanga-beaches",
+    title: "Tanga Beaches",
+    location: "Tanga",
+    duration: "Full Day",
+    image: "/tanga_Sandbank.jpg",
+    description:
+      "Tanga is home to beautiful and peaceful beaches along the Indian Ocean, offering a relaxing escape from the busy city life. The coastline features soft white sand, warm turquoise water, and stunning ocean views. Visitors can enjoy swimming, sunbathing, beach walks, and fresh seafood from nearby fishing villages. The beaches around Tanga are less crowded than many other coastal destinations in Tanzania, making them perfect for travelers who want a quiet and authentic beach experience. It is also a great place to watch traditional dhow boats sailing along the coast and enjoy unforgettable sunsets over the ocean.",
+    highlights: [
+      "Soft white sand and warm turquoise water",
+      "Quiet, uncrowded beach experience",
+      "Fresh seafood from local fishing villages",
+      "Traditional dhow boats and sunset views",
+    ],
+  },
+  {
+    id: "pangani-beaches",
+    title: "Pangani Beaches",
+    location: "Pangani",
+    duration: "Full Day",
+    image: "/pangani beaches.jpg",
+    description:
+      "Pangani is a historic coastal town located south of Tanga, famous for its pristine beaches and rich Swahili culture. The area offers long stretches of untouched white sand and clear blue waters along the Indian Ocean. Visitors can relax on quiet beaches, take boat trips along the Pangani River, or explore the town's historic buildings that reflect Arab, German, and British influences. Pangani is also known for its peaceful atmosphere and natural beauty, making it an ideal destination for beach holidays, cultural exploration, and romantic seaside escapes.",
+    highlights: [
+      "Pristine white sand beaches",
+      "Pangani River boat trips",
+      "Historic Swahili culture and architecture",
+      "Peaceful, romantic coastal atmosphere",
+    ],
+  },
+  {
+    id: "bike-tourism",
+    title: "Bike Tourism",
+    location: "Tanga Region",
+    duration: "Half/Full Day",
+    image: "/biking tourism.webp",
+    description:
+      "Explore the scenic beauty of Tanga Region on two wheels with our guided bike tourism experiences. Ride through lush coconut plantations, traditional villages, and along the stunning coastline. This eco-friendly adventure allows you to experience the local culture up close, interact with friendly communities, and discover hidden gems that are inaccessible by car. Whether you're a casual rider or an experienced cyclist, our bike tours offer a unique perspective on Tanzania's coastal landscapes.",
+    highlights: [
+      "Scenic rides through plantations and villages",
+      "Eco-friendly exploration of the region",
+      "Close interaction with local communities",
+      "Suitable for all fitness levels",
+    ],
+  },
+  {
+    id: "sandbank-snorkeling",
+    title: "Visit Sandbank & Snorkeling in Tanga",
+    location: "Tanga",
+    duration: "Full Day",
+    image: "/tanga_Sandbank.jpg",
+    description:
+      "Experience the magic of Tanga's sandbanks - pristine, uninhabited strips of white sand emerging from the turquoise Indian Ocean. Our sandbank excursion includes a boat ride to these secluded paradises where you can relax, swim, and enjoy a seafood barbecue picnic. The crystal-clear waters around the sandbanks offer excellent snorkeling opportunities, with colorful coral reefs teeming with tropical fish, sea stars, and other marine life. A perfect day trip for beach lovers and ocean enthusiasts.",
+    highlights: [
+      "Secluded sandbank paradise experience",
+      "Excellent snorkeling with tropical marine life",
+      "Seafood barbecue picnic on the sandbank",
+      "Crystal-clear turquoise waters",
+    ],
+  },
+  {
     id: "materuni-waterfalls",
     title: "Materuni Waterfalls & Coffee Tour",
     location: "Arusha/Moshi",

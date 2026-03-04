@@ -100,16 +100,6 @@ export default function OurItinerariesPage() {
                       ))}
                     </ul>
 
-                    {/* Price */}
-                    <div className="mb-6 pb-6 border-b border-gray-100">
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-gray-500">From</span>
-                        <span className="text-3xl font-serif font-bold text-brand-chocolate">${tour.priceFrom}</span>
-                        <span className="text-sm text-gray-500">per person</span>
-                      </div>
-                      <p className="text-xs text-gray-400 mt-1">Price range: {tour.priceRange}</p>
-                    </div>
-
                     {/* Action Buttons */}
                     <div className="flex gap-3">
                       <Link
@@ -189,22 +179,6 @@ export default function OurItinerariesPage() {
                         </li>
                       ))}
                     </ul>
-
-                    {/* Prices */}
-                    <div className="mb-6 pb-6 border-b border-brand-sand">
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="text-center p-4 bg-white rounded-xl shadow-sm">
-                          <p className="text-xs text-gray-500 mb-1">Camping</p>
-                          <p className="text-xl font-serif font-bold text-brand-ocean">${tour.campingPrice}</p>
-                          <p className="text-xs text-gray-400">per person</p>
-                        </div>
-                        <div className="text-center p-4 bg-white rounded-xl shadow-sm">
-                          <p className="text-xs text-gray-500 mb-1">Lodge</p>
-                          <p className="text-xl font-serif font-bold text-brand-gold">${tour.lodgePrice}</p>
-                          <p className="text-xs text-gray-400">per person</p>
-                        </div>
-                      </div>
-                    </div>
 
                     {/* Action Buttons */}
                     <div className="flex gap-3">

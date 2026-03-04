@@ -8,6 +8,18 @@ import { Check, Compass } from "lucide-react"
 
 const destinations = [
   {
+    title: "Mkomazi National Park",
+    image: "/Mkomazi NP.webp",
+    description:
+      "Mkomazi National Park is a magnificent wilderness area located in northeastern Tanzania, at the foothills of the Pare and Usambara mountains. This 3,700 square kilometer park forms a vital part of the greater Tsavo ecosystem, sharing a border with Kenya's Tsavo West National Park. Mkomazi is renowned for its successful rhino and African wild dog conservation programs, offering visitors a chance to see these endangered species in their natural habitat.",
+    highlights: [
+      "Endangered black rhino sanctuary",
+      "African wild dog conservation program",
+      "Stunning views of Mount Kilimanjaro",
+      "Unique dry-country wildlife species",
+    ],
+  },
+  {
     title: "Serengeti National Park",
     image: "/images/serengeti.jpg",
     description:

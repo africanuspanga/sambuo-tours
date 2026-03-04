@@ -38,10 +38,6 @@ export default function OneDayMikumiPage() {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap gap-8 justify-center md:justify-around items-center">
             <div className="text-center">
-              <div className="text-3xl font-bold text-brand-gold">$325-790</div>
-              <div className="text-sm text-gray-300">Price Range (PP)</div>
-            </div>
-            <div className="text-center">
               <div className="text-3xl font-bold">1 Day</div>
               <div className="text-sm text-gray-300">Duration</div>
             </div>
@@ -146,43 +142,6 @@ export default function OneDayMikumiPage() {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Pricing Table */}
-            <div className="mb-12">
-              <h2 className="text-3xl font-bold text-brand-chocolate mb-6">Pricing</h2>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="bg-brand-chocolate text-white">
-                      <th className="p-4 text-left">Group Size</th>
-                      <th className="p-4 text-right">Price Per Person</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b">
-                      <td className="p-4">1 Person</td>
-                      <td className="p-4 text-right font-bold text-brand-gold">$790 (All Trip)</td>
-                    </tr>
-                    <tr className="border-b bg-gray-50">
-                      <td className="p-4">2 People</td>
-                      <td className="p-4 text-right font-bold text-brand-gold">$480 PP</td>
-                    </tr>
-                    <tr className="border-b">
-                      <td className="p-4">3 People</td>
-                      <td className="p-4 text-right font-bold text-brand-gold">$375 PP</td>
-                    </tr>
-                    <tr className="border-b bg-gray-50">
-                      <td className="p-4">4 People</td>
-                      <td className="p-4 text-right font-bold text-brand-gold">$355 PP</td>
-                    </tr>
-                    <tr className="border-b">
-                      <td className="p-4">5-10 People</td>
-                      <td className="p-4 text-right font-bold text-brand-gold">$325 PP</td>
-                    </tr>
-                  </tbody>
-                </table>
               </div>
             </div>
 

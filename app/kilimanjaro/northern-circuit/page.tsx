@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { BookingModal } from "@/components/booking-modal"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowLeft, Check, X, Users } from "lucide-react"
+import { ArrowLeft, Check, X } from "lucide-react"
 import { company } from "@/lib/sambuo-data"
 
 export const metadata = {
@@ -94,13 +94,6 @@ const notIncluded = [
   "International visas & Medical/Travel Insurance",
 ]
 
-const pricing = [
-  { pax: "1 Person", price: "$3,069" },
-  { pax: "2 People", price: "$2,584 per person" },
-  { pax: "3 People", price: "$2,422 per person" },
-  { pax: "4+ People", price: "$2,342 per person" },
-]
-
 export default function NorthernCircuitRoutePage() {
   return (
     <div className="min-h-screen bg-brand-cream">
@@ -172,37 +165,6 @@ export default function NorthernCircuitRoutePage() {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Pricing */}
-        <section className="py-12 md:py-16 bg-brand-cream">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-chocolate mb-12 text-center">Pricing</h2>
-            <div className="max-w-3xl mx-auto">
-              <div className="bg-brand-cream rounded-2xl shadow-xl overflow-hidden">
-                <div className="bg-gradient-to-r from-brand-ocean to-blue-600 p-6 text-white">
-                  <h3 className="text-2xl font-black mb-2">Northern Circuit</h3>
-                  <p className="text-blue-100">9 Days / 8 Nights</p>
-                </div>
-                <div className="p-6 md:p-8">
-                  <div className="space-y-4">
-                    {pricing.map((item, index) => (
-                      <div
-                        key={index}
-                        className="flex items-center justify-between py-4 border-b border-gray-200 last:border-0"
-                      >
-                        <div className="flex items-center gap-3">
-                          <Users size={20} className="text-brand-ocean" />
-                          <span className="font-semibold text-gray-900">{item.pax}</span>
-                        </div>
-                        <span className="text-xl md:text-2xl font-black text-brand-chocolate">{item.price}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>

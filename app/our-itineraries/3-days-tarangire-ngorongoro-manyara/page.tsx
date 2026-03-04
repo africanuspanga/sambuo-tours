@@ -40,16 +40,6 @@ const itinerary = [
   },
 ]
 
-const pricingLodge = [
-  { people: "1 Person", price: "$1,558", config: "1 Room" },
-  { people: "2 People", price: "$1,194", config: "2 Rooms" },
-  { people: "2 People", price: "$1,033", config: "1 Room" },
-  { people: "3 People", price: "$858", config: "2 Rooms" },
-  { people: "4 People", price: "$771", config: "2 Rooms" },
-  { people: "5 People", price: "$718", config: "3 Rooms" },
-  { people: "6 People", price: "$683", config: "3 Rooms" },
-]
-
 export default function ThreeDaysTarangireNgorongoroManyaraPage() {
   return (
     <>
@@ -144,25 +134,6 @@ export default function ThreeDaysTarangireNgorongoroManyaraPage() {
                       </div>
                     </div>
                   ))}
-                </div>
-              </div>
-
-              {/* Pricing */}
-              <div className="mb-12">
-                <h2 className="text-3xl font-bold text-brand-chocolate mb-8">Pricing (Mid-Range Lodge)</h2>
-                <div className="bg-amber-50 rounded-lg p-6 border-l-4 border-brand-gold">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    {pricingLodge.map((item, index) => (
-                      <div key={index} className="flex justify-between items-center bg-white p-4 rounded-xl">
-                        <div>
-                          <span className="text-gray-700 font-medium">{item.people}</span>
-                          <span className="text-gray-500 text-sm ml-2">({item.config})</span>
-                        </div>
-                        <span className="text-xl font-bold text-brand-gold">{item.price}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <p className="text-sm text-gray-600 mt-4">Price per person. High season rates shown.</p>
                 </div>
               </div>
 
