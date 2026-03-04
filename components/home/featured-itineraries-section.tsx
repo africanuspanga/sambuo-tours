@@ -112,13 +112,6 @@ export function FeaturedItinerariesSection() {
                   ))}
                 </ul>
 
-                {/* Price */}
-                <div className="flex items-baseline gap-1.5 mb-5 pt-4 border-t border-gray-100">
-                  <span className="text-xs text-gray-500">From</span>
-                  <span className="text-2xl font-serif font-bold text-brand-chocolate">${tour.priceFrom}</span>
-                  <span className="text-xs text-gray-500">/person</span>
-                </div>
-
                 {/* Action Buttons */}
                 <div className="flex gap-2">
                   <Link
